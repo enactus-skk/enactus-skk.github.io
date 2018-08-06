@@ -1,27 +1,28 @@
-title: Urban Template
+title: 인액터스 성균관(Enactus SKK)
 # url: "https://enactus-skk.org/"
 url: "localhost:4000"
 baseurl:
 favicon_path: "/images/assets/favicon.ico"
-header_logo:
-  path: "/images/assets/logo-sm.png"
-  alt: "Enactus Skk"
+header_logo_path: "/images/assets/logo.png"
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem
-description: Jekyll template with example content for a web agency.
+description: |
+  Unique Origin, Future and Change.
+  성균관 인액터스는 기업가정신의 실천을 통해 더 나은 사회를 만들어가는 전략적 사회공헌 경영학회입니다.
+  우리는 비즈니스의 긍정적인 힘으로 세상에 변화를 가져오고 있습니다.
 
 # Author details for the jekyll-seo-tag gem
 author:
-  name: Enactus Skk
+  name: Enactus SKK
   email: mail@enactus-skk.org
   twitter: # twitter username without the @ symbol
 
 # Social details for the jekyll-seo-tag gem
 social:
-  name: Urban Template
+  name: Enactus SKK
   links:
     - https://github.com/CloudCannon/urban-jekyll-template
 
@@ -46,7 +47,7 @@ plugins:
   - "jekyll-seo-tag"
   - "jekyll-paginate"
   - "jekyll-archives"
-  - "jekyll-minifier"
+  #- "jekyll-minifier"
 
 exclude:
   - Gemfile
@@ -94,7 +95,7 @@ defaults:
 
 # -----------
 # CloudCannon
-
+# jekyll-seo-tag/usage.md at master · jekyll/jekyll-seo-tag
 social_icons:
   - Facebook
   - Google Plus
@@ -106,5 +107,5 @@ social_icons:
   - YouTube
   - RSS
 
-jekyll-minifier:
-  exclude: 'feed.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+#jekyll-minifier:
+#  exclude: 'feed.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns

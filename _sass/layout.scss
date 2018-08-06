@@ -14,26 +14,39 @@
 }
 
 header {
-	color: #fff;
-	padding: 20px 0;
+	/* color: #fff; */
+	color: $secondary-brand-color;
+	background-color: #fff;
+	padding: 20px 0 0px 0;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 10;
 
 	a {
-		color: #fff;
+		/* color: #fff; */
+		color: $secondary-brand-color;
 		text-decoration: none;
 		z-index: 1;
 		position: relative;
 
 		&:hover {
+			color: $brand-color;
 			text-decoration: none;
 		}
 	}
 
-	.enactus-name {
+	.team-name {
 		font-size: 1.7em;
+
+		a {
+			top: -12px;
+			line-height:60px;
+			img {
+				height:60px;
+			}
+		}
 	}
 }
 
@@ -74,8 +87,12 @@ section {
 	}
 
 	&.hero {
+		/*
 		color: #ffffff;
 		background: $brand-color;
+		*/
+		color: $secondary-brand-color;
+		background: #EFEFE8;
 		text-align: left;
 		margin-top: -100px;
 		padding-top: 250px;
@@ -86,11 +103,12 @@ section {
 
 		h2 {
 			font-size: 3.5rem;
+			color: $brand-color;
 		}
 
 		p {
 			font-size: 1.8rem;
-			color: #fff;
+			color: $secondary-brand-color;
 		}
 
 		a:not(.button) {
@@ -101,6 +119,10 @@ section {
 
 	&.alternate {
 		background: #EFEFE8;
+	}
+	&.brand {
+		color: #ffffff;
+		background: $brand-color;
 	}
 }
 
@@ -238,7 +260,7 @@ section {
 }
 
 .patterned {
-	background: #232D39 url($pattern);
+	background: $secondary-brand-color url($pattern);
 
 	&,
 	p {

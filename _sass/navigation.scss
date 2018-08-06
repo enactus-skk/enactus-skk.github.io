@@ -1,6 +1,6 @@
 .nav-open {
 	header {
-		background: #232D39;
+		background: $secondary-brand-color;
 		z-index: 10;
 
 		@media #{$mid-point} {
@@ -9,11 +9,12 @@
 	}
 
 	nav {
-		margin: 20px 0 0 0;
+		margin: 0 0 0 0;
 		border: 0;
 
 		a {
 			display: block;
+			color: rgba(255, 255, 255, 0.8);
 		}
 
 		@media #{$mid-point} {
@@ -31,10 +32,12 @@ nav {
 	text-transform: uppercase;
 	font-size: 0.8em;
 	width: 100%;
+	/* intiwatana */
 
 	ul {
 		margin: 0;
 		padding: 0;
+		/* padding-top:5px; */
 	}
 
 	li {
@@ -56,13 +59,14 @@ nav {
 	a {
 		margin: 0 3px;
 		padding: 20px 10px;
-		color: rgba(255, 255, 255, 0.8);
+		/* intiwatana */
+		color: rgba(14, 18, 22, 0.8);
 		transition: 0.2s ease-in-out;
 		display: none;
 		font-size: 1rem;
 
 		@media #{$mid-point} {
-			border-bottom: 2px solid rgba(255, 255, 255, 0);
+			border-bottom: none;
 			display: block;
 			padding: 10px;
 		}
@@ -71,12 +75,15 @@ nav {
 			display: inline;
 			position: absolute;
 			right: 10px;
-			top: -22px;
+			top: -12px;
 			font-size: 1.9em;
 			border: 0;
 
 			@media #{$mid-point} {
 				display: none;
+				ul {
+					padding-top:0;
+				}
 			}
 
 			&:hover {
@@ -86,10 +93,11 @@ nav {
 	}
 
 	a:hover {
-		color: #fff;
-
+		/*intiwatana*/
+		/* color: #fff; */
+		color: $brand-color;
 		@media #{$mid-point} {
-			border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+			border-bottom: 2px solid $brand-color;
 			display: block;
 			padding: 10px;
 		}
@@ -108,6 +116,6 @@ nav {
 	}
 
 	a.active {
-		color: #fff;
+		color: $brand-color;
 	}
 }

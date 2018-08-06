@@ -2,10 +2,15 @@
 
 <html>
 	<head>
+		<meta name="theme-color" content="#f4d525">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		{% seo %}
+		{% if page.layout == 'default' %}
+			<title>{{ site.title }}</title>
+			{% seo title=false %}
+		{% else %}
+			{% seo %}
+		{% endif %}
 		{% feed_meta %}
 
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
@@ -26,7 +31,14 @@
 	<body>
 		<header>
 			<div class="container">
-				<h1 class="enactus-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.header_logo.path }}" alt="{{ site.header_logo.alt }}" width="150"></a></h1>
+				<div class="team-name">
+					<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.header_logo_path }}" alt="{{ site.social.name }}"></a>
+				</div>
+<!--
+				<div class="logo">
+					<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.header_logo_path }}" alt="{{ site.social.name }}"></a>
+				</div>
+			-->
 				{% include navigation.html %}
 			</div>
 		</header>
@@ -58,9 +70,9 @@
 
 					<ul class="footer-links">
 						<li>
-							<h2>{{ site.data.enactus-branch.title }}</h2>
+							<h2>{{ site.data.team.title }}</h2>
 						</li>
-						<li>{{ site.data.enactus-branch.description }}</li>
+						<li>{{ site.data.team.description }}</li>
 						<li><a href="{{ site.baseurl }}/feed.xml">{% include social-icon.html icon="RSS" %} Subscribe with RSS</a></li>
 					</ul>
 				</div>
@@ -68,9 +80,9 @@
 
 			<div class="legal-line">
 				<p class="container">
-					&copy; {{ site.time | date: '%Y' }} {{ site.data.enactus-branch.title }}
+					&copy; {{ site.time | date: '%Y' }} {{ site.data.team.title }}
 					&bull;
-					by <a href="http://github.io/intiwatana/" target="_blank">CloudCannon</a>
+					by <a href="https://github.com/intiwatana/" target="_blank">intiwatana</a>
 				</p>
 			</div>
 		</footer>
