@@ -12,7 +12,7 @@
 
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}{{ site.favicon_path }}">
 
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			<script>
@@ -26,7 +26,7 @@
 	<body>
 		<header>
 			<div class="container">
-				<h1 class="enactus-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" alt="Urban" width="150"></a></h1>
+				<h1 class="enactus-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.header_logo.path }}" alt="{{ site.header_logo.alt }}" width="150"></a></h1>
 				{% include navigation.html %}
 			</div>
 		</header>
@@ -70,7 +70,7 @@
 				<p class="container">
 					&copy; {{ site.time | date: '%Y' }} {{ site.data.enactus-branch.title }}
 					&bull;
-					Template by <a href="http://cloudcannon.com/">CloudCannon</a>
+					by <a href="http://github.io/intiwatana/" target="_blank">CloudCannon</a>
 				</p>
 			</div>
 		</footer>

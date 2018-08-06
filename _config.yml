@@ -1,6 +1,11 @@
 title: Urban Template
-url: "https://enactus-skk.org"
-baseurl: "/"
+# url: "https://enactus-skk.org/"
+url: "localhost:4000"
+baseurl:
+favicon_path: "/images/assets/favicon.ico"
+header_logo:
+  path: "/images/assets/logo-sm.png"
+  alt: "Enactus Skk"
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
@@ -10,8 +15,8 @@ description: Jekyll template with example content for a web agency.
 
 # Author details for the jekyll-seo-tag gem
 author:
-  name:
-  email:
+  name: Enactus Skk
+  email: mail@enactus-skk.org
   twitter: # twitter username without the @ symbol
 
 # Social details for the jekyll-seo-tag gem
@@ -26,7 +31,7 @@ collections:
   staff_members:
     output: false
   clients:
-    output: true
+    output: false
 
 paginate: 10
 paginate_path: "/blog/:num/"

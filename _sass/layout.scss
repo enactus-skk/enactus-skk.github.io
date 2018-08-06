@@ -47,7 +47,7 @@ header {
 	height: auto;
 	display: block;
 	margin: 0 auto;
-	box-shadow: 0 1px 0 #ccc,0 1px 1px #eee;
+	box-shadow: 0 1px 0 #ccc,0 1px 1px #EFEFE8;
 	border-radius: 2px;
 	padding: 20px 0 0;
 	background: url($screenshot-buttons) 4px 4px no-repeat #DDD;
@@ -100,7 +100,7 @@ section {
 	}
 
 	&.alternate {
-		background: #eee;
+		background: #EFEFE8;
 	}
 }
 
@@ -238,7 +238,7 @@ section {
 }
 
 .patterned {
-	background: #222 url($pattern);
+	background: #232D39 url($pattern);
 
 	&,
 	p {
