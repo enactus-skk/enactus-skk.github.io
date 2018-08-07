@@ -45,8 +45,6 @@
 
 		<footer class="diagonal">
 			<div class="container">
-				<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Update Footer Sections</a></p>
-
 				<div class="footer-columns">
 					{% for column in site.data.footer %}
 						<ul class="footer-links">
@@ -72,7 +70,7 @@
 							<h2>{{ site.data.team.title }}</h2>
 						</li>
 						<li>{{ site.data.team.description }}</li>
-						<li><a href="{{ site.baseurl }}/feed.xml">{% include social-icon.html icon="RSS" %} Subscribe with RSS</a></li>
+						<li><a href="{{ site.baseurl }}/feed.xml">{% include social-icon.html icon="RSS" %} RSS feed</a></li>
 					</ul>
 				</div>
 			</div>

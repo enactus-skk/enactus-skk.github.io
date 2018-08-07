@@ -1,0 +1,10 @@
+---
+name: with 人
+subtitle: 도자기 제조업체[달항아리]에 경영컨설팅을 제공합니다.
+start_year:
+end_year:
+external_url:
+image_path: /images/main/main-2018-nc.jpg
+---
+
+임시로 작성.

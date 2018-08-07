@@ -31,8 +31,8 @@ timezone: Asia/Seoul
 collections:
   staff_members:
     output: false
-  clients:
-    output: false
+  projects:
+    output: true
 
 paginate: 10
 paginate_path: "/blog/:num/"
@@ -67,9 +67,9 @@ defaults:
           height: 2000
   - scope:
       path: ""
-      type: "clients"
+      type: "projects"
     values:
-      layout: "client"
+      layout: "project"
       _options:
         image_path:
           width: 2000

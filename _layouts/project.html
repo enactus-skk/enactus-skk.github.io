@@ -1,16 +1,22 @@
 ---
 layout: default
 ---
-{% assign portfolio = site.pages | where: "path", "portfolio.html" | first %}
+{% assign project = site.pages | where: "path", "project.html" | first %}
 
-<section class="hero diagonal">
-	<div class="container">
-		{% if portfolio.heading %}
-		<h2><a href="{{ site.baseurl }}/portfolio/">{{ portfolio.heading }}</a> / {{ page.title | capitalize }}</h2>
+<section class="first diagonal brand">
+  <div class="container">
+		{% if project.heading %}
+		<h2><a href="{{ site.baseurl }}/project/">{{ project.heading }}</a> / {{ page.title | capitalize }}</h2>
 		{% endif %}
 		{% if page.subtitle %}
 			<p class="subtext">{{ page.subtitle }}</p>
 		{% endif %}
+  </div>
+</section>
+
+<section class="hero diagonal">
+	<div class="container">
+
 	</div>
 </section>
 
