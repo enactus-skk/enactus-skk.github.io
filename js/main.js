@@ -1,4 +1,5 @@
 (function () {
+	// 스크립트 중에서 nav에서 목록아이콘이 안드로이드에서 흰색으로 디폴트가 되지 않는 경우가 있다.
 	var header = document.getElementById("mainHeader");
 
 	function changeHeader() {
