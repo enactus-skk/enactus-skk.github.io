@@ -279,7 +279,7 @@ section {
 		text-align: left;
 		border: 1px solid $enactus-gold;
 		line-height: 0;
-
+		/* TODO :  정렬 수정 */
 		@media #{$tablet} {
 			flex: 1 1 50%;
 		}
@@ -321,11 +321,13 @@ section {
 	}
 
 	.name {
-		font-size: 1.3rem;
+		font-size: 1.1rem;
+		font-weight: bold;
 		color: $enactus-gold;
 	}
 
 	.position {
+		font-size: 0.5rem;
 		margin-top: 5px;
 		color: #fff;
 	}
