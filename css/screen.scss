@@ -3,12 +3,17 @@
 
 $pattern: "{{ site.baseurl }}/images/pattern.png";
 $screenshot-buttons: "{{ site.baseurl }}/images/screenshot-buttons.svg";
+/*
+$front-main-image: "https://source.unsplash.com/j5LSbCqB1wA/2000x1322?a=.png";
+*/
 
-$brand-color: #fdc03c;
+$enactus-gold: #FFC222; /* RGB(255, 194, 34) */
+$enactus-tan: #E8EAE2;  /* 	RGB(232, 234, 226) */
+$enactus-grey: #3B4650;  /* RGB(59, 70, 80) */
+$enactus-dark-grey: #30333C; /* 	RGB(48, 51, 60) */
+
 $html-background-color: #fff;
-/*$secondary-brand-color: #FFC461;*/
-$secondary-brand-color:#232D39;
-$middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
+$middle-gradient-color: mix($enactus-gold, $enactus-grey, 95%);
 
 // Breakpoints
 $tablet: "(min-width: 450px)";
@@ -17,7 +22,10 @@ $desktop: "(min-width: 768px)";
 
 $section-rotation: 5deg;
 
+@import "mixins/flexbox";
+@import "mixins/columns";
 @import "elements";
+@import "landing-page";
 @import "layout";
 @import "contact";
 @import "blog";

@@ -1,9 +1,24 @@
 ---
 title:
 ---
+<!--
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+-->
 
-<section class="hero diagonal">
-  <div class="container">
+<section class="hero" style="background-image: url({{ site.data.image.main }})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h1 class="editable">Make a new friend today</h1>
+			<p class="subtext editable">Frisco helps you find new friends with common interests. Search for a new Tennis partner, find a baking side-kick or befriend a new drinking buddy.</p>
+			<div class="cta button alt"><a href="#">Join Now</a></div>
+		</div>
+    <div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div>
+	</div>
+
+</section>
+
+<section class="diagonal brand">
+  <div class="container halves">
     <h2 class="editable">
 			<span class="investing">We believe investing in students who take</span>
 			<span class="subtext editable">
@@ -57,16 +72,6 @@ title:
 </section>
 
 <section class="diagonal alternate">
-  <div class="container halves">
-    <div>
-      <h2 class="editable">We build websites</h2>
-      <p class="subtext editable">This is the <strong>Urban</strong> template from <a href="http://cloudcannon.com/">CloudCannon</a>. Urban is a strong foundation for the web presence of your agency.</p>
-      <p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
-    </div>
-  </div>
-</section>
-
-<section class="diagonal brand">
   <div class="container halves">
     <div>
       <h2 class="editable">We build websites</h2>

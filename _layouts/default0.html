@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<meta name="theme-color" content="#FFC222">
+		<meta name="theme-color" content="#fdc03c">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		{% if page.layout == 'default' %}
@@ -40,7 +40,21 @@
 				{% include navigation.html %}
 			</div>
 		</header>
+		<!--
+		<header>
+			<div class="container">
+				<div class="team-name">
+					<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.header_logo_path }}" alt="{{ site.social.name }}"></a>
+				</div>
 
+				<div class="logo">
+					<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.header_logo_path }}" alt="{{ site.social.name }}"></a>
+				</div>
+
+				{% include navigation.html %}
+			</div>
+		</header>
+		-->
 		{{ content }}
 
 		<footer class="diagonal">

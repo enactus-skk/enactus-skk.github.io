@@ -4,14 +4,14 @@ input[type=submit] {
 	padding: 20px 30px;
 	border-radius: 3px;
 	transition: 0.2s ease-in-out;
-	border: 1px solid $brand-color;
-	background: $brand-color;
+	border: 1px solid $enactus-gold;
+	background: $enactus-gold;
 	cursor: pointer;
 }
 
 input[type=submit]:hover {
-	border: 1px solid $brand-color;
-	background: $secondary-brand-color;
+	border: 1px solid $enactus-gold;
+	background: $enactus-dark-grey;
 }
 
 input[type=submit]:active {
