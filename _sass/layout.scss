@@ -154,7 +154,9 @@ section {
 	padding: 150px 0;
 	background: #fff;
 	margin-top: -2px;
-
+	&.first {
+		margin-top: -300px;
+	}
 	&.diagonal {
 		-webkit-transform: skewY(-$section-rotation);
 		-moz-transform: skewY(-$section-rotation);

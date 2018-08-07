@@ -19,7 +19,24 @@ title:
 
 </section>
 
-<section class="first diagonal brand">
+<section class="first diagonal patterned">
+  <div class="container halves">
+    <div>
+      <h3 class="editable">Some of our work</h3>
+      <p class="editable">We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure.</p>
+      <p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
+    </div>
+    <div>
+      <ul class="image-grid">
+        {% for client in site.clients limit: 4 %}
+        <li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="diagonal brand">
   <div class="container halves">
     <h2 class="editable">
 			<span class="investing">We believe investing in students who take</span>
@@ -54,23 +71,6 @@ title:
 			<li class="filler"></li>
 		</ul>
 	</div>
-</section>
-
-<section class="diagonal patterned">
-  <div class="container halves">
-    <div>
-      <h3 class="editable">Some of our work</h3>
-      <p class="editable">We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure.</p>
-      <p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
-    </div>
-    <div>
-      <ul class="image-grid">
-        {% for client in site.clients limit: 4 %}
-        <li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
 </section>
 
 <section class="diagonal alternate">
