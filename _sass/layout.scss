@@ -74,6 +74,10 @@ header {
 
 		a {
 			color: #333;
+			.nav-toggle {
+				color: #fff;
+			}
+
 			@media #{$mid-point} {
 				&:hover {
 					border-bottom-color: rgba(80, 80, 80,.3);
