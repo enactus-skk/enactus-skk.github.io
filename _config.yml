@@ -2,7 +2,7 @@ title: 인액터스 성균관(Enactus SKK)
 # url: "https://enactus-skk.org/"
 url: "localhost:4000"
 baseurl:
-favicon_path: "/images/assets/favicon.ico"
+favicon_path: "/favicon.ico"
 header_logo_path: "/images/assets/logo.png"
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -43,6 +43,7 @@ jekyll-archives:
     - "categories"
 
 plugins:
+  # https://github.com/jekyll/jekyll-feed
   - "jekyll-feed"
   - "jekyll-seo-tag"
   - "jekyll-paginate"
@@ -93,6 +94,9 @@ defaults:
     values:
       layout: "default"
 
+feed:
+  path: atom.xml
+
 # -----------
 # CloudCannon
 # jekyll-seo-tag/usage.md at master · jekyll/jekyll-seo-tag
@@ -108,4 +112,4 @@ social_icons:
   - RSS
 
 #jekyll-minifier:
-#  exclude: 'feed.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+#  exclude: 'atom.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns

@@ -1,9 +1,11 @@
 links:
-- name: Portfolio
-  link: /portfolio/
-- name: Blog
-  link: /blog/
-- name: About
+- name: Who We Are
   link: /about/
-- name: Contact
+- name: What We Do
+  link: /projects/
+- name: Now We Are
+  link: /blog/
+- name: Where We Work
   link: /contact/
+- name: Join Us
+  link: /recruitment/

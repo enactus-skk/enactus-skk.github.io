@@ -1,30 +1,19 @@
-- title: Pages
+- title: Site Links
   links:
-    - name: Home
-      link: /
-    - name: Portfolio
-      link: /portfolio/
-    - name: Blog
-      link: /blog/
-    - name: About
-      link: /about/
-    - name: Contact
-      link: /contact/
+    - name: Enactus Worldwide
+      link: http://enactus.org/
+    - name: Enactus Korea
+      link: http://enactuskorea.org/
+    - name: Enactus Korea Blog
+      link: https://blog.naver.com/enactusblog/
+
 - title: Social
   links:
     - name: Facebook
-      link:
+      link: https://www.facebook.com/skkenactus/
       social_icon: Facebook
       new_window: true
-    - name: Twitter
-      link:
-      social_icon: Twitter
-      new_window: true
-    - name: Google+
-      link:
-      social_icon: Google Plus
-      new_window: true
-    - name: LinkedIn
-      link:
-      social_icon: LinkedIn
-      new_window: true
+    - name: Email
+      link: mailto:mail@enactus-skk.org
+      social_icon: Email
+      new_window: false

@@ -1,52 +1,52 @@
 ---
-title: Contact
-heading: Get in touch today
-subtitle: We'd love to help your business.
+title: Recruitment
+heading: Together We Do
+subtitle: Gain Real World Experience
+map:
+  latitude: -45.8787605
+  longitude: 170.5027976
+  address: "1 George Street, Dunedin, New Zealand"
+  zoom: 13
 ---
 
 <section class="diagonal">
 	<div class="container">
 		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
-			<input type="hidden" name="_to" value="{{ site.data.team.contact_email_address }}" />
+			<input type="hidden" name="_to" value="support@example.com" />
 			<input type="text" name="_gotcha" style="display: none;" />
 
 			<div class="halves">
 				<div>
-					<label for="name">성(First Name)</label>
-					<input type="text" name="first-name" id="first-name" placeholder="인액터스" />
+					<label for="name">First Name</label>
+					<input type="text" name="first-name" id="first-name" placeholder="John" />
 				</div>
 
 				<div>
-					<label for="name">이름(Last Name)</label>
-					<input type="text" name="last-name" id="last-name" placeholder="코리아" />
+					<label for="name">Last Name</label>
+					<input type="text" name="last-name" id="last-name" placeholder="Doe" />
 				</div>
 			</div>
 
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email" placeholder="{{ site.data.team.contact_email_address }}" required />
+			<label for="email">Email Address</label>
+			<input type="email" name="email" id="email" placeholder="john@example.com" required />
 
 			<label for="message">Message</label>
-			<textarea name="message" id="message" placeholder="인액터스는 함게 변화를 만들어갑니다."></textarea>
+			<textarea name="message" id="message" placeholder="Hi There..."></textarea>
 
-			<input type="submit" value="메일 전송" />
+			<input type="submit" value="Send Message" />
 		</form>
 	</div>
 </section>
 
 <section class="diagonal map">
-	<div   id="gmap_canvas"
-        data-team-map-zoom="{{ site.data.team.map.zoom }}"
-        data-team-map-latitude="{{ site.data.team.map.latitude }}"
-        data-team-map-longitude="{{ site.data.team.map.longitude }}"
-
-        ></div>
+	<div id="gmap_canvas"></div>
 </section>
 
 <section class="diagonal">
 	<div class="container halves aligned-top">
 		<div>
 			<h3>Address</h3>
-				<address><a target="_blank" href="https://www.google.com/maps/place/{{ site.data.team.map.address | default: site.data.team.map.title | url_encode }}">{{ site.data.team.map.title | replace: ", ", ", <br>" }}</a></address>
+				<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
 		</div>
 		<div>
 			<h3>Email</h3>
@@ -56,12 +56,7 @@ subtitle: We'd love to help your business.
 </section>
 
 <script type="text/javascript">
-
-	// window.mapData = {{ page.map | jsonify }};
-  window.mapData = {};
-  window.mapData.zoom = Number(document.getElementById('gmap_canvas').getAttribute('data-team-map-zoom'));
-  window.mapData.latitude = document.getElementById('gmap_canvas').getAttribute('data-team-map-latitude');
-  window.mapData.longitude = document.getElementById('gmap_canvas').getAttribute('data-team-map-longitude');
+	window.mapData = {{ page.map | jsonify }};
 
 	function initMap() {
 		var myOptions = {
