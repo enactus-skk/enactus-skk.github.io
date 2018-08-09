@@ -4,7 +4,7 @@ subtitle: 다문화 여성을 산후관리사로 양성해 동일국적의 산�
 start_year:
 end_year:
 external_url:
-image_path: /images/main/main-2018-nc.jpg
+image_path: /images/main/2018-nc-1-sm.jpg
 ---
 
 임시로 작성.
