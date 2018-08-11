@@ -1,2 +1,5 @@
-# main : "/images/main/main-2018-nc.jpg"
-main :  "/images/main/2018-nc-1-sm.jpg"
+main : "/images/main/2018-nc-1-sm.jpg"
+asset_folder: "/images/assets"
+header_logo_light: "/images/assets/logo-light.png"
+header_logo: "/images/assets/logo-dark.png"
+# main :  "/images/2018-nc-1-sm-test.jpg"

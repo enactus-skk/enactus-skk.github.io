@@ -2,8 +2,6 @@ title: 인액터스 성균관(Enactus SKK)
 # url: "https://enactus-skk.org/"
 url: "localhost:4000"
 baseurl:
-favicon_path: "/favicon.ico"
-header_logo_path: "/images/assets/logo.png"
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
@@ -55,6 +53,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
+  - WORK
 
 defaults:
   - scope:
