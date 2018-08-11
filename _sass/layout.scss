@@ -155,7 +155,7 @@ section {
 	background: #fff;
 	margin-top: -2px;
 	&.first {
-		margin-top: -300px;
+		margin-top: -10vh;
 	}
 	&.diagonal {
 		-webkit-transform: skewY(-$section-rotation);
@@ -321,13 +321,13 @@ section {
 	}
 
 	.name {
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 		font-weight: bold;
 		color: $enactus-gold;
 	}
 
 	.position {
-		font-size: 0.5rem;
+		font-size: 1rem;
 		margin-top: 5px;
 		color: #fff;
 	}
