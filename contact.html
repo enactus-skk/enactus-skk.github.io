@@ -4,6 +4,28 @@ heading: Get in touch today
 subtitle: We'd love to help your business.
 ---
 
+<section class="first diagonal alternate">
+	<div class="container halves aligned-top">
+		<div>
+			<h3>Address</h3>
+				<address><strong><a target="_blank" href="https://www.google.com/maps/place/{{ site.data.team.map.address | default: site.data.team.map.title | url_encode }}">{{ site.data.team.map.title | replace: ", ", ", <br>" }}</a></strong></address>
+		</div>
+		<div>
+			<h3>Email</h3>
+			<p><strong><a href="mailto:{{ site.data.team.contact_email_address }}">{{ site.data.team.contact_email_address }}</a><strong></p>
+		</div>
+	</div>
+</section>
+
+<section class="diagonal map">
+	<div   id="gmap_canvas"
+        data-team-map-zoom="{{ site.data.team.map.zoom }}"
+        data-team-map-latitude="{{ site.data.team.map.latitude }}"
+        data-team-map-longitude="{{ site.data.team.map.longitude }}"
+
+        ></div>
+</section>
+
 <section class="diagonal">
 	<div class="container">
 		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
@@ -30,28 +52,6 @@ subtitle: We'd love to help your business.
 
 			<input type="submit" value="메일 전송" />
 		</form>
-	</div>
-</section>
-
-<section class="diagonal map">
-	<div   id="gmap_canvas"
-        data-team-map-zoom="{{ site.data.team.map.zoom }}"
-        data-team-map-latitude="{{ site.data.team.map.latitude }}"
-        data-team-map-longitude="{{ site.data.team.map.longitude }}"
-
-        ></div>
-</section>
-
-<section class="diagonal">
-	<div class="container halves aligned-top">
-		<div>
-			<h3>Address</h3>
-				<address><a target="_blank" href="https://www.google.com/maps/place/{{ site.data.team.map.address | default: site.data.team.map.title | url_encode }}">{{ site.data.team.map.title | replace: ", ", ", <br>" }}</a></address>
-		</div>
-		<div>
-			<h3>Email</h3>
-			<p><a href="mailto:{{ site.data.team.contact_email_address }}">{{ site.data.team.contact_email_address }}</a></p>
-		</div>
 	</div>
 </section>
 

@@ -1,8 +1,9 @@
 ---
 ---
 
-$pattern: "{{ site.baseurl }}/images/pattern.png";
-$screenshot-buttons: "{{ site.baseurl }}/images/screenshot-buttons.svg";
+$pattern-dark: "{{ site.baseurl }}/images/assets/pattern-dark.png";
+$pattern-grey: "{{ site.baseurl }}/images/assets/pattern-grey.png";
+$pattern-light-grey: "{{ site.baseurl }}/images/assets/pattern-light-grey.png";
 /*
 $front-main-image: "https://source.unsplash.com/j5LSbCqB1wA/2000x1322?a=.png";
 */
@@ -26,6 +27,7 @@ $section-rotation: 5deg;
 @import "mixins/columns";
 @import "elements";
 @import "landing-page";
+@import "page-top-element";
 @import "layout";
 @import "contact";
 @import "blog";

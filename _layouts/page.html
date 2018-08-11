@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<!--
 <section class="hero diagonal">
 	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
 		{% if page.heading %}
@@ -12,6 +13,19 @@ layout: default
 			<p class="subtext">{{ page.subtitle }}</p>
 		{% endif %}
 	</div>
+</section>
+-->
+
+<section class="hero-page" style="background-image: url({{ site.data.image.main }})">
+	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
+			<span>
+				<h2 class="enactus-highlight">{{ page.title | default: page.heading }}</h2>
+			</span>
+		{% if page.subtitle %}
+			<p class="subtext">{{ page.subtitle }}</p>
+		{% endif %}
+	</div>
+
 </section>
 
 {{ content }}
