@@ -6,20 +6,32 @@ subtitle: See some of our proud proejcts.
 
 <section class="first diagonal alternate">
 	<div class="container">
-		<ul class="image-grid">
-			{% for project in site.projects %}
-				<li>
-					<a href="{{ site.baseurl }}{{ project.url }}">
-						<img src="{% include relative-src.html src=project.image_path %}" alt="{{ project.name }}">
-						<div class="details">
-							<div class="name">{{ project.name }}</div>
-							<div class="position">{{ project.subtitle }}</div>
-						</div>
-					</a>
-				</li>
+
+			{% assign _projects = site.projects | group_by_exp:"item", "item.end_year" %}
+			{% assign projects = _projects | sort: 'name' ,'last' | reverse %}
+
+			{% for year in projects  %}
+
+			<h3> {{ year.name | default: 'Now Act On' }}<h3>
+				<ul class="image-grid">
+				{% for project in year.items %}
+					<li>
+						<a href="{{ site.baseurl }}{{ project.url }}">
+							<img src="{% include relative-src.html src=project.image_path %}" alt="{{ project.name }}">
+							<sub class="top-right">launched in {{ project.start_year | default:'anytime'}}</sub>
+							<div class="details">
+								<div class="name">{{ project.name }}</div>
+								<div class="position">{{ project.subtitle }}</div>
+							</div>
+						</a>
+					</li>
+				{% endfor %}
+				<li class="filler"></li>
+				<li class="filler"></li>
+			</ul>
 			{% endfor %}
-			<li class="filler"></li>
-			<li class="filler"></li>
-		</ul>
+
+
+
 	</div>
 </section>
