@@ -53,6 +53,7 @@ subtitle: We'd love to help your business.
 <script type="text/javascript">
 
 	// window.mapData = {{ page.map | jsonify }};
+
   window.mapData = {};
   window.mapData.zoom = Number(document.getElementById('gmap_canvas').getAttribute('data-team-map-zoom'));
   window.mapData.latitude = document.getElementById('gmap_canvas').getAttribute('data-team-map-latitude');
@@ -80,6 +81,8 @@ subtitle: We'd love to help your business.
 		google.maps.event.addDomListener(window, "resize", function () {
 			map.setCenter(myOptions.center);
 		});
+
 	}
+
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
