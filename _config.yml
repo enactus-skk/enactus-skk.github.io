@@ -76,14 +76,6 @@ defaults:
           height: 2000
   - scope:
       path: ""
-      type: "staff_members"
-    values:
-      _options:
-        image_path:
-          width: 600
-          height: 600
-  - scope:
-      path: ""
       type: "pages"
     values:
       layout: "page"

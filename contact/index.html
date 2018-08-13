@@ -28,24 +28,30 @@ subtitle: We'd love to help your business.
 
 <section class="diagonal">
 	<div class="container">
-		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
+		<form action="https://formspree.io/mail@enactus-skk.org" method="post" class="contact-form">
+			 <input type='hidden' name='_next' value='{{ site.url }}/contact/success/' />
+<!--
 			<input type="hidden" name="_to" value="{{ site.data.team.contact_email_address }}" />
+		-->
+
 			<input type="text" name="_gotcha" style="display: none;" />
 
-			<div class="halves">
-				<div>
-					<label for="name">Name</label>
-					<input type="text" name="name" id="name" placeholder="인액터스 성균관" />
-				</div>
-			</div>
+			<input type="hidden" name="_language" value="ko" />
 
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email" placeholder="{{ site.data.team.contact_email_address }}" required />
+			<label for="email">회신 Email</label>
+			<input type="email" name="email" id="email" placeholder="ex) {{ site.data.team.contact_email_address }}" required />
 
-			<label for="message">Message</label>
-			<textarea name="message" id="message" placeholder="인액터스는 함게 변화를 만들어갑니다."></textarea>
+			<label for="name">이름/단체명</label>
+			<input type="text" name="name" id="name" placeholder="ex) 인액터스 성균관" />
+
+			<label for="subject">제목</label>
+			<input type="text" name="subject" id="subject" placeholder="ex) [MOU 문의] 협력관계를 고민하고 있습니다." required />
+
+			<label for="message">본문</label>
+			<textarea name="message" id="message" placeholder="ex) 인액터스는 함게 변화를 만들어갑니다." required></textarea>
 
 			<input type="submit" value="메일 전송" />
+
 		</form>
 	</div>
 </section>
