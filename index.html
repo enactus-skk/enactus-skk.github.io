@@ -63,9 +63,10 @@ title:
 
 				<ul class="image-grid">
 				{% for project in projects limit: 4 %}
-					<li class="square-image">
+					<li class="square-image" >
 						<a href="{{ site.baseurl }}{{ project.url }}">
-							<img src="{% include relative-src.html src=project.image_path %}" alt="{{ project.name }}">
+							<div class="img-box" style="background-image: url({% include relative-src.html src=project.image_path %})">
+							</div>
 							<sub class="top-right">launched in {{ project.start_year | default:'anytime'}}</sub>
 							<div class="details">
 								<div class="name">{{ project.name }}</div>

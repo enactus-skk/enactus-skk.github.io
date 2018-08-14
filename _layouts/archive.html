@@ -3,18 +3,22 @@ layout: default
 ---
 {% assign blog = site.pages | where: "path", "blog/index.html" | first %}
 
-<section class="hero diagonal">
-	<div class="container">
+<section class="hero-page" >
+	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
 		{% if blog.heading %}
 		<h2><a href="{{ site.baseurl }}/blog/">{{ blog.heading }}</a> / {{ page.title | capitalize }}</h2>
 		{% endif %}
+		<!--
 		{% if blog.subtitle %}
 			<p class="subtext">{{ blog.subtitle }}</p>
 		{% endif %}
+	-->
 	</div>
+
 </section>
 
-<section class="diagonal">
+
+<section class="first diagonal zero-padding-top">
 	<div class="text-container">
 		<ul class="blog-posts">
 			{% include list-posts.html posts=page.posts %}
