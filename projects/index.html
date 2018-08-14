@@ -25,8 +25,11 @@ subtitle: See some of our proud proejcts.
 				<ul class="image-grid">
 			<li class="square-image">
 				<a href="{{ site.baseurl }}{{ project.url }}">
-					<img  src="{% include relative-src.html src=project.image_path %}" alt="{{ project.name }}">
-					<sub class="top-right">launched in {{ project.start_year | default:'now'}}</sub>
+					<div class="img-box" style="background-image: url({% include relative-src.html src=project.image_path  %})">
+					</div>
+					{% if project.start_year %}
+					<sub class="top-right">launched in {{ project.start_year }}</sub>
+					{% endif %}
 					<div class="details">
 						<div class="name">{{ project.name }}</div>
 					</div>

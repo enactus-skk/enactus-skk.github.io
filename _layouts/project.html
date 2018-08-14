@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign project = site.pages | where: "path", "project.html" | first %}
 
-<section class="hero" style="background-image: url({{ proejct.image_path | default: site.data.image.projects_main }})">
+<section class="hero" style="background-image: url({{ page.image_path | default: site.data.image.projects_main }})">
 	<div class="inner-hero container">
     <div class="hero-text-container" >
 			<h1 class = "enactus-highlight">
