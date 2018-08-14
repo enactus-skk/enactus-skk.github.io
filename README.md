@@ -1,6 +1,6 @@
 # Urban
 
-![](/images/recruits/2018-상반기-포스터.jpg)
+![](/images/recruits/2018-상반기-포스터.jpg)
 
 ![](/images/recruits/2017-하반기-포스터.jpg)
 
