@@ -3,29 +3,40 @@ layout: default
 ---
 {% assign project = site.pages | where: "path", "project.html" | first %}
 
-<section class="first diagonal brand">
-  <div class="container">
-		{% if project.heading %}
-		<h2><a href="{{ site.baseurl }}/project/">{{ project.heading }}</a> / {{ page.title | capitalize }}</h2>
-		{% endif %}
-		{% if page.subtitle %}
-			<p class="subtext">{{ page.subtitle }}</p>
-		{% endif %}
-  </div>
-</section>
-
-<section class="hero diagonal">
-	<div class="container">
-
+<section class="hero" style="background-image: url({{ proejct.image_path | default: site.data.image.projects_main }})">
+	<div class="inner-hero container">
+    <div class="hero-text-container" >
+			<h1 class = "enactus-highlight">
+				{{ page.name }}
+			</h1>
+			<br>
+      {% if page.subtitle %}
+  			<p class="subtext">{{ page.subtitle }}</p>
+  		{% endif %}
+      {% if page.start_year %}
+        {% if page.end_year %}
+        <sub>{{ page.start_year }} - {{ page.end_year }}</sub>
+        {% else %}
+        <sub>launched in {{ page.start_year }}</sub>
+        {% endif %}
+      {% endif %}
+      <br>
+			<div class="cta button alt"><a href="{{ site.baseurl }}/projects/" >&larr;목록</a></div>
+      {% if page.external_url %}
+			<div class="cta button alt"><a href="{{ page.external_url }}" target="_blank">홈페이지</a></div>
+      {% endif %}
+    </div>
+    <!--
+    <div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div>
+  -->
 	</div>
+
 </section>
 
-<section class="diagonal">
-	<div class="container">
-		<p><img src="{% include relative-src.html src=page.image_path %}" class="screenshot"></p>
-		<div>
+<section class="first diagonal">
+  <div class="blog-post text-container">
+    <div class="post-content">
 			{{ content }}
 		</div>
-		<p><a href="{{ page.external_url }}">View {{ page.title }} &rarr;</a></p>
 	</div>
 </section>

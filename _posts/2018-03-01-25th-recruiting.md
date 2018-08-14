@@ -1,12 +1,12 @@
 ---
-title: Enactus SKK 25th Recruiting
+title: 25th Recruiting
 categories:
   - recruitment
 ---
 
 
 
-![](/images/posts/2018 상반기 리쿠르팅 지원종료.jpg)
+![](/images/recruits/2018-상반기-포스터.jpg)
 
 
 > 3/11 낮 12시, 25기 서류지원이 마감됩니다! 아직 제출하지 않으신 분들은 잊지 않고 꼭 제출해주세요!

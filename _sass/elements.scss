@@ -60,8 +60,29 @@ p, address, ul, ol {
 
 pre {
 	padding: 10px;
-	background: #EFEFE8;
+	background: $enactus-grey;
+	color:$enactus-tan;
 	border-radius: 2px;
+}
+
+blockquote {
+	background-color: $enactus-tan;
+	border-radius: 5px;
+	padding: 10px;
+
+	p{
+		color: $enactus-dark-grey;
+		margin:0;
+	}
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 4em;
+  color: $enactus-gold;
+  float: left;
+  margin: -25px 10px 0px -40px;
+	height: 100%;
 }
 
 .enactus-highlight{
