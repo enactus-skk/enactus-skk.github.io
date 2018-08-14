@@ -4,21 +4,52 @@ heading: Proejcts
 subtitle: See some of our proud proejcts.
 ---
 
-<section class="first diagonal alternate less-padding-top">
+{% assign _projects = site.projects | group_by_exp:"item", "item.end_year" %}
+{% assign projects = _projects | sort: 'name' ,'last' | where_exp:"item",
+"item.name == nil"| reverse %}
+<section class="first diagonal patterned less-padding-top">
+{% for project in projects[0].items  %}
+	<div class="container halves">
+    <div>
+      <h3 class="enactus-highlight">{{ project.name }}</h3>
+      <p>
+				{{ project.subtitle }}
+		  </p>
+			<sub>
+					{{ project.excerpt | strip_html | truncatewords: 45 }}
+			</sub>
+
+      <p><a href="{{ site.baseurl }}{{ project.url }}">자세히보기 &rarr;</a></p>
+    </div>
+    <div>
+				<ul class="image-grid">
+			<li class="square-image">
+				<a href="{{ site.baseurl }}{{ project.url }}">
+					<img  src="{% include relative-src.html src=project.image_path %}" alt="{{ project.name }}">
+					<sub class="top-right">launched in {{ project.start_year | default:'now'}}</sub>
+					<div class="details">
+						<div class="name">{{ project.name }}</div>
+					</div>
+				</a>
+			</li>
+</ul>
+    </div>
+  </div>
+{% endfor %}
+</section>
+
+{% assign projects = _projects | sort: 'name' ,'last' | where_exp:"item",
+"item.name != nil"| reverse %}
+<section class="diagonal alternate less-padding-top">
+	{% for year in projects  %}
 	<div class="container">
-
-			{% assign _projects = site.projects | group_by_exp:"item", "item.end_year" %}
-			{% assign projects = _projects | sort: 'name' ,'last' | reverse %}
-
-			{% for year in projects  %}
-
-			<h3> {{ year.name | default: 'Now Act On' }}<h3>
+			<h3> {{ year.name }}<h3>
 				<ul class="image-grid">
 				{% for project in year.items %}
-					<li>
+					<li class="square-image">
 						<a href="{{ site.baseurl }}{{ project.url }}">
-							<img src="{% include relative-src.html src=project.image_path %}" alt="{{ project.name }}">
-							<sub class="top-right">launched in {{ project.start_year | default:'anytime'}}</sub>
+							<img  src="{% include relative-src.html src=project.image_path %}" alt="{{ project.name }}">
+							<sub class="top-right">{{ project.start_year }} - {{ project.end_year }}</sub>
 							<div class="details">
 								<div class="name">{{ project.name }}</div>
 								<div class="position">{{ project.subtitle }}</div>
@@ -29,7 +60,7 @@ subtitle: See some of our proud proejcts.
 				<li class="filler"></li>
 				<li class="filler"></li>
 			</ul>
-			{% endfor %}
 
 	</div>
+	{% endfor %}
 </section>

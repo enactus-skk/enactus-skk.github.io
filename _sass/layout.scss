@@ -209,6 +209,13 @@ section {
 			color: $enactus-dark-grey;
 		}
 	}
+	&.take-action {
+		color: $enactus-grey;
+		background: #ffffff url($bg-take-cation);
+		a {
+			color: $enactus-gold;
+		}
+	}
 }
 
 .button {
