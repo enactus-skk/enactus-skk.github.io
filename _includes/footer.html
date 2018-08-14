@@ -4,7 +4,10 @@
       {% for column in site.data.footer %}
         <ul class="footer-links">
           <li>
-            <h2>{{ column.title }}</h2>
+            {% if column.title == 'Site Links' %}
+              <h2 class="no-margin">{{ site.data.team.title }}</h2>
+            {% endif %}
+            <h2 class="no-margin">{{ column.title }}</h2>
           </li>
           {% for link in column.links %}
             <li>
@@ -18,18 +21,39 @@
 
             </li>
           {% endfor %}
+          {% if column.title == 'Social' %}
           <li><a href="{{ site.baseurl }}/atom.xml">{% include social-icon.html icon="RSS" %} RSS feed</a></li>
+          {% endif %}
         </ul>
       {% endfor %}
 
       <ul class="footer-links">
         <li>
-          <h2>{{ site.data.team.title }}</h2>
-          <h2>
+          <h2 class="no-margin">
             <strong class="enactus-text">EN</strong>/<strong class="enactus-text">ACT</strong>/<strong class="enactus-text">US</strong>
           </h2>
         </li>
-        <li>{{ site.data.team.description }}</li>
+        <li>
+          <p class="no-margin">
+            <strong class="enactus-text">EN</strong>trepreneurial&nbsp;|&nbsp;기업가정신
+          </p>
+          <p class="no-margin">기회를 발견해 내는 안목과</p>
+          <p class="no-margin">이러한 기회를 통해 가치를</p>
+          <p class="no-margin">만들어 내는 재능</p>
+        </li>
+        <li>
+          <p class="no-margin">
+            <strong class="enactus-text">ACT</strong>ion&nbsp;|&nbsp;실천
+          </p>
+          <p class="no-margin">결과가 보장되지 않은 상황에서도</p>
+          <p class="no-margin">이를 끝까지 해내려는 의지</p>
+        </li>
+        <li>
+          <p class="no-margin">
+            <strong class="enactus-text">US</strong>&nbsp;|&nbsp;공동체
+          </p>
+          <p class="no-margin">행동 또는 목적을 같이하는 집단</p>
+        </li>
       </ul>
     </div>
   </div>
