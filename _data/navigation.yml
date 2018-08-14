@@ -1,9 +1,11 @@
 links:
 - name: Who We Are
-  link: /about/
+  link: /who-we-are/
 - name: What We Do
+  link: /what-we-do/
+- name: Projects
   link: /projects/
 - name: Now We Are
   link: /blog/
-- name: Where We Work
+- name: Contact Us
   link: /contact/

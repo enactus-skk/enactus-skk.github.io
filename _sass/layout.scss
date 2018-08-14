@@ -71,6 +71,7 @@ header {
 		box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 		transition: background-color 0.2s ease;
 		text-shadow: none;
+		padding-bottom:0px;
 
 		a {
 			color: $enactus-grey;
@@ -334,7 +335,7 @@ section {
 	}
 
 	.square-image {
-		height: 320px;
+		height: 300px;
 
 		.img-box {
 			min-height: 100%;
