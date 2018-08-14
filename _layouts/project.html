@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign project = site.pages | where: "path", "project.html" | first %}
 
-{% assign projects_image = project.image_path | default: site.data.image.project_default %}
+{% assign projects_image = page.image_path | default: site.data.image.project_default %}
 <section class="hero" style="background-image: url({% include relative-src.html src= projects_image %})">
 	<div class="inner-hero container">
     <div class="hero-text-container" >
@@ -22,7 +22,9 @@ layout: default
         {% endif %}
       {% endif %}
       <br>
+			<!--
 			<div class="cta button alt"><a href="{{ site.baseurl }}/projects/" >&larr;목록</a></div>
+		-->
       {% if page.external_url %}
 			<div class="cta button alt"><a href="{{ page.external_url }}" target="_blank">홈페이지</a></div>
       {% endif %}
