@@ -22,7 +22,7 @@ author:
 social:
   name: Enactus SKK
   links:
-    - https://github.com/CloudCannon/urban-jekyll-template
+    - https://enactus-skk.org
 
 timezone: Asia/Seoul
 
@@ -34,11 +34,13 @@ collections:
 
 paginate: 10
 paginate_path: "/blog/:num/"
-permalink: pretty
-
+permalink: /:categories/:slug/
+#pretty
 jekyll-archives:
   enabled:
     - "categories"
+  permalinks:
+    category: '/:name/'
 
 plugins:
   # https://github.com/jekyll/jekyll-feed

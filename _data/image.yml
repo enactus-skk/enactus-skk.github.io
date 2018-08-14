@@ -1,5 +1,6 @@
 main : "/images/main/2018-nc-1-sm.jpg"
-projects_main : "/images/main/2013-wc-enter.jpg"
+projects_main : "/images/projects/default-main.jpg"
+project_default: "/images/projects/default.jpeg"
 asset_folder: "/images/assets"
 header_logo_light: "/images/assets/logo-light.png"
 header_logo: "/images/assets/logo-dark.png"

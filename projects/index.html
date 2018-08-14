@@ -9,6 +9,7 @@ subtitle: See some of our proud proejcts.
 "item.name == nil"| reverse %}
 <section class="first diagonal patterned less-padding-top">
 {% for project in projects[0].items  %}
+
 	<div class="container halves">
     <div>
       <h3 class="enactus-highlight">{{ project.name }}</h3>
@@ -25,7 +26,8 @@ subtitle: See some of our proud proejcts.
 				<ul class="image-grid">
 			<li class="square-image">
 				<a href="{{ site.baseurl }}{{ project.url }}">
-					<div class="img-box" style="background-image: url({% include relative-src.html src=project.image_path  %})">
+					{% assign projects_image = project.image_path | default: site.data.image.project_default %}
+					<div class="img-box" style="background-image: url({% include relative-src.html src= projects_image %})">
 					</div>
 					{% if project.start_year %}
 					<sub class="top-right">launched in {{ project.start_year }}</sub>
@@ -51,7 +53,8 @@ subtitle: See some of our proud proejcts.
 				{% for project in year.items %}
 					<li class="square-image">
 						<a href="{{ site.baseurl }}{{ project.url }}">
-							<div class="img-box" style="background-image: url({% include relative-src.html src=project.image_path %})">
+							{% assign projects_image = project.image_path | default: site.data.image.project_default %}
+							<div class="img-box" style="background-image: url({% include relative-src.html src= projects_image %})">
 							</div>
 							<sub class="top-right">{{ project.start_year }} - {{ project.end_year }}</sub>
 							<div class="details">

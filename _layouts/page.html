@@ -2,13 +2,13 @@
 layout: default
 ---
 
-{% if page.title == 'Project' %}
+{% if page.title == 'Projects' %}
 	{% assign bg_image = site.data.image.projects_main | default: site.data.image.main %}
 {% else %}
 	{% assign bg_image = site.data.image.main %}
 {% endif %}
 
-<section class="hero-page" style="background-image: url({{ bg_image }})">
+<section class="hero-page" style="background-image: url({% include relative-src.html src= bg_image %})">
 	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
 			<span>
 				<h2 class="enactus-highlight">{{ page.title | default: page.heading }}</h2>
