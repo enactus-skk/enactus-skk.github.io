@@ -15,17 +15,21 @@
 
                 {{ link.name }}
               </a>
+
             </li>
           {% endfor %}
+          <li><a href="{{ site.baseurl }}/atom.xml">{% include social-icon.html icon="RSS" %} RSS feed</a></li>
         </ul>
       {% endfor %}
 
       <ul class="footer-links">
         <li>
           <h2>{{ site.data.team.title }}</h2>
+          <h2>
+            <strong class="enactus-text">EN</strong>/<strong class="enactus-text">ACT</strong>/<strong class="enactus-text">US</strong>
+          </h2>
         </li>
         <li>{{ site.data.team.description }}</li>
-        <li><a href="{{ site.baseurl }}/atom.xml">{% include social-icon.html icon="RSS" %} RSS feed</a></li>
       </ul>
     </div>
   </div>
