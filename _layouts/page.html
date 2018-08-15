@@ -13,11 +13,13 @@ layout: default
 			<span>
 				<h2 class="enactus-highlight">{{ page.title | default: page.heading }}</h2>
 			</span>
-		{% if page.description %}
-			<p class="subtext">{{ page.description }}</p>
-		{% endif %}
+			{% if page.is_post != true and page.description %}
+				<p class="subtext">{{ page.description }}</p>
+			{% endif %}
+
 	</div>
 
 </section>
-
+<div>
 {{ content }}
+</div>

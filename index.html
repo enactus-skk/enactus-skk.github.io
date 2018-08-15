@@ -58,25 +58,23 @@ title:
 	<div class="container halves">
     <div>
 
-			{% assign projects = site.projects | sort: 'end_year' ,'first' | reverse %}
+			{% assign projects = site.projects | where: 'categories','representative' | sort: 'end_year' ,'last' %}
 
 				<ul class="image-grid">
-				{% for project in projects limit: 4 %}
+				{% for project in projects reversed %}
 					<li class="square-image" >
 						<a href="{{ site.baseurl }}{{ project.url }}">
 							{% assign projects_image = project.image | default: site.data.image.project_default %}
 							<div class="img-box" style="background-image: url({% include relative-src.html src= projects_image %})">
 							</div>
-							<sub class="top-right">launched in {{ project.start_year | default:'anytime'}}</sub>
+							<sub class="top-right">launched in {{ project.start_year | default:'now'}}</sub>
 							<div class="details">
-								<div class="name">{{ project.title }}</div>
+								<div class="name"><small class="light-text">project.</small>&nbsp;{{ project.title }}</div>
 								<div class="position">{{ project.description }}</div>
 							</div>
 						</a>
 					</li>
 				{% endfor %}
-				<li class="filler"></li>
-				<li class="filler"></li>
 			</ul>
 
     </div>

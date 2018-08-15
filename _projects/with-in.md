@@ -5,6 +5,8 @@ start_year: 2014
 end_year: 2015
 external_url:
 image: /images/main/2018-nc-1-sm.jpg
+categories:
+  - representative
 ---
 
 임시로 작성.

@@ -68,10 +68,11 @@ pre {
 blockquote {
 	background-color: $enactus-tan;
 	border-radius: 5px;
-	padding: 10px;
+	padding: 20px 10px 20px 10px;
 	margin-right: 0px;
 	p{
 		color: $enactus-dark-grey;
+		font-style: oblique;
 		margin:0;
 	}
 }
@@ -90,6 +91,9 @@ blockquote:before {
 	padding-right:3px;
 	padding-left:3px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+	a{
+		color: #fff;
+	}
 }
 
 .enactus-text{
@@ -97,4 +101,7 @@ blockquote:before {
 }
 .no-margin{
 	margin:0;
+}
+.light-text{
+	font-weight:200;
 }

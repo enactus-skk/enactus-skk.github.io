@@ -266,6 +266,10 @@ section {
 
 .aligned-top {
 	align-items: flex-start;
+
+	.aligned-top-text-box{
+		padding-top:20px;
+	}
 }
 
 .image-grid {
@@ -386,7 +390,7 @@ section {
 
 	&,
 	p {
-		color: #fefefe;
+			color: $enactus-tan;
 	}
 }
 
