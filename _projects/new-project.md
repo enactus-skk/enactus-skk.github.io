@@ -1,11 +1,11 @@
 ---
-name: New Project Teams
-subtitle: |
+title: New Project Teams
+description: |
   당신의 비즈니스로 세상에 변화를.
 start_year:
 end_year:
 external_url:
-image_path:
+image:
 ---
 # 1. Project Judging Criterion
 [Enactus Worldwide](http://enactus.org)에서 제공하는 Project Judging Criterion의 궁극적인 목적은 지역사회에 대한 진정한 변화를 이끌어 내는데 있습니다.

@@ -3,16 +3,16 @@ layout: default
 ---
 {% assign project = site.pages | where: "path", "project.html" | first %}
 
-{% assign projects_image = page.image_path | default: site.data.image.project_default %}
+{% assign projects_image = page.image | default: site.data.image.project_default %}
 <section class="hero" style="background-image: url({% include relative-src.html src= projects_image %})">
 	<div class="inner-hero container">
     <div class="hero-text-container" >
 			<h1 class = "enactus-highlight">
-				{{ page.name }}
+				{{ page.title }}
 			</h1>
 			<br>
-      {% if page.subtitle %}
-  			<p class="subtext">{{ page.subtitle }}</p>
+      {% if page.description %}
+  			<p class="subtext">{{ page.description }}</p>
   		{% endif %}
       {% if page.start_year %}
         {% if page.end_year %}

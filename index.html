@@ -64,13 +64,13 @@ title:
 				{% for project in projects limit: 4 %}
 					<li class="square-image" >
 						<a href="{{ site.baseurl }}{{ project.url }}">
-							{% assign projects_image = project.image_path | default: site.data.image.project_default %}
+							{% assign projects_image = project.image | default: site.data.image.project_default %}
 							<div class="img-box" style="background-image: url({% include relative-src.html src= projects_image %})">
 							</div>
 							<sub class="top-right">launched in {{ project.start_year | default:'anytime'}}</sub>
 							<div class="details">
-								<div class="name">{{ project.name }}</div>
-								<div class="position">{{ project.subtitle }}</div>
+								<div class="name">{{ project.title }}</div>
+								<div class="position">{{ project.description }}</div>
 							</div>
 						</a>
 					</li>

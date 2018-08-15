@@ -1,7 +1,7 @@
 ---
 title: Projects
 heading: Proejcts
-subtitle: See some of our proud proejcts.
+description: See some of our proud proejcts.
 ---
 
 {% assign _projects = site.projects | group_by_exp:"item", "item.end_year" %}
@@ -12,9 +12,9 @@ subtitle: See some of our proud proejcts.
 
 	<div class="container halves">
     <div>
-      <h3 class="enactus-highlight">{{ project.name }}</h3>
+      <h3 class="enactus-highlight">{{ project.title }}</h3>
       <p>
-				{{ project.subtitle }}
+				{{ project.description }}
 		  </p>
 			<sub>
 					{{ project.excerpt | strip_html | truncatewords: 60 }}
@@ -26,14 +26,14 @@ subtitle: See some of our proud proejcts.
 				<ul class="image-grid">
 			<li class="square-image">
 				<a href="{{ site.baseurl }}{{ project.url }}">
-					{% assign projects_image = project.image_path | default: site.data.image.project_default %}
+					{% assign projects_image = project.image | default: site.data.image.project_default %}
 					<div class="img-box" style="background-image: url({% include relative-src.html src= projects_image %})">
 					</div>
 					{% if project.start_year %}
 					<sub class="top-right">launched in {{ project.start_year }}</sub>
 					{% endif %}
 					<div class="details">
-						<div class="name">{{ project.name }}</div>
+						<div class="name">{{ project.title }}</div>
 					</div>
 				</a>
 			</li>
@@ -53,13 +53,13 @@ subtitle: See some of our proud proejcts.
 				{% for project in year.items %}
 					<li class="square-image">
 						<a href="{{ site.baseurl }}{{ project.url }}">
-							{% assign projects_image = project.image_path | default: site.data.image.project_default %}
+							{% assign projects_image = project.image | default: site.data.image.project_default %}
 							<div class="img-box" style="background-image: url({% include relative-src.html src= projects_image %})">
 							</div>
 							<sub class="top-right">{{ project.start_year }} - {{ project.end_year }}</sub>
 							<div class="details">
-								<div class="name">{{ project.name }}</div>
-								<div class="position">{{ project.subtitle }}</div>
+								<div class="name">{{ project.title }}</div>
+								<div class="position">{{ project.description }}</div>
 							</div>
 						</a>
 					</li>
