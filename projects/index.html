@@ -3,61 +3,61 @@ title: Projects
 heading: Proejcts
 description: See some of our proud proejcts.
 ---
-
-{% assign _projects = site.projects | group_by_exp:"item", "item.end_year" %}
-{% assign projects = _projects | sort: 'name' ,'last' | where_exp:"item",
-"item.name == nil"| reverse %}
+{% assign _projects = site.projects | group_by_exp:"item", "item.end_year" %} {% assign projects = _projects | sort: 'name' ,'last' | where_exp:"item", "item.name ==
+nil"| reverse %}
 <section class="first diagonal patterned less-padding-top">
-	<div class="container">
-		<hr>
-	</div>
-{% for project in projects[0].items  %}
+  <div class="container">
+    <hr>
+  </div>
 
+  {% for project in projects[0].items %}
 	<div class="container halves aligned-top">
-    <div class="aligned-top-text-box">
-      <h3 class="enactus-highlight"><a href="{{ site.baseurl }}{{ project.url }}">
+    <div>
+      <ul class="image-grid">
+        <li class="square-image">
+          <a href="{{ site.baseurl }}{{ project.url }}">
+						{% assign projects_image = project.image | default: site.data.image.project_default %}
+						<div class="img-box" style="background-image: url({% include relative-src.html src= projects_image %})">
+						</div>
+						{% if project.start_year %}
+						<sub class="top-right">launched in {{ project.start_year }}</sub>
+						{% endif %}
+						<div class="details">
+							<div class="name">
+								<small class="light-text">project.</small>&nbsp;{{ project.title }}</a>
+							</div>
+	  				</div>
+  				</a>
+  			</li>
+  		</ul>
+  	</div>
+
+		<div class="aligned-top-text-box">
+			<h3 class="enactus-highlight"><a href="{{ site.baseurl }}{{ project.url }}">
 				<small class="light-text">project.</small>&nbsp;{{ project.title }}</a>
 			</h3>
-
-      <p>
+			<p>
 				{{ project.description }}
-		  </p>
+			</p>
 			<sub>
-					{{ project.excerpt | strip_html | truncatewords: 60 }}
+					{{ project.excerpt | strip_html | truncatewords: 30 }}
 			</sub>
 
-      <p style="padding-top:5px;"><a href="{{ site.baseurl }}{{ project.url }}">Read More &rarr;</a></p>
-    </div>
-    <div>
-				<ul class="image-grid">
-			<li class="square-image">
-				<a href="{{ site.baseurl }}{{ project.url }}">
-					{% assign projects_image = project.image | default: site.data.image.project_default %}
-					<div class="img-box" style="background-image: url({% include relative-src.html src= projects_image %})">
-					</div>
-					{% if project.start_year %}
-					<sub class="top-right">launched in {{ project.start_year }}</sub>
-					{% endif %}
-					<div class="details">
-						<div class="name"><small class="light-text">project.</small>&nbsp;{{ project.title }}</a></div>
-					</div>
-				</a>
-			</li>
-		</ul>
-    </div>
-  </div>
-	<div class="container">
-		<hr>
+			<p style="padding-top:5px;"><a href="{{ site.baseurl }}{{ project.url }}">Read More &rarr;</a></p>
+		</div>
 	</div>
-{% endfor %}
+
+  <div class="container">
+    <hr>
+  </div>
+  {% endfor %}
 </section>
 
-{% assign projects = _projects | sort: 'name' ,'last' | where_exp:"item",
-"item.name != nil"| reverse %}
+{% assign projects = _projects | sort: 'name' ,'last' | where_exp:"item", "item.name != nil"| reverse %}
 <section class="diagonal alternate less-padding-top">
-	{% for year in projects  %}
-	<div class="container">
-			<h3> {{ year.name }}<h3>
+  {% for year in projects %}
+  <div class="container">
+    <h3> {{ year.name }}<h3>
 				<hr>
 				<ul class="image-grid">
 				{% for project in year.items %}
@@ -74,8 +74,6 @@ description: See some of our proud proejcts.
 						</a>
 					</li>
 				{% endfor %}
-				<li class="filler"></li>
-				<li class="filler"></li>
 			</ul>
 
 	</div>
