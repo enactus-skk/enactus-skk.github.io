@@ -78,7 +78,7 @@ blockquote {
 }
 
 blockquote:before {
-  content: "\201C";
+  content: " \201C";
   font-size: 4em;
   color: $enactus-gold;
   float: left;
