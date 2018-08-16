@@ -1,10 +1,24 @@
 .slider {
   position: relative;
   width: 100%;
+  max-width: 620px;
   overflow: hidden;
   transition: all 1s;
   perspective: 900px;
+  margin:auto;
+  height:70vh;
+  line-height:1.6;
+
   transform-style: preserve-3d;
+
+  @media #{mid-point} {
+      height:300px;
+  }
+  @media #{$tablet} {
+      height:250px;
+
+  }
+
 }
 
 .slider .next,
@@ -48,16 +62,64 @@
 }
 
 .slide {
-  padding: 50px;
+  padding: 10px;
   width: auto;
   text-align: center;
   position: absolute;
 	height:80%;
   /* transform: scale(0.5,0.5);*/
-	transform: translateX(-100%);
+	/*transform: translateX(100%);*/
   opacity: 0;
-
   transition: all 1s;
+
+  cite{
+    font-weight: 200;
+    color: $enactus-dark-grey;
+    margin-top:0px;
+    padding-right:30px;
+    text-align: right;
+    padding-right:10px;
+    float:right;
+  }
+  blockquote {
+  	color: $enactus-tan;
+    background-color: transparent;
+  	border-radius: 5px;
+    margin-left: 0px;
+  	margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    .slide-post{
+  	  padding: 10px 30px 0px 30px;
+      p{
+        color: $enactus-grey;
+        font-style: oblique;
+        font-size:1em;
+        margin:0;
+      }
+    }
+
+  }
+
+  blockquote:before {
+    content: "\201C";
+    font-size: 4em;
+    color: $enactus-grey;
+    margin:0;
+    float: left;
+  	height: 30px;
+  }
+  /*
+  blockquote:after {
+    content: "\201D";
+    font-size: 4em;
+    color: $enactus-grey;
+    margin-left:20px;
+    float:right;
+    height: 30px;;
+    margin-top:-30px;
+  }
+  */
 }
 
 .slide.blue {
@@ -81,15 +143,18 @@
   opacity: 1;
   /* transform: scale(1,1);*/
 	transform: translateX(0%);
+
 }
 
-.slide.inactiveLeft {
-  left: -100%;
+.slide.inactive.Left {
+
+  transform: translateX(-100%);
   z-index: 11;
 }
 
-.slide.inactiveRight {
-  left: 100%;
+.slide.inactive.Right {
+
+  transform: translateX(100%);
   z-index: 11;
 }
 
@@ -110,6 +175,8 @@
   padding: 10px;
   font-size: 1.3vw;
   margin-top: 20px;
+
+  /*display: inline-block;*/
   display: inline-block;
   transition: all 0.3s;
   text-transform: uppercase;
@@ -142,7 +209,7 @@
   text-align: center;
   position: absolute;
   width: 100%;
-	margin-top:10px;
+  top:10px;
 }
 
 .slider .bullets .bullet {
@@ -150,8 +217,8 @@
   display: inline-block;
   background: rgba(255,255,255,.8);
   border-radius: 50%;
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   z-index: 14;
   margin: 0 5px;
   cursor: pointer;

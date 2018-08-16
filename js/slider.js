@@ -1,11 +1,12 @@
 var $slider = $(".slider"),
   $bullets = $(".bullets");
 var slideInterval;
-var slidedelay = 5000;
+var slidedelay = 500000000;
 
 function calculateHeight() {
   var height = $(".slide.active").outerHeight();
-  height = (height>500)?height:500;
+  console.log(height);
+  height = (height<400)?400:400;
 
   $slider.height(height);
 }
@@ -21,7 +22,7 @@ $(window).scroll(function () {
 
 });
 */
-
+/*
 function isScrolledIntoView(elem)
 {
     var docViewTop = $(window).scrollTop();
@@ -29,28 +30,31 @@ function isScrolledIntoView(elem)
     var elemTop = $(elem).offset().top;
     return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
 }
-
+*/
 $(window).resize(function() {
-  calculateHeight();
+  // calculateHeight();
   clearTimeout($.data(this, 'resizeTimer'));
 });
 
 function resetSlides() {
-  $(".slide.inactive").removeClass("inactiveRight").removeClass("inactiveLeft");
+  $(".slide.inactive").removeClass("inactive Left Right");
 }
 
 function gotoSlide($activeSlide, $slide, className) {
-  console.log(className)
-  $activeSlide.removeClass("active").addClass("inactive " + className);
-  $slide.removeClass("inactive").addClass("active");
-  calculateHeight();
-  resetBullets();
-  setTimeout(resetSlides, 300);
-}
+  console.log($activeSlide.index()+" "+$slide.index()+" ")
 
+  $slide.prevAll().not(".bullets").removeClass("active inactive Left Right").addClass("inactive Left");
+  $slide.nextAll().not(".bullets").removeClass("active inactive Left Right").addClass("inactive Right");
+  $slide.removeClass("inactive Left Right").addClass("active");
+  //calculateHeight();
+  resetBullets();
+  //setTimeout(resetSlides, 1000);
+}
+/*
 $(".next").on("click", function() {
   gotoNextSlide();
 });
+*/
 $(".slider").on("mouseover",function(){
   clearInterval(slideInterval);
 });
@@ -62,15 +66,18 @@ $(".slider").on("mouseleave",function(){
 
 function gotoNextSlide(){
   var $activeSlide = $(".slide.active"),
-    $nextSlide = $activeSlide.next(".slide").length != 0 ? $activeSlide.next(".slide") : $(".slide:first-child");
-  gotoSlide($activeSlide, $nextSlide, "inactiveLeft");
+    $nextSlide = $activeSlide.next(".slide").length != 0 ? $activeSlide.next(".slide") : $(".slide").first();
+  gotoSlide($activeSlide, $nextSlide, "Left");
 }
+/*
 $(".previous").on("click", function() {
   var $activeSlide = $(".slide.active"),
-    $prevSlide = $activeSlide.prev(".slide").length != 0 ? $activeSlide.prev(".slide") : $(".slide:last-child");
-
-  gotoSlide($activeSlide, $prevSlide, "inactiveRight");
+    $prevSlide = $activeSlide.prev(".slide").length != 0 ? $activeSlide.prev(".slide") : $(".slide").last();
+    console.log($activeSlide.prev(".slide"))
+  gotoSlide($activeSlide, $prevSlide, "Right");
 });
+*/
+
 $(document).on("click", ".bullet", function() {
   if ($(this).hasClass("active")) {
     return;
@@ -79,7 +86,7 @@ $(document).on("click", ".bullet", function() {
   var currentIndex = $activeSlide.index();
   var targetIndex = $(this).index();
   var $theSlide = $(".slide:nth-child(" + (targetIndex + 1) + ")");
-  gotoSlide($activeSlide, $theSlide, currentIndex > targetIndex ? "inactiveRight" : "inactiveLeft");
+  gotoSlide($activeSlide, $theSlide, currentIndex > targetIndex ? "Right" : "Left");
 })
 
 function addBullets() {
@@ -100,5 +107,5 @@ function resetBullets() {
   $(".bullet:nth-child(" + index + ")").addClass("active");
 }
 addBullets();
-calculateHeight();
+//calculateHeight();
 slideInterval = setInterval(function(){gotoNextSlide()}, slidedelay);

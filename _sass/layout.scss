@@ -209,6 +209,15 @@ section {
 			color: $enactus-dark-grey;
 		}
 	}
+	&.brand-slider {
+		color: #ffffff;
+		background: $enactus-gold;
+		padding-bottom:50px;
+		padding-top:60px;
+		a {
+			color: $enactus-dark-grey;
+		}
+	}
 	&.take-action {
 		color: $enactus-grey;
 		background: #ffffff url($bg-take-cation);
