@@ -9,11 +9,11 @@
 
 - title: Social
   links:
-    - name: Facebook
-      link: https://www.facebook.com/skkenactus/
-      social_icon: Facebook
-      new_window: true
     - name: Email
       link: mailto:mail@enactus-skk.org
       social_icon: Email
       new_window: false
+    - name: Facebook
+      link: https://www.facebook.com/skkenactus/
+      social_icon: Facebook
+      new_window: true

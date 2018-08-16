@@ -1,3 +1,4 @@
+{% include facebook_sdk.html %}
 <footer class="diagonal">
   <div class="container">
     <div class="footer-columns">
@@ -9,6 +10,10 @@
             {% endif %}
             <h2 class="no-margin">{{ column.title }}</h2>
           </li>
+          {% if column.title == 'Social' %}
+          <li><a href="{{ site.baseurl }}/atom.xml">{% include social-icon.html icon="RSS" %} RSS feed</a></li>
+          {% endif %}
+
           {% for link in column.links %}
             <li>
               <a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}>
@@ -19,11 +24,15 @@
                 {{ link.name }}
               </a>
 
+              {% if link.name == 'Facebook' %}
+                <br>
+                <div data-colorscheme="dark" class="fb-like" data-href="{% include relative-src.html src=link.link %}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+              {% endif %}
             </li>
+
+
+
           {% endfor %}
-          {% if column.title == 'Social' %}
-          <li><a href="{{ site.baseurl }}/atom.xml">{% include social-icon.html icon="RSS" %} RSS feed</a></li>
-          {% endif %}
         </ul>
       {% endfor %}
 
