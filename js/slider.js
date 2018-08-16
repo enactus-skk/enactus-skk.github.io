@@ -1,14 +1,33 @@
 var $slider = $(".slider"),
   $bullets = $(".bullets");
 var slideInterval;
-var slidedelay = 50000000;
+var slidedelay = 5000;
 
 function calculateHeight() {
   var height = $(".slide.active").outerHeight();
   height = (height>500)?height:500;
-  console.log(height);
 
   $slider.height(height);
+}
+/*
+$(window).scroll(function () {
+  console.log(isScrolledIntoView(".slider"))
+  console.log(slideInterval);
+  console.log("===")
+
+  if(!isScrolledIntoView(".slider")){
+      clearInterval(slideInterval);
+  }
+
+});
+*/
+
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+    var elemTop = $(elem).offset().top;
+    return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
 }
 
 $(window).resize(function() {
@@ -21,6 +40,7 @@ function resetSlides() {
 }
 
 function gotoSlide($activeSlide, $slide, className) {
+  console.log(className)
   $activeSlide.removeClass("active").addClass("inactive " + className);
   $slide.removeClass("inactive").addClass("active");
   calculateHeight();
@@ -34,7 +54,7 @@ $(".next").on("click", function() {
 $(".slider").on("mouseover",function(){
   clearInterval(slideInterval);
 });
-$(".slider").on("mouseout",function(){
+$(".slider").on("mouseleave",function(){
   slideInterval = setInterval(function(){gotoNextSlide()}, slidedelay);
 });
 
@@ -43,7 +63,6 @@ $(".slider").on("mouseout",function(){
 function gotoNextSlide(){
   var $activeSlide = $(".slide.active"),
     $nextSlide = $activeSlide.next(".slide").length != 0 ? $activeSlide.next(".slide") : $(".slide:first-child");
-  console.log($nextSlide);
   gotoSlide($activeSlide, $nextSlide, "inactiveLeft");
 }
 $(".previous").on("click", function() {
@@ -59,7 +78,6 @@ $(document).on("click", ".bullet", function() {
   var $activeSlide = $(".slide.active");
   var currentIndex = $activeSlide.index();
   var targetIndex = $(this).index();
-  console.log(currentIndex, targetIndex);
   var $theSlide = $(".slide:nth-child(" + (targetIndex + 1) + ")");
   gotoSlide($activeSlide, $theSlide, currentIndex > targetIndex ? "inactiveRight" : "inactiveLeft");
 })
@@ -79,7 +97,6 @@ function addBullets() {
 function resetBullets() {
   $(".bullet.active").removeClass("active");
   var index = $(".slide.active").index() + 1;
-  console.log(index);
   $(".bullet:nth-child(" + index + ")").addClass("active");
 }
 addBullets();
