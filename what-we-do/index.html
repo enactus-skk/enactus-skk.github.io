@@ -8,27 +8,6 @@ description: Meet our efficient and qualified team.
 
 <section class="first diagonal alternate less-padding-top">
   <div class="container halves">
-    <div id="horizontalTab">
-      <ul>
-				{% for post_contents in what_we_do %}
-					<li><a href="#tab-{{ post_contents.items[0].num }}">{{ post_contents.name }}</a></li>
-				{% endfor %}
-      </ul>
-
-
-			{% for post_contents in what_we_do %}
-	    <div id="tab-{{ post_contents.items[0].num }}">
-	      <div class="blog-post text-contaier">
-					{% for post_content in post_contents.items %}
-	        <div class="post-content">
-
-					{{ post_content }}
-
-					</div>
-					{% endfor %}
-	      </div>
-			</div>
-			{% endfor %}
-		</div>
+		{% include tab-view.html page_contents=what_we_do %}
   </div>
 </section>
