@@ -11,7 +11,7 @@ layout: default
 <section class="hero-page" style="background-image: url({% include relative-src.html src= bg_image %})">
 	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
 			<span>
-				<h2 class="enactus-highlight">{{ page.title | default: page.heading }}</h2>
+				<h2 class="enactus-text">{{ page.title | default: page.heading }}</h2>
 			</span>
 			{% if page.is_post != true and page.description %}
 				<p class="subtext">{{ page.description }}</p>
