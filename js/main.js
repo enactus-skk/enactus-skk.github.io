@@ -41,10 +41,12 @@ $(document).ready(function () {
 		var $tabs = $('#horizontalTab');
 		$tabs.responsiveTabs({
 				rotate: false,
-				startCollapsed: 'accordion',
+				startCollapsed: false,
+				/* collapsible: 'accordion',*/
 				collapsible: 'accordion',
 				setHash: true,
 				/*animation: 'slide',*/
+				active: 0,
 				disabled: [],
 				click: function(e, tab) {
 						// $('.info').html('Tab <strong>' + tab.id + '</strong> clicked!');

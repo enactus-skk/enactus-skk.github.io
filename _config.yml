@@ -29,8 +29,8 @@ social:
 timezone: Asia/Seoul
 
 collections:
-  staff_members:
-    output: false
+  what_we_do:
+    output: true
   projects:
     output: true
 

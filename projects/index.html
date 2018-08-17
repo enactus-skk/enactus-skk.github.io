@@ -3,8 +3,8 @@ title: Projects
 heading: Proejcts
 description: See some of our proud proejcts.
 ---
-{% assign _projects = site.projects | group_by_exp:"item", "item.end_year" %} {% assign projects = _projects | sort: 'name' ,'last' | where_exp:"item", "item.name ==
-nil"| reverse %}
+{% assign _projects = site.projects | group_by_exp:"item", "item.end_year" %}
+{% assign projects = _projects | sort: 'name' ,'last' | where_exp:"item", "item.name == nil"| reverse %}
 <section class="first diagonal patterned less-padding-top">
   <div class="container">
     <hr>
