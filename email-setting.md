@@ -2,7 +2,7 @@
 title: '@enactus-skk.org 메일 세팅하기'
 sitemap: false
 layout: post
-permalink: info/email.html
+permalink: email-setting.html
 ---
 
 > 다음의 사항을 확인해주세요.

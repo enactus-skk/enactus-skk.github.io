@@ -2,7 +2,7 @@
 title: '@enactus-skk.org 메일 초대하기'
 sitemap: false
 layout: post
-permalink: info/email/invite.html
+permalink: email-invite.html
 ---
 
 > 다음의 사항을 확인해주세요.
