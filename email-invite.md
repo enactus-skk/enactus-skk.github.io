@@ -1,8 +1,6 @@
 ---
 title: '@enactus-skk.org 메일 초대하기'
 layout: post
-categories:
-  - info
 ---
 
 > 다음의 사항을 확인해주세요.
@@ -58,7 +56,7 @@ enactus.skk 혹은 **mail@enactus-skk.org 로도 로그인 가능**하게 해주
 
 + **초대 내용은 아래의 내용을 전체 복사하면 됩니다.**
 
-    ***초대를 받으셨다면 먼저 아래 글을 확인하면서 이메일 세팅을 완료해주세요.  https://enactus.org/info/email/***
+    ***초대를 받으셨다면 먼저 아래 글을 확인하면서 이메일 세팅을 완료해주세요.  https://enactus.org/email-setting/***
 
 
 ![](/images/info/email-5.png)

@@ -1,7 +1,6 @@
 ---
 title: 25th Recruiting
-categories:
-  - recruitment
+categories: recruitment
 ---
 
 ![](/images/recruits/2018-상반기-포스터.jpg)

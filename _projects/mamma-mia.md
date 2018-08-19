@@ -5,8 +5,7 @@ start_year: 2011
 end_year: 2014
 external_url:
 image: /images/projects/mamma-mia/main.jpg
-categories:
-  - representative
+categories: representative
 ---
 
 > 한국사회에서 취업을 원하는 다문화여성과 산후우울증을 겪고 있는 다문화여성에게 국적 매칭

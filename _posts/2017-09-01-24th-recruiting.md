@@ -1,7 +1,6 @@
 ---
 title: 24th Recruiting
-categories:
-  - recruitment
+categories: recruitment
 ---
 
 

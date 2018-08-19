@@ -5,8 +5,7 @@ start_year: 2011
 end_year: 2013
 external_url: http://dohands.com/
 image: /images/projects/do-hands/main.png
-categories:
-  - representative
+categories: representative
 ---
 
 >친환경 종이옷걸이 광고플랫폼을 비즈니스 모델을 통해 노숙인에게 일자리를 제공하는 프로젝트입니다.

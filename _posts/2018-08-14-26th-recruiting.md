@@ -1,7 +1,6 @@
 ---
 title: 26th Recruiting
-categories:
-  - recruitment
+categories: recruitment
 description: 9.3(월) ~ 9.7(금) 사회혁신 경영학회 Enactus SKK에서 2017년 하반기 신입회원을 모집하고 있습니다.
 image:
 ---

@@ -6,8 +6,7 @@ start_year: 2016
 end_year:
 external_url:
 image: /images/projects/gyeol/main.jpg
-categories:
-  - representative
+categories: representative
 ---
 
 청각장애인 목수의 자아실현과 경제적 자립을 위해 원목디자인 소품 사업체, 메인오브제를 운영하고 있습니다.
