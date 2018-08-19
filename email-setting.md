@@ -2,7 +2,7 @@
 title: '@enactus-skk.org 메일 세팅하기'
 sitemap: false
 layout: post
-permalink: info/email.html
+permalink: info/email/index.html
 ---
 
 > 다음의 사항을 확인해주세요.
@@ -23,7 +23,7 @@ permalink: info/email.html
 enactus.skk 라는 다음아이디가 있다면 거기에 추가적으로 mail@enactus-skk.org라는 **메일주소를 추가로 사용가능하게** 해주고,
 enactus.skk  와 **mail@enactus-skk.org로 로그인 가능**하게 해주는 서비스입니다.
 
-물론 xxx@enactus-skk.org로 메일을 받는 건 당연히 가능하고, 메일을 보낼때도 해당 이메일로 보낼 수 있습니다. 가입을 하게 되면 별도의 설정없이 **enactus.skk 주소 대신 xxx@enactus-skk.org가 기본 발송 주소**로 설정됩니다. 
+물론 xxx@enactus-skk.org로 메일을 받는 건 당연히 가능하고, 메일을 보낼때도 해당 이메일로 보낼 수 있습니다. 가입을 하게 되면 별도의 설정없이 **enactus.skk 주소 대신 xxx@enactus-skk.org가 기본 발송 주소**로 설정됩니다.
 
 다음을 선택한 이유는 세가지 입니다. 추후 다음의 장점들이 없어지거나, 더 좋은 장점을 가진 서비스가 생긴다면 이동을 고려해볼만 합니다. 참고로 서비스를 이동할시 데이터들은 수동으로 백업하여야 합니다.
 1. **무료** (우선 지메일/네이버의 서비스를 고려하였으나 유료화)
