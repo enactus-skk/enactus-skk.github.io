@@ -11,7 +11,8 @@ layout: page
 	</div>
 </section>
 
-
+<!--
+{% if page.next or page.previous %}
 <section class="diagonal alternate">
 	<div class="text-container">
 		<h2>Next post</h2>
@@ -24,6 +25,8 @@ layout: page
 		</div>
 	</div>
 </section>
+{% endif %}
+-->
 
 {% if site.disqus_shortname and page.show_comments %}
 	<section class="diagonal">
