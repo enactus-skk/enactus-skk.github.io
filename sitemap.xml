@@ -18,7 +18,7 @@ sitemap: false
   </url>
   {% endfor %}
   {% for page in site.pages %}
-  {% if page.sitemap %}
+  {% if page.sitemap and page.url != '/assets/css/style.css' %}
   <url>
     <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
     {% if page.date %}
