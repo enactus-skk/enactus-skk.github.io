@@ -66,6 +66,7 @@ defaults:
       path: ""
       type: "posts"
     values:
+      sitemap: true
       layout: "post"
       is_post: true
       _options:
@@ -76,6 +77,7 @@ defaults:
       path: ""
       type: "projects"
     values:
+      sitemap: true
       layout: "project"
       _options:
         image_path:
@@ -85,11 +87,13 @@ defaults:
       path: ""
       type: "pages"
     values:
+      sitemap: true
       layout: "page"
   - scope:
       path: "index.html"
       type: "pages"
     values:
+      sitemap: true
       layout: "default"
 
 feed:

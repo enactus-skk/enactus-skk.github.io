@@ -1,6 +1,6 @@
 ---
 title: '@enactus-skk.org 메일 초대하기'
-layout: post
+
 ---
 
 > 다음의 사항을 확인해주세요.
