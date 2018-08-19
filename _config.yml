@@ -79,6 +79,7 @@ defaults:
     values:
       sitemap: true
       layout: "project"
+      is_post: true
       _options:
         image_path:
           width: 2000
@@ -95,10 +96,7 @@ defaults:
     values:
       sitemap: true
       layout: "default"
-  - scope:
-      path: "/projects"
-    values:
-      sitemap: true
+
 
 feed:
   path: atom.xml
