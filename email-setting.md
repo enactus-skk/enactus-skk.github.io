@@ -17,9 +17,13 @@ permalink: info/email.html
 #### - Overview
 인액터스 공식 도메인으로 사용하는 메일은 다음의 **[스마트워크](http://mail2.daum.net/hanmailex/domain.html)** 서비스를 활용하고 있습니다.
 
-원리는 [enactus-skk.org](https://enactus-skk.org)라는 도메인을 직접 구입한 후,
-다음아이디 하나당 xxx@enactus-skk.org라는 메일 주소를 하나 더 다음에서 얻는 것입니다. 예를 들어 다음에서 enactus.skk 라는 다음아이디에 mail@enactus-skk.org라는 **메일주소 추가로 대여**해주고,
-enactus.skk 혹은 **mail@enactus-skk.org 로도 로그인 가능**하게 해주는 서비스입니다. 물론 mail@enactus-skk.org주소메일을 보내면 확인이 가능하고요.
+[enactus-skk.org](https://enactus-skk.org)라는 도메인을 직접 구입한 후,
+다음에서 다음아이디 하나당 xxx@enactus-skk.org 라는 메일 주소를 무료로 얻는 것입니다.
+
+enactus.skk 라는 다음아이디가 있다면 거기에 추가적으로 mail@enactus-skk.org라는 **메일주소를 추가로 사용가능하게** 해주고,
+enactus.skk  와 **mail@enactus-skk.org로 로그인 가능**하게 해주는 서비스입니다.
+
+물론 xxx@enactus-skk.org로 메일을 받는 건 당연히 가능하고, 메일을 보낼때도 해당 이메일로 보낼 수 있습니다. 가입을 하게 되면 별도의 설정없이 **enactus.skk 주소 대신 xxx@enactus-skk.org가 기본 발송 주소**로 설정됩니다. 
 
 다음을 선택한 이유는 세가지 입니다. 추후 다음의 장점들이 없어지거나, 더 좋은 장점을 가진 서비스가 생긴다면 이동을 고려해볼만 합니다. 참고로 서비스를 이동할시 데이터들은 수동으로 백업하여야 합니다.
 1. **무료** (우선 지메일/네이버의 서비스를 고려하였으나 유료화)
