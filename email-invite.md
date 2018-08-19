@@ -10,7 +10,8 @@ permalink: info/email/invite/index.html
 > **[대량으로 등록가능한 CSV 파일](/files/info/enactus-mail-upload.csv)**
 >
 > 위의 양식으로 작성하거나, 위의 양식에 표시된 정보들을 다 받았는지 확인해주세요.
->
+
+
 
 #### - Overview
 인액터스 공식 도메인으로 사용하는 메일은 다음의 **[스마트워크](http://mail2.daum.net/hanmailex/domain.html)** 서비스를 활용하고 있습니다.

@@ -40,4 +40,6 @@ enactus.skk  와 **mail@enactus-skk.org로 로그인 가능**하게 해주는 �
 + 카카오 아이디를 연동해서 다음아이디를 만들 경우, 아직까지 실명인증이 필요없어 간편합니다.
 + **[다음아이디 생성하러 가기](https://member.daum.net/join?rtnUrl=https%3A%2F%2Fmail.daum.net%2F)
 
+
+
 작성중
