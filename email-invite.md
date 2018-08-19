@@ -1,14 +1,13 @@
 ---
 title: '@enactus-skk.org 메일 초대하기'
-description:
-image:
 layout: post
-
+categories:
+  - info
 ---
 
 > 다음의 사항을 확인해주세요.
 >
-> **[대량으로 등록가능한 CSV 파일](/files/email/enactus-mail-upload.csv)**
+> **[대량으로 등록가능한 CSV 파일](/files/info/enactus-mail-upload.csv)**
 >
 > 위의 양식으로 작성하거나, 위의 양식에 표시된 정보들을 다 받았는지 확인해주세요.
 >
@@ -59,15 +58,14 @@ enactus.skk 혹은 **mail@enactus-skk.org 로도 로그인 가능**하게 해주
 
 + **초대 내용은 아래의 내용을 전체 복사하면 됩니다.**
 
-    ***초대를 받으셨다면 먼저 아래 글을 확인하면서 이메일 세팅을 완료해주세요. https://enactus-skk.org/email-setting/***
-
+    ***초대를 받으셨다면 먼저 아래 글을 확인하면서 이메일 세팅을 완료해주세요.  https://enactus.org/info/email/***
 
 
 ![](/images/info/email-5.png)
 
 #### 3.1. 여러명을 추가하는 경우 **여러명 초대**를 클립합니다.
 
-+ **[대량으로 등록가능한 CSV 파일](/files/email/enactus-mail-upload.csv)** 형식의 파일이 적절히 잘작성되었는지 체크해주세요.
++ **[대량으로 등록가능한 CSV 파일](/files/info/enactus-mail-upload.csv)** 형식의 파일이 적절히 잘작성되었는지 체크해주세요.
 + **초대내용의 경우 반드시 똑같은 내용으로 회원마다 채워주세요.**
 + 작성 중 어려움이 있으면 [다음문서](http://cs.daum.net/faq/43/13114.html#26287) 를 참고바랍니다.
 
