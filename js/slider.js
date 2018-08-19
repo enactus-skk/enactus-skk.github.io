@@ -1,11 +1,10 @@
 var $slider = $(".slider"),
   $bullets = $(".bullets");
 var slideInterval;
-var slidedelay = 500000000;
+var slidedelay = 7000;
 
 function calculateHeight() {
   var height = $(".slide.active").outerHeight();
-  console.log(height);
   height = (height<400)?400:400;
 
   $slider.height(height);
@@ -41,7 +40,6 @@ function resetSlides() {
 }
 
 function gotoSlide($activeSlide, $slide, className) {
-  console.log($activeSlide.index()+" "+$slide.index()+" ")
 
   $slide.prevAll().not(".bullets").removeClass("active inactive Left Right").addClass("inactive Left");
   $slide.nextAll().not(".bullets").removeClass("active inactive Left Right").addClass("inactive Right");
