@@ -1,7 +1,7 @@
 ---
 title: 26th Recruiting
 categories: recruitment
-description: 9.3(월) ~ 9.7(금) 사회혁신 경영학회 Enactus SKK에서 2017년 하반기 신입회원을 모집하고 있습니다.
+description: 9.3(월) ~ 9.7(금) 사회혁신 경영학회 Enactus SKK에서 2018년 하반기 신입회원을 모집하고 있습니다.
 image:
 ---
 
@@ -19,8 +19,8 @@ image:
 + **카카오톡 플러스친구** : [@인액터스 성균관](http://pf.kakao.com/_xhfhRj)
 + **페이스북** : [https://fb.com/skkenactus](https://www.facebook.com/skkenactus)
 + **문의** :
-    + **회장** : 한연규 [010-4405-0415](tel:010-4405-0415)
-    + **리쿠르팅매니저** : 권혁원 [010-7183-2439](tel:010-7183-2439)
+    + **회장** [010-4405-0415](tel:010-4405-0415)
+    + **리쿠르팅매니저** [010-7183-2439](tel:010-7183-2439)
 
 
 *****
