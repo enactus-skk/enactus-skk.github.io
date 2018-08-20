@@ -1,16 +1,19 @@
 ---
 title: 26th Recruiting
 categories: recruitment
-description: 9.3(월) ~ 9.7(금) 사회혁신 경영학회 Enactus SKK에서 2018년 하반기 신입회원을 모집하고 있습니다.
+description: |
+  9.3.(월) ~ 9.7.(금) 낮 12시까지. 사회혁신 경영학회 Enactus SKK에서 2018년 하반기 신입회원을 모집하고 있습니다. 
 apply_file: /files/recruits/text.doc
 image: /images/recruits/2018/하반기-메인.jpeg
 ---
 
 # 2018년 하반기 정기 신입회원 모집
 
-![](/images/recruits/2018/하반기-포스터.jpeg)
+![](/images/recruits/2018/하반기-포스터.jpg)
 
-#### 1. 지원 자격
+
+
+### 1. 지원 자격
 
 + 성균관대학교 학생 **(전공, 학년, 학번 무관, 휴학생 포함)**
 + 방학을 포함하여 **최소 1년 이상 연속활동**이 가능한 사람
@@ -21,14 +24,16 @@ image: /images/recruits/2018/하반기-메인.jpeg
 
 > 지금 이 글을 보고 있는 바로 당신!
 
-#### 2. 지원 안내
 
-+ **부스 설명회** : 9.3(월) ~ 9.6(목) 성균관대학교 경영관 1층 로비
-+ **지원서 접수** : 9.3(월) ~ 9.7(금) 낮 12:00 까지
+### 2. 지원 안내
+
++ **부스 설명회** : 9.3.(월) ~ 9.6.(목) 성균관대학교 경영관 1층 로비
++ **지원서 접수** : 9.3.(월) ~ 9.7.(금) 낮 12:00 까지
 + **지원메일** : [recruit@enactus-skk.org](mailto:recruit@enactus-skk.org)
 + **[지원서 다운로드](/files/recruits/text.doc)**
 
-#### 3. 실시간 문의
+
+### 3. 실시간 문의
 
 + **카카오톡 플러스친구** : [@인액터스 성균관](http://pf.kakao.com/_xhfhRj)
 + **페이스북** : [https://fb.com/skkenactus](https://www.facebook.com/skkenactus)
@@ -36,7 +41,8 @@ image: /images/recruits/2018/하반기-메인.jpeg
     + **회장** [010-4405-0415](tel:010-4405-0415)
     + **리쿠르팅매니저** [010-7183-2439](tel:010-7183-2439)
 
-#### 4. 일정 안내
+
+### 4. 일정 안내
 
 ![](/images/recruits/2018/하반기-일정.jpeg)
 

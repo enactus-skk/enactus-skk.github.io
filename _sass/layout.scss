@@ -465,7 +465,7 @@ section {
 .learn-more {
 	position: absolute;
 	left: 0;
-	bottom: 40px;
+	bottom: 50px;
 	text-align: center;
 	font-size: 1.2em;
 	font-weight:700;
@@ -474,11 +474,11 @@ section {
 
 	a {
 		color: white;
-		background-color: #532e72;
-		border: 2px solid transparent;
-		border-radius: 4px;
+		background-color: RGB(232,98,12,.9);;
+		border: 0px solid transparent;
+		border-radius: 8px;
 
-		padding: 10px;
+		padding: 10px 30px 10px 30px;
 		font-size: 1em;
 		margin-top: 20px;
 
@@ -493,12 +493,13 @@ section {
 	a:hover {
 		background-color: RGB(255,255,255,.7);
 		font-size: 1.2em;
-		color: 	#532e72;
-		border: 2px solid #532e72;
+		color: 	#E8620C;
+		border: 0px solid RGB(232,98,12,.5);;
 	 	text-decoration: none;
-	 	letter-spacing: 2px;
-	 	padding-right: 10px;
-		padding-left: 10px;
+	 	/*letter-spacing: 2px;*/
+		padding-top:5px;
+		padding-bottom:5px;
+
  }
 
 	.arrow {

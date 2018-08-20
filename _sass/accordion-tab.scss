@@ -14,6 +14,12 @@
 	border-bottom: 5px solid $enactus-dark-grey;
 
 	border-radius: 4px;
+	margin-top:-55px;
+
+	@media #{$desktop} {
+			margin-top:0px;
+	}
+
 
 }
 

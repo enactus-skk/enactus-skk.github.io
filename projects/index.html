@@ -1,7 +1,7 @@
 ---
 title: Projects
 heading: Proejcts
-description: See some of our proud proejcts.
+description: Listen to the Sound of Empowerment
 ---
 {% assign _projects = site.projects | group_by_exp:"item", "item.end_year" %}
 {% assign projects = _projects | sort: 'name' ,'last' | where_exp:"item", "item.name == nil"| reverse %}
