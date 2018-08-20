@@ -1,0 +1,15 @@
+{% if site.data.team.is_recruiting %}
+
+<section class="diagonal take-action">
+  <div class="container halves">
+    <div>
+      <h2>{{ site.categories.recruitment[0].title }}</h2>
+      <p class="subtext">
+        {{ site.categories.recruitment[0].description }}
+      </p>
+      <p class="banner-link"><a class="button alt" href="{{ site.categories.recruitment[0].url }}">리쿠르팅 지원하기</a></p>
+    </div>
+  </div>
+</section>
+
+{% endif %}

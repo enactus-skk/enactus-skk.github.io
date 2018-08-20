@@ -23,8 +23,9 @@ title:
 
     </div>
 
-    <div class="learn-more"><a href="/recruitment/26th-recruiting/">리쿠르팅 지원 ▶</a></div>
-
+    {% if site.data.team.is_recruiting %}
+    <div class="learn-more"><a href="{{ site.categories.recruitment[0].url }}">리쿠르팅 지원 ▶</a></div>
+    {% endif %}
   </div>
 
 </section>
@@ -129,17 +130,21 @@ title:
   </div>
 </section>
 -->
+<!--
+<div class="learn-more"><a href="{{ site.categories.recruitment[0].url }}">리쿠르팅 지원 ▶</a></div>
 
 <section class="diagonal alternate">
   <div class="container halves">
     <div>
-      <h2>인액터스 성균관 홈페이지를 제작하기 위한 템플릿입니다. </h2>
+      <h2>{{ site.categories.recruitment[0].title }}</h2>
       <p class="subtext">
-        특히 <strong>Korea Enactus Team</strong> 전체가 사용가능한 템플릿으로 만들기 위해 노력하고 있습니다. made by <a href="https://github.com/intiwatana/">intiwatana</a>
+        {{ site.categories.recruitment[0].description }}
       </p>
-      <p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
+      <p><a class="button alt" href="{{ site.categories.recruitment[0].url }}">리쿠르팅 지원 ▶</a></p>
     </div>
   </div>
 </section>
+-->
+
 
 <script src="{{ site.baseurl }}/js/slider.js"></script>
