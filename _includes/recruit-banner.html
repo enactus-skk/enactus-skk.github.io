@@ -1,13 +1,29 @@
 {% if site.data.team.is_recruiting %}
 
-<section class="diagonal take-action">
+<section class="diagonal take-action less-padding-top">
+  <div class="slide-back shade-top ">
+  </div>
+  <div class="slide-back shade-bottom ">
+  </div>
   <div class="container halves">
-    <div>
-      <h2>{{ site.categories.recruitment[0].title }}</h2>
-      <p class="subtext">
+    <div style="padding-top:20px;">
+
+        <h3>
+          <strong>{{ site.categories.recruitment[0].title }}</strong>
+        </h3>
+
+      <p class="subtext" style="font-size:1em;">
         {{ site.categories.recruitment[0].description }}
+        <br>
+        지원서 작성 후 {{ site.data.team.recruit_email | default:site.data.team.contact_email_address}} 로 지원
+        <br>
+        <a href="{{ site.categories.recruitment[0].apply_file }}" style="color:#3b4650;">
+          <strong>▶ 지원서 다운로드</strong>
+        </a>
       </p>
-      <p class="banner-link"><a class="button alt" href="{{ site.categories.recruitment[0].url }}">리쿠르팅 지원하기</a></p>
+      <p class="banner-link">
+        <a class="button alt" href="{{ site.categories.recruitment[0].url }}">지원공지 확인 &rarr;</a>
+      </p>
     </div>
   </div>
 </section>

@@ -4,11 +4,13 @@ heading: Who We Are heading
 description: Meet our efficient and qualified team.
 ---
 
+{% assign what_we_do = site.what_we_do | group_by_exp:"item", "item.title" |  sort: 'num' ,'last'  %}
+
 <section class="first diagonal alternate less-padding-top">
-	<div class="container">
+  <div class="slide-back">
+  </div>
+  <div class="container halves">
 
-		<ul class="image-grid">
 
-		</ul>
-	</div>
+  </div>
 </section>

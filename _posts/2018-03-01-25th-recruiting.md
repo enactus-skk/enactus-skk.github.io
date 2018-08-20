@@ -1,6 +1,7 @@
 ---
 title: 25th Recruiting
 categories: recruitment
+apply_file: /files/recruits/text.doc
 ---
 
 ![](/images/recruits/2018-상반기-포스터.jpg)

@@ -3,14 +3,15 @@
 .r-tabs {
 	position: relative;
 
-	background-color: $enactus-gold;
+	background-color: $enactus-dark-grey;
+	border-top: 5px solid $enactus-dark-grey;
 	/*
-	border-top: 1px solid $enactus-dark-grey;
+
 	border-right: 1px solid $enactus-dark-grey;
 	border-left: 1px solid $enactus-dark-grey;
 	*/
 
-	border-bottom: 2px solid $enactus-grey;
+	border-bottom: 5px solid $enactus-dark-grey;
 
 	border-radius: 4px;
 
@@ -19,7 +20,7 @@
 /* Tab element */
 .r-tabs .r-tabs-nav .r-tabs-tab {
 	position: relative;
-	background-color: $enactus-gold;
+	background-color: $enactus-dark-grey;
 
 }
 

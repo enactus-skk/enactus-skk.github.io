@@ -144,6 +144,12 @@ section {
 	padding: 150px 0;
 	background: #fff;
 	margin-top: -2px;
+
+	&.less-padding-top {
+		padding-top: 100px;
+		padding-bottom:100px;
+	}
+
 	&.first {
 		margin-top: -10vh;
 		&.less-padding-top {
@@ -164,11 +170,37 @@ section {
 		-ms-transform: skewY(-$section-rotation);
 		transform: skewY(-$section-rotation);
 
-		> div {
+		> div:not(.slide-back) {
 			-webkit-transform: skewY($section-rotation);
 			-moz-transform: skewY($section-rotation);
 			-ms-transform: skewY($section-rotation);
 			transform: skewY($section-rotation);
+		}
+		> div.slide-back{
+			width:100%;
+			height:20%;
+			position:absolute;
+			top:0px;
+			background: linear-gradient(to bottom,rgba(48,51,60,.4) 0,rgba(232, 234, 226, 1) 100%);
+			/*background-color:$enactus-grey;	*/
+			&.shade-top{
+				top:0px;
+				border-top: 7px solid $enactus-dark-grey;
+				height:3%;
+				background: linear-gradient(to bottom,rgba(48,51,60,.4) 0,rgba(232, 234, 226, 0) 100%);
+/*
+				background: linear-gradient(to bottom,rgba(255, 194, 34,.001) 0,rgba(255, 194, 34, .001) 100%);
+				*/
+			}
+			&.shade-bottom{
+				top:97%;
+				border-top-width: 0px;
+				height:3%;
+				background: linear-gradient(to bottom,rgba(232, 234, 226,0) 0,rgba(48,51,60, 0.4) 100%);
+/*
+				background: linear-gradient(to bottom,rgba(255, 194, 34,.001) 0,rgba(255, 194, 34, .001) 100%);
+				*/
+			}
 		}
 	}
 /*
@@ -212,8 +244,8 @@ section {
 	&.brand-slider {
 		color: #ffffff;
 		background: $enactus-gold;
-		padding-bottom:50px;
-		padding-top:60px;
+		padding-bottom:60px;
+		padding-top:80px;
 		a {
 			color: $enactus-dark-grey;
 		}
@@ -230,9 +262,9 @@ section {
 		.banner-link a {
 			color: $enactus-gold;
 			border: 2px solid $enactus-gold;
-		  padding: 10px;
+		  padding: 5px 10px;
 		  font-size: 1.2em;
-		  margin-top: 20px;
+		  margin-top: 0px;
 
 		  /*display: inline-block;*/
 		  display: inline-block;
