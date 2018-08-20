@@ -14,7 +14,7 @@ layout: default
 				<h2 class="enactus-text">{{ page.title | default: page.heading }}</h2>
 			</span>
 			{% if page.is_post != true and page.description %}
-				<p class="subtext line-1">|&nbsp;{{ page.description }}</p>
+				<p class="subtext line-1">{{ page.description }}</p>
 			{% endif %}
 
 	</div>
