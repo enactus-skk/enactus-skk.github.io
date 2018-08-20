@@ -4,11 +4,14 @@
 	position: relative;
 
 	background-color: $enactus-gold;
+	/*
+	border-top: 1px solid $enactus-dark-grey;
+	border-right: 1px solid $enactus-dark-grey;
+	border-left: 1px solid $enactus-dark-grey;
+	*/
 
-	border-top: 1px solid $enactus-gold;
-	border-right: 1px solid $enactus-gold;
-	border-left: 1px solid $enactus-gold;
-	border-bottom: 4px solid $enactus-gold;
+	border-bottom: 2px solid $enactus-grey;
+
 	border-radius: 4px;
 
 }
@@ -17,6 +20,7 @@
 .r-tabs .r-tabs-nav .r-tabs-tab {
 	position: relative;
 	background-color: $enactus-gold;
+
 }
 
 /* Tab anchor */
@@ -70,7 +74,7 @@
 	display: block;
 	padding: 10px;
 
-	background-color: $enactus-gold;
+	background-color: $enactus-dark-grey;
 	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
@@ -79,6 +83,10 @@
 
 	border-top-right-radius: 4px;
 	border-top-left-radius: 4px;
+
+	&:hover{
+		background-color: $enactus-gold;
+	}
 }
 
 /* Active accordion anchor */
@@ -92,6 +100,7 @@
 .r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
 	opacity: 0.5;
 }
+
 
 /* Buttons */
 button {

@@ -4,7 +4,7 @@ description: |
   사회에서 당당한 기업인으로 살아가고자 하는 청각장애인 목수님의 이야기를 전합니다.
 start_year: 2016
 end_year:
-external_url:
+external_url: http://mainobjet.com/
 image: /images/projects/gyeol/main.jpg
 categories: representative
 ---
