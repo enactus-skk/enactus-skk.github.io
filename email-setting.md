@@ -15,6 +15,8 @@ permalink: info/email/index.html
 
 
 #### - Overview
+공식계정을 사용하는 이유는 기본적으로 인액터스 회원들이 단지 학생일때보다 더 튼튼한 네임벨류와 공신력을 가지기 위한 목적입니다. 여러분들에게도 프로젝트를 진행하는데 대외적으로 긍정적인 영향을 주지만, 공식계정을 사용하면서 우리는 학생이 아니라 누군가의 삶을 책임지는 프로라는 생각을 다시 한번 되새겼으면 합니다.
+
 인액터스 공식 도메인으로 사용하는 메일은 다음의 **[스마트워크](http://mail2.daum.net/hanmailex/domain.html)** 서비스를 활용하고 있습니다.
 
 [enactus-skk.org](https://enactus-skk.org)라는 도메인을 직접 구입한 후,
@@ -99,10 +101,9 @@ enactus.skk  와 **mail@enactus-skk.org로 로그인 가능**하게 해주는 �
 
 ![](/images/info/email-22.png)
 
-** HTML전환 버튼을 누른후 아래의 코드를 붙여넣어 주세요.**
+**HTML전환 버튼을 누른후 아래의 코드를 붙여넣어 주세요.**
 
-```
-
+```html
 <table align="center" cellspacing="0" cellpadding="0" border="0" style="border: 2px solid RGB(59, 70, 80,.8); width:100%; max-width:1000px; ">
   <tbody>
     <tr>
