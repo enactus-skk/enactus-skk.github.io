@@ -313,16 +313,16 @@ section {
 
 .halves {
 	@include flexbox;
-	flex-flow: wrap;
-	align-items: center;
+	@include flex-flow(wrap);
+	@include align-items(center);
 
 	> div {
-		flex: 1 0 100%;
+		@include flex(1,0,100%);
 	}
 
 	@media #{$mid-point} {
 		> div {
-			flex: 1;
+			@include flex(1);
 		}
 
 		> div + div {
@@ -333,7 +333,7 @@ section {
 }
 
 .aligned-top {
-	align-items: flex-start;
+	@include align-items(flex-start);
 
 	.aligned-top-text-box{
 		padding-top:20px;
@@ -342,9 +342,9 @@ section {
 
 .image-grid {
 	@include flexbox;
+	@include flex-flow(wrap);
 	padding: 0;
 	list-style: none;
-	flex-flow: wrap;
 	text-align: center;
 	margin: 0 -20px;
 
@@ -382,11 +382,11 @@ section {
 
 		/* TODO :  정렬 수정 */
 		@media #{$tablet} {
-			flex: 1 1 50%;
+			@include flex(1,1,50%);
 		}
 
 		@media #{$desktop} {
-			flex: 1 1 30%;
+			@include flex(1,1,30%);
 		}
 
 		img {

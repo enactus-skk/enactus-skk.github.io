@@ -1,7 +1,7 @@
 .r-tabs-nav{
-  display:flex;
-  align-items: center;
-  justify-content: space-around;
+  @include flexbox;
+  @include justify-content(space-around);
+  @include align-items(center);
 }
 .r-tabs .r-tabs-nav {
     margin: 0;

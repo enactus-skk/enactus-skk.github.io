@@ -23,7 +23,7 @@ footer {
 
 	.footer-columns {
 		@include flexbox;
-		flex-flow: wrap;
+		@include flex-flow(wrap);
 		margin: -10px -10px 10px -10px;
 	}
 
@@ -58,10 +58,10 @@ footer {
 }
 
 .footer-links {
+	@include flex(1,0,180px);
 	width: 100%;
 	margin: 5px;
 	padding:0 10px 0 20px;
-	flex: 1 0 180px;
 
 	li {
 		list-style: none;
