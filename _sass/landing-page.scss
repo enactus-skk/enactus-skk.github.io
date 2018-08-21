@@ -32,7 +32,7 @@
 
 		align-items: initial;
 		*/
-    display: flex;
+    @include flexbox;
     align-items: center;
     justify-content: center;
     height: 100%;

@@ -22,7 +22,7 @@ footer {
 	}
 
 	.footer-columns {
-		display: flex;
+		@include flexbox;
 		flex-flow: wrap;
 		margin: -10px -10px 10px -10px;
 	}
