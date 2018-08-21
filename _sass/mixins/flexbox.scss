@@ -60,10 +60,12 @@
 // (Placeholder selectors for each type, for those who rather @extend)
 
 @mixin flexbox {
+
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flexbox;
+	-js-display: flex;
 	display: flex;
 }
 

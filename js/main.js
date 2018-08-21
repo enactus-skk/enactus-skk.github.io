@@ -1,9 +1,11 @@
 (function () {
+	flexibility(document.documentElement || document.body);
 	// 스크립트 중에서 nav에서 목록아이콘이 안드로이드에서 흰색으로 디폴트가 되지 않는 경우가 있다.
 	var header = document.getElementById("mainHeader");
 
 	function changeHeader() {
-		var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+
 		header.classList.toggle("header-background", scrollTop >= 1 || document.body.classList.contains("nav-open"));
 	}
 
