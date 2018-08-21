@@ -6,9 +6,9 @@
 	function changeHeader() {
 		var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
 		console.log(scrollTop);
-		header.classList.toggle("header-background", scrollTop >= 1 || document.body.classList.contains("nav-open");
+		header.classList.toggle("header-background", scrollTop >= 1 || document.body.classList.contains("nav-open"));
 		if(scrollTop >= 1 || document.body.classList.contains("nav-open")){
-					console.log("true")
+					console.log("true");
 		}
 
 	}
