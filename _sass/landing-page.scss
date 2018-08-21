@@ -40,9 +40,12 @@
 
   .hero-text-container {
     /* width: 600px; */
+    @include align-self(center);
     padding-bottom: 7vh;
     text-align: center;
+    /*
     vertical-align: middle;
+    */
     margin: auto;
     max-width: 600px;
 
