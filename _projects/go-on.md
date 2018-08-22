@@ -5,7 +5,7 @@ description: |
 start_year: 2017
 end_year:
 external_url:
-image: /images/projects/go-on/main.jpeg
+image: /images/projects/go-on/main.jpg
 ---
 
 >미혼양육모의 경제적 자립과 자아실현을 위한 프로젝트입니다.
