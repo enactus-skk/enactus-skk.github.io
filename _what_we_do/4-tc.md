@@ -1,6 +1,6 @@
 ---
 title: Training Conference
-num : 41
+num : 21
 ---
 
 # ETC(Enactus Training Conference)
@@ -11,6 +11,7 @@ ETC(Enactus Training Conference)는 모든 인액터스 회원을 위한 트레�
 + 강연내용: 연사 초청, 기업가 정신, 비즈니스 스킬, 팀 매니지먼트
 + 참여대상: 전국 인액터스 회원
 
+![](/images/what-we-do/etc.jpg)
 
 # Enactus Workshop
 
@@ -19,3 +20,5 @@ ETC(Enactus Training Conference)는 모든 인액터스 회원을 위한 트레�
 + 개최시기: 매년 8월 중순(하계), 2월 중순(동계)
 + 행사내용: 팀 빌딩, 알럼나이 세션, 인액터스 알아가기
 + 참여대상: 전국 인액터스 회원
+
+![](/images/what-we-do/workshop.jpg)
