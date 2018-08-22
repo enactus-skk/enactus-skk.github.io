@@ -18,8 +18,18 @@ NC에서는 인액터스의 핵심 구성원인 학생, 교육인, 비즈니스 
 인액터스 성균관은 2006년 설립 이후 2차례 우승하여 Nactional Champion 으로 Enactus Worldcup에 한국대표로 참여하였습니다.
 이외에도 지속적으로 독창적인 프로젝트와 활동력으로 좋은 성과와 대외인지도를 보유하고 있는 팀이라 할 수 있습니다.
 
-+ 우승
-+ finalist
++ 2006 - 설립
++ 2007 - **NATIONAL CHAMPION(우승)**
++ 2008 - finalist
++ 2009 - semi-finalist
++ 2010 - 3rd place
++ 2012 - 2nd place
++ 2013 - **NATIONAL CHAMPION(우승)**
++ 2014 - 3rd place
++ 2015 - finalist
++ 2016 - finalist
++ 2017 - semi-finalist
++ 2017 - semi-finalist
 
 ![](/images/what-we-do/nc-win-2013-md.jpg)
 
