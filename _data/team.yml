@@ -3,6 +3,9 @@ description: '당신의 <strong class="enactus-highlight">비즈니스</strong>�
 contact_email_address: mail@enactus-skk.org
 recruit_email : recruit@enactus-skk.org
 contact_phone_number:
+foundingDate: 2009
+
+default_logo: /images/assets/logo.png
 contact_fb_messeger: https://m.me/skkenactus
 contact_fb_pageid: skkenactus
 is_recruiting: true
@@ -14,3 +17,4 @@ map:
   latitude: 37.588630
   longitude: 126.991918
   zoom: 15
+search_keyword: 대외활동, enactusskk, sk 써니, CSR서포터즈, 러브지니, 드림메이커, 인엑터스, 성대, 사회공헌, 경영학회, 사회적기업, 소셜벤처, 스펙, 공모전, sife, 취업

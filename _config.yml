@@ -4,10 +4,13 @@ url: "https://enactus-skk.org"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
+site_verification:
+  naver: b16b04b7844cbfe72dc8a0aae45d23ef9fc5c4b6
 facebook:
   app_id: '2058376827757026'
 disqus_shortname:
 
+locale: ko_KR
 
 # Default description in social shares for the jekyll-seo-tag gem
 description: |

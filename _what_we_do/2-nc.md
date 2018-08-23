@@ -19,13 +19,14 @@ NC에서는 인액터스의 핵심 구성원인 학생, 교육인, 비즈니스 
 이외에도 지속적으로 독창적인 프로젝트와 활동력으로 좋은 성과와 대외인지도를 보유하고 있는 팀이라 할 수 있습니다.
 
 + 2006 - 설립
-+ 2007 - **NATIONAL CHAMPION(우승)**
++ **2007** - **NATIONAL CHAMPION**
 + 2008 - Finalist
 + 2009 - Semi-finalist
 + 2010 - 3rd place
++ 2011 - Spirit Award
 + 2012 - 2nd place
-+ 2013 - **NATIONAL CHAMPION(우승)**
-+ 2013 - *Worldcup Semi-finalist*
++ **2013** - **NATIONAL CHAMPION**
++ **2013** - *Worldcup Semi-finalist*
 + 2014 - 3rd place
 + 2015 - Finalist
 + 2016 - Finalist

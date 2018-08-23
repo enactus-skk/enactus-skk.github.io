@@ -5,7 +5,7 @@ num : 41
 
 # WC(World Cup)
 
-<iframe allowtransparency="true" title="Wistia video player" allowFullscreen frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" src="https://fast.wistia.net/embed/iframe/291hvlmovr" width="400" height="225"></iframe>
+<iframe allowtransparency="true" title="Wistia video player" allowFullscreen frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" src="https://fast.wistia.net/embed/iframe/291hvlmovr" width="100%" height="300"></iframe>
 
 
 *****

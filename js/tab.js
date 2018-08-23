@@ -10,5 +10,4 @@ $('.tabs a').click(function(e){
     $this.addClass('active');
     $(tabgroup).children('div').hide();
     $(target).show();
-
 })
