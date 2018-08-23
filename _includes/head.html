@@ -8,6 +8,7 @@
 <meta name="naver-site-verification" content="{{ site.site_verification.naver }}"/>
 {% endif %}
 
+
 {% unless site.data.team.default_logo contains '://' %}
   {% assign ld_logo = site.data.team.default_logo | prepend: site.url | uri_escape %}
 {% endunless %}
