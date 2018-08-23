@@ -1,17 +1,17 @@
 [[redirects]]
-  from = "https://enactus-skk.org.netlify.com/*"
-  to = "https://www.enactus-skk.org.com/:splat"
+  from = "https://enactus-skk.netlify.com/*"
+  to = "https://enactus-skk.org/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "http://enactus-skk.org.netlify.com/*"
-  to = "http://www.enactus-skk.org.com/:splat"
+  from = "http://enactus-skk.netlify.com/*"
+  to = "http://enactus-skk.org/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "http://www.enactus-skk.org.com/*"
-  to = "https://www.enactus-skk.org.com/:splat"
+  from = "http://enactus-skk.org/*"
+  to = "https://enactus-skk.org/:splat"
   status = 301
   force = true
