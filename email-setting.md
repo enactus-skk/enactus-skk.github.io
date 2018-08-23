@@ -106,7 +106,7 @@ enactus.skk  와 **mail@enactus-skk.org로 로그인 가능**하게 해주는 �
 **HTML전환 버튼을 누른후 아래의 코드를 붙여넣어 주세요.**
 
 ```html
-<table align="center" cellspacing="0" cellpadding="0" border="0" style="border: 2px solid RGB(59, 70, 80,.8); width:100%; max-width:1000px; ">
+<table align="center" cellspacing="0" cellpadding="0" border="0" style="border: 2px solid #3B4650; width:100%; max-width:1000px; ">
   <tbody>
     <tr>
       <td valign="middle" style="padding: 20px 0;">

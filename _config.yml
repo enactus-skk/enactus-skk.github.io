@@ -5,7 +5,7 @@ baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
 site_verification:
-  naver: b16b04b7844cbfe72dc8a0aae45d23ef9fc5c4b6
+  naver: 'b16b04b7844cbfe72dc8a0aae45d23ef9fc5c4b6'
 facebook:
   app_id: '2058376827757026'
 disqus_shortname:
@@ -63,6 +63,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
+  - CNAME
   - _작업파일
 
 defaults:
