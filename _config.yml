@@ -56,7 +56,7 @@ plugins:
   - "jekyll-seo-tag"
   - "jekyll-paginate"
   - "jekyll-archives"
-  - "jekyll-minifier"
+#  - "jekyll-minifier"
 
 exclude:
   - Gemfile
@@ -120,8 +120,8 @@ social_icons:
   - RSS
 
 # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
-jekyll-minifier:
-  exclude:
-    - 'atom.xml'
-    - 'sitemap.xml'
-    - 'sitemap.xsl'
+#jekyll-minifier:
+#  exclude:
+#    - 'atom.xml'
+#    - 'sitemap.xml'
+#    - 'sitemap.xsl'
