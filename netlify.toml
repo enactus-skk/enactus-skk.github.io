@@ -15,3 +15,9 @@
   to = "https://enactus-skk.org/:splat"
   status = 301
   force = true
+
+  [[redirects]]
+    from = "/what-we-do/*"
+    to = "https://enactus-skk.org/what-we-do#:splat"
+    status = 200
+    force = true
