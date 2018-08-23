@@ -2,7 +2,7 @@ title: 인액터스 성균관(Enactus SKK)
 # url: "https://enactus-skk.org/"
 url: "https://enactus-skk.org"
 baseurl:
-google_analytics_key:
+google_analytics_key: 'UA-124494032-1'
 google_maps_javascript_api_key:
 site_verification:
   naver: 'b16b04b7844cbfe72dc8a0aae45d23ef9fc5c4b6'
