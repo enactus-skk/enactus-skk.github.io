@@ -94,15 +94,13 @@
      "@context": "http://schema.org",
      "@graph": [{
        "@type":"{{ld_type}}",
-       "headline":"{{ meta_title }}",
-      {% if ld_type == 'BlogPosting' %}
+       "headline":"{{ meta_title }}",{% if ld_type == 'BlogPosting' %}
        "dateModified":"{{ site.time | date_to_xmlschema }}",
        "datePublished":"{{ page.date | date_to_xmlschema }}",
        "mainEntityOfPage":{
          "@type":"WebPage",
          "@id":"{{ meta_url }}"
-       },
-       {% endif %}
+       },  {% endif %}
        "image":"{{ meta_image }}",
        "sameAs":[
          "https://www.facebook.com/skkenactus/",
