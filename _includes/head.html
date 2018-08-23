@@ -42,7 +42,7 @@
 
 {% endif %}
 
-{% assign contents_excerpt = content | remove:'&nbsp;' | remove:'<a>'| remove:'<h1>' | replace: _meta_description, "" | strip_html | truncatewords:50 %}
+{% assign contents_excerpt = content | remove:'&nbsp;' | remove:'<a>'| remove:'<h1>' | replace: _meta_description, "" | strip_newlines | strip_html | truncatewords:50 %}
 {% assign meta_description = _meta_description | append: " " | append: contents_excerpt | truncatewords: 50 %}
 
 {% unless meta_image contains '://' %}
