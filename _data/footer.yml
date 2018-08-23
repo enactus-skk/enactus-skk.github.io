@@ -2,14 +2,19 @@
   links:
     - name: Enactus Worldwide
       link: http://enactus.org/
+      new_window: true
     - name: Enactus Korea
       link: http://enactuskorea.org/
+      new_window: true
     - name: Enactus Korea Blog
       link: https://blog.naver.com/enactusblog/
+      new_window: true
     - name: Enactus Korea Youtube
       link: https://www.youtube.com/EnactusKorea
+      new_window: true
     - name: Enactus Korea Flickr
       link: https://www.flickr.com/photos/enactuskorea
+      new_window: true
 
 - title: Social
   links:

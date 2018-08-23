@@ -126,3 +126,13 @@ We are Enactus Sungkyunkwan.*
 
  + 기타 기술적 문의 사항 : 11기 장현빈
  + [merryyear45@gmail.com](mailto:merryyear45@gmail.com)
+
+
+ ```
+ <부록> 외부 메일을 다음메일에서 확인하기.
+ ```
+ **["외부메일 가져오기 전체"](http://cs.daum.net/faq/43/21259.html#36660)**
+ **["[계정 추가] 네이버 메일을 앱에 연결하는 방법"](http://cs.daum.net/faq/43/14487.html?faqId=30974)**
+ **["[계정 추가] 구글 지메일(Gmail)을 앱에 연결하는 방법"](http://cs.daum.net/faq/43/14487.html?faqId=30974#30973)**
+
+ **["다음스마트워크 지원"](http://cs.daum.net/faq/43/13114.html?page=1)**

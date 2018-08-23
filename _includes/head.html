@@ -13,7 +13,7 @@
   {% assign ld_logo = site.data.team.default_logo | prepend: site.url | uri_escape %}
 {% endunless %}
 
-{% if page.layout == 'post' or page.layout == 'page' or page.layout == 'project' %}
+{% if page.layout == 'post' or page.layout == 'page' or page.layout == 'project' or page.layout == 'archive'%}
   {% assign ld_title = page.title %}
   {% assign meta_title = page.title | append: ' | ' | append: site.title %}
   {% assign meta_author = site.title %}
