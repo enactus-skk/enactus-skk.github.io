@@ -58,6 +58,8 @@ plugins:
   - "jekyll-archives"
   #- "jekyll-minifier"
 
+Include:
+  - _redirects
 exclude:
   - Gemfile
   - Gemfile.lock
