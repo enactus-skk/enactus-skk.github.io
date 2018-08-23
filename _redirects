@@ -1,0 +1,3 @@
+# Redirect default Netlify subdomain to primary domain
+http://enactus-skk.netlify.com/* http://enactus-skk.org/:splat 301!
+https://enactus-skk.netlify.com/* https://enactus-skk.org/:splat 301!
