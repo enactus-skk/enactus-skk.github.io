@@ -1,16 +1,15 @@
 <head>
-<meta name="naver-site-verification" content="b16b04b7844cbfe72dc8a0aae45d23ef9fc5c4b6"/>
 <meta charset="utf-8"/>
 <meta name="msapplication-TileColor" content="#FFC222">
 <meta name="theme-color" content="#FFC222">
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
-<!--
+
 {% if site.site_verification.naver %}
 <meta name="naver-site-verification" content="{{ site.site_verification.naver }}"/>
 {% endif %}
--->
+
 
 {% unless site.data.team.default_logo contains '://' %}
   {% assign ld_logo = site.data.team.default_logo | prepend: site.url | uri_escape %}
