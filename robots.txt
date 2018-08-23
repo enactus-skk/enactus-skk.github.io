@@ -1,5 +1,4 @@
 User-agent: *
-#Disallow: /
-#Disallow: /info/**
+Disallow: /info/**
 
-#Sitemap: https://enactus-skk.org/sitemap.xml
+Sitemap: https://enactus-skk.org/sitemap.xml
