@@ -5,6 +5,7 @@
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+<meta name="robots" content="index,follow" /> 
 
 {% if site.site_verification.naver %}
 <meta name="naver-site-verification" content="{{ site.site_verification.naver }}"/>
@@ -55,14 +56,17 @@
 <meta name="description" content="{{ meta_description }}"/>
 <link rel="canonical" href="{{meta_url}}" />
 {% if page.tags %}
-  {% assign keywords = {{ page.tags | join: ',' }} %}
-  <meta name="keywords" content="{{keywords}}"/>
+  {% assign keywords = page.tags | join: ',' %}
 {% else %}
   {% if site.data.team.search_keyword %}
-    {% assign keywords = {{ site.data.team.search_keyword }} %}
-    <meta name="keywords" content="{{keywords}}"/>
+    {% assign keywords = site.data.team.search_keyword %}
   {% endif %}
 {% endif %}
+
+{% if keywords %}
+    <meta name="keywords" content="{{keywords}}"/>
+{% endif %}
+
 
 {% if site.facebook.app_id %}
 <meta property="fb:app_id" content="{{ site.facebook.app_id }}"/>
