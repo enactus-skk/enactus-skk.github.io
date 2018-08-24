@@ -5,7 +5,7 @@ description: |
 start_year: 2016
 end_year:
 external_url: https://smartstore.naver.com/mainobjet/
-image: /images/projects/gyeol/main.jpg
+image: /images/projects/gyeol/main0.jpg
 categories: representative
 ---
 
@@ -48,6 +48,6 @@ categories: representative
 
 *****
 
-![](/images/projects/gyeol/main.jpg)
+![](/images/projects/gyeol/main0.jpg)
 
 ![](/images/projects/gyeol/product.jpg)
