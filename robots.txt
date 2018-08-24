@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /info/**
 
-Sitemap: /sitemap.xml
+Sitemap: https://enactus-skk.org/sitemap.xml
