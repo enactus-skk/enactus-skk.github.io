@@ -15,15 +15,3 @@
   to = "https://enactus-skk.org/:splat"
   status = 301
   force = true
-
-[[redirects]]
-  from = "/index.html"
-  to = "/"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/index"
-  to = "/"
-  status = 200
-  force = true
