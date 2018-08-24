@@ -4,8 +4,10 @@
 <meta name="theme-color" content="#FFC222">
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
-<meta name="robots" content="index,follow" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="index, follow" />
+<meta name="robots" content="noarchive" />
+
 
 {% if site.site_verification.naver %}
 <meta name="naver-site-verification" content="{{ site.site_verification.naver }}"/>
@@ -42,8 +44,8 @@
   {% assign ld_type = 'WebSite' %}
 
 {% endif %}
-{% assign contents_excerpt = content | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '&nbsp;', ' '| replace: _meta_description, "" | strip_html | strip |  truncatewords: 70 %}
-{% assign meta_description = _meta_description | append: " " | append: contents_excerpt | truncatewords: 70 %}
+{% assign contents_excerpt = content | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '&nbsp;', ' '| replace: _meta_description, "" | strip_html | strip |  truncatewords: 50 %}
+{% assign meta_description = _meta_description | append: " " | append: contents_excerpt | truncatewords: 50 %}
 
 {% unless meta_image contains '://' %}
   {% assign meta_image = meta_image  | uri_escape  | prepend: site.url %}
@@ -108,19 +110,7 @@
 <link rel="apple-touch-icon" sizes="144x144" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-144x144.png" />
 <link rel="apple-touch-icon" sizes="152x152" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-152x152.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-180x180.png" />
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 <link rel="stylesheet" href="{{site.url}}{{ site.baseurl }}/css/screen.css">
 
-{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics_key}}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', '{{site.google_analytics_key}}');
-  </script>
-{% endif %}
 </head>
-</script>

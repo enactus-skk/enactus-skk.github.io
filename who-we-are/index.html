@@ -4,13 +4,12 @@ heading:
 description: Community of student, academic and business leaders
 ---
 
-{% assign what_we_do = site.what_we_do | group_by_exp:"item", "item.title" |  sort: 'num' ,'last'  %}
+{% assign who_we_are = site.who_we_are | group_by_exp:"item", "item.title" |  sort: 'num' ,'last'  %}
 
 <section class="first diagonal alternate less-padding-top">
   <div class="slide-back">
   </div>
   <div class="container halves">
-
-
+		{% include tab-view.html page_contents=who_we_are %}
   </div>
 </section>

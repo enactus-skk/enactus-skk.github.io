@@ -45,16 +45,20 @@
 	});
 })();
 
+if($("iframe").length>0){
   function resizeVideo(){ $("iframe").each(function(){ if( /^https?:\/\/(www.youtube.com)|(fast.wistia.net)\/embed\//g.test($(this).attr("src")) ){ $(this).css("width","100%"); $(this).css("height",Math.ceil( parseInt($(this).css("width")) * 480 / 854 ) + "px");} }); }
 	$(window).resize(function(){resizeVideo();});
   $(function(){resizeVideo();});
-
+}
 
 
 
 
 
 		var $tabs = $('#horizontalTab');
+		if($tabs.length>0){
+
+
 		$tabs.responsiveTabs({
 				rotate: false,
 				startCollapsed: false,
@@ -87,3 +91,4 @@
 		$('.select-tab').on('click', function() {
 				$tabs.responsiveTabs('activate', $(this).val());
 		});
+		}
