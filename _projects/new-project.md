@@ -5,7 +5,7 @@ description: |
 start_year:
 end_year:
 external_url:
-image:
+image: /images/projects/default.png
 ---
 # Project Judging Criterion
 

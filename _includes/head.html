@@ -42,8 +42,8 @@
   {% assign ld_type = 'WebSite' %}
 
 {% endif %}
-{% assign contents_excerpt = content | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '&nbsp;', ' '| replace: _meta_description, "" | strip_html | strip |  truncatewords: 50 %}
-{% assign meta_description = _meta_description | append: " " | append: contents_excerpt | truncatewords: 50 %}
+{% assign contents_excerpt = content | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '&nbsp;', ' '| replace: _meta_description, "" | strip_html | strip |  truncatewords: 70 %}
+{% assign meta_description = _meta_description | append: " " | append: contents_excerpt | truncatewords: 70 %}
 
 {% unless meta_image contains '://' %}
   {% assign meta_image = meta_image  | uri_escape  | prepend: site.url %}
