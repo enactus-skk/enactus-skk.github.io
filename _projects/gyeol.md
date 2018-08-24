@@ -48,4 +48,6 @@ categories: representative
 
 *****
 
+![](/images/projects/gyeol/main.jpg)
+
 ![](/images/projects/gyeol/product.jpg)

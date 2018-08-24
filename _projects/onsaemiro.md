@@ -49,6 +49,8 @@ image: /images/projects/onsaemiro/main.jpg
 
 *****
 
+![](/images/projects/onsaemiro/main.jpg)
+
 ![](/images/projects/onsaemiro/1.jpg)
 
 ![](/images/projects/onsaemiro/2.jpg)

@@ -42,6 +42,7 @@ Do손은 현재, 발생하는 이윤을 통해 ‘단 한명’이라도 성공�
 
 *****
 
+![](/images/projects/do-hands/main.png)
 
 ![](/images/projects/do-hands/1.jpg)
 

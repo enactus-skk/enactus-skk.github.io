@@ -49,7 +49,7 @@
 	$(window).resize(function(){resizeVideo();});
   $(function(){resizeVideo();});
 
-$(document).ready(function () {
+
 
 
 
@@ -87,5 +87,3 @@ $(document).ready(function () {
 		$('.select-tab').on('click', function() {
 				$tabs.responsiveTabs('activate', $(this).val());
 		});
-
-});

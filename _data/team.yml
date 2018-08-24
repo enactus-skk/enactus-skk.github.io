@@ -17,4 +17,20 @@ map:
   latitude: 37.588630
   longitude: 126.991918
   zoom: 15
-search_keyword: 대외활동, enactusskk, sk 써니, CSR서포터즈, 러브지니, 드림메이커, 인엑터스, 성대, 사회공헌, 경영학회, 사회적기업, 소셜벤처, 스펙, 공모전, sife, 취업
+search_keyword:
+  - 대외활동
+  - enactusskk
+  - sk 써니
+  - CSR서포터즈
+  - 러브지니
+  - 드림메이커
+  - 인엑터스
+  - 성대
+  - 사회공헌
+  - 경영학회
+  - 사회적기업
+  - 소셜벤처
+  - 스펙업
+  - 공모전
+  - sife
+  - 취업

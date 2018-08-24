@@ -9,27 +9,7 @@ function calculateHeight() {
 
   $slider.height(height);
 }
-/*
-$(window).scroll(function () {
-  console.log(isScrolledIntoView(".slider"))
-  console.log(slideInterval);
-  console.log("===")
 
-  if(!isScrolledIntoView(".slider")){
-      clearInterval(slideInterval);
-  }
-
-});
-*/
-/*
-function isScrolledIntoView(elem)
-{
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
-    var elemTop = $(elem).offset().top;
-    return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
-}
-*/
 $(window).resize(function() {
   // calculateHeight();
   clearTimeout($.data(this, 'resizeTimer'));

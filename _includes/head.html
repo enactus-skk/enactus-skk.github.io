@@ -5,7 +5,7 @@
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
-<meta name="robots" content="index,follow" /> 
+<meta name="robots" content="index,follow" />
 
 {% if site.site_verification.naver %}
 <meta name="naver-site-verification" content="{{ site.site_verification.naver }}"/>
@@ -42,8 +42,7 @@
   {% assign ld_type = 'WebSite' %}
 
 {% endif %}
-
-{% assign contents_excerpt = content | remove:'&nbsp;' | remove:'<a>'| remove:'<h1>' | replace: _meta_description, "" | strip_newlines | strip_html | truncatewords:50 %}
+{% assign contents_excerpt = content | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '&nbsp;', ' '| replace: _meta_description, "" | strip_html | strip |  truncatewords: 50 %}
 {% assign meta_description = _meta_description | append: " " | append: contents_excerpt | truncatewords: 50 %}
 
 {% unless meta_image contains '://' %}
@@ -59,7 +58,7 @@
   {% assign keywords = page.tags | join: ',' %}
 {% else %}
   {% if site.data.team.search_keyword %}
-    {% assign keywords = site.data.team.search_keyword %}
+    {% assign keywords = site.data.team.search_keyword | join: ',' %}
   {% endif %}
 {% endif %}
 
@@ -98,20 +97,19 @@
 
 {% feed_meta %}
 
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="apple-touch-icon" href="{{ site.data.image.asset_folder }}/apple-touch-icon.png" />
+<link rel="shortcut icon" href="{{site.url}}/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon.png" />
 
-<link rel="apple-touch-icon" sizes="57x57" href="{{ site.data.image.asset_folder }}/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="{{ site.data.image.asset_folder }}/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon" sizes="76x76" href="{{ site.data.image.asset_folder }}/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="{{ site.data.image.asset_folder }}/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon" sizes="120x120" href="{{ site.data.image.asset_folder }}/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon" sizes="144x144" href="{{ site.data.image.asset_folder }}/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon" sizes="152x152" href="{{ site.data.image.asset_folder }}/apple-touch-icon-152x152.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="{{ site.data.image.asset_folder }}/apple-touch-icon-180x180.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-180x180.png" />
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link rel="stylesheet" href="{{site.url}}{{ site.baseurl }}/css/screen.css">
 
 {% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -125,73 +123,4 @@
   </script>
 {% endif %}
 </head>
-<script type="application/ld+json">
-{
-     "@context": "http://schema.org",
-     "@graph": [{
-       "@type":"{{ld_type}}",
-       "headline":"{{ meta_title }}",{% if ld_type == 'BlogPosting' %}
-       "dateModified":"{{ site.time | date_to_xmlschema }}",
-       "datePublished":"{{ page.date | date_to_xmlschema }}",
-       "mainEntityOfPage":{
-         "@type":"WebPage",
-         "@id":"{{ meta_url }}"
-       },  {% endif %}
-       "image":"{{ meta_image }}",
-       "sameAs":[
-         "https://www.facebook.com/skkenactus/",
-         "https://www.youtube.com/EnactusKorea",
-         "https://blog.naver.com/enactusblog/",
-         "https://www.flickr.com/photos/enactuskorea"
-       ],
-       "url": "{{ meta_url }}",
-       "name": "{{ ld_title }}",
-       "keywords":"{{keyowords}}",
-       "author":{
-         "@type": "NGO",
-         "name": "{{site.title}}",
-         "url": "{{site.url}}",
-         "logo": "{{ld_logo}}",
-         "contactPoint": [{
-           "@type": "ContactPoint",
-           "email": "{{site.data.team.contact_email_address}}",
-           "contactType": "customer support",
-           "url" : "{{site.url}}"
-         }],
-         "sameAs": [
-           "https://www.facebook.com/skkenactus/",
-           "https://www.youtube.com/EnactusKorea",
-           "https://blog.naver.com/enactusblog/",
-           "https://www.flickr.com/photos/enactuskorea"
-         ],
-         "foundingDate": "{{site.data.team.foundingDate}}"
-       },
-       "publisher":{
-         "@type": "Organization",
-         "name": "{{site.title}}",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "{{ld_logo}}"
-          }
-       },
-       "description": "{{ meta_description }}"
-     }, {
-       "@type": "NGO",
-       "url": "{{site.url}}",
-       "logo": "{{ld_logo}}",
-       "contactPoint": [{
-         "@type": "ContactPoint",
-         "email": "{{site.data.team.contact_email_address}}",
-         "contactType": "customer support",
-         "url" : "{{site.url}}"
-       }],
-       "sameAs": [
-         "https://www.facebook.com/skkenactus/",
-         "https://www.youtube.com/EnactusKorea",
-         "https://blog.naver.com/enactusblog/",
-         "https://www.flickr.com/photos/enactuskorea"
-       ],
-       "foundingDate": "{{site.data.team.foundingDate}}"
-     }]
-}
 </script>

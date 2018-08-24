@@ -21,6 +21,7 @@ Project Criterion은 학생 리더들이 지역사회를 위한 프로젝트를 
 
 이것은 비지니스가 더 나은 세상을 만드는데 기여할 수 있다고 믿는 인액터스의 핵심 가치이기도 합니다.
 
+![](/images/projects/default.png)
 
 # 현재 진행중인 New projects
 

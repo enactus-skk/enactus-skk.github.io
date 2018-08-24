@@ -44,6 +44,8 @@ Enactus 팀은 산후조리에 어려움을 겪고 있는 다문화산모와 전
 
 *****
 
+![](/images/projects/mamma-mia/main.jpeg)
+
 ![](/images/projects/mamma-mia/1.jpg)
 
 ![](/images/projects/mamma-mia/2.jpeg)
