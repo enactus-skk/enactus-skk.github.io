@@ -11,7 +11,7 @@ sitemap: false
 
   <url>
     <loc>{{ site.url }}</loc>
-    <lastmod>{{ site.time }}</lastmod>
+    <lastmod>{{ site.time | date_to_xmlschema}}</lastmod>
     <changefreq>{{ sitemap.freq | default: 'monthly' }}</changefreq>
     <priority>1.0</priority>
   </url>
