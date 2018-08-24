@@ -4,7 +4,7 @@ description: 다문화 여성을 산후관리사로 양성해 동일국적의 �
 start_year: 2011
 end_year: 2014
 external_url:
-image: /images/projects/mamma-mia/main.jpeg
+image: /images/projects/mamma-mia/main.jpg
 categories: representative
 ---
 
@@ -44,7 +44,7 @@ Enactus 팀은 산후조리에 어려움을 겪고 있는 다문화산모와 전
 
 *****
 
-![](/images/projects/mamma-mia/main.jpeg)
+![](/images/projects/mamma-mia/main.jpg)
 
 ![](/images/projects/mamma-mia/1.jpg)
 
