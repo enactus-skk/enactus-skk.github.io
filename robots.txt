@@ -1,5 +1,4 @@
 User-agent: *
-Allow: /
 Disallow: /info/**
 
 Sitemap: https://enactus-skk.org/sitemap.xml
