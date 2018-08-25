@@ -8,11 +8,9 @@
 <meta name="robots" content="index, follow" />
 <meta name="robots" content="noarchive" />
 
-
 {% if site.site_verification.naver %}
 <meta name="naver-site-verification" content="{{ site.site_verification.naver }}"/>
 {% endif %}
-
 
 {% unless site.data.team.default_logo contains '://' %}
   {% assign ld_logo = site.data.team.default_logo | prepend: site.url | uri_escape %}
@@ -32,20 +30,23 @@
     {% assign ld_type = 'WebPage' %}
   {% endif %}
 
+  {% assign contents_excerpt = content | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '&nbsp;', ' '| replace: _meta_description, "" | strip_html | strip |  truncatewords: 35 %}
+  {% assign meta_description = _meta_description | append: " " | append: contents_excerpt | truncatewords: 35 %}
+
 {% else %}
 
   {% assign ld_title = site.title %}
   {% assign meta_title = site.title %}
   {% assign meta_author = site.title %}
-  {% assign _meta_description = site.description | strip_html  %}
+  {% assign meta_description = site.description | strip_html  %}
   {% assign meta_url = site.url | uri_escape %}
   {% assign meta_image = ld_logo | uri_escape %}
   {% assign meta_type = 'website' %}
   {% assign ld_type = 'WebSite' %}
 
 {% endif %}
-{% assign contents_excerpt = content | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '&nbsp;', ' '| replace: _meta_description, "" | strip_html | strip |  truncatewords: 50 %}
-{% assign meta_description = _meta_description | append: " " | append: contents_excerpt | truncatewords: 50 %}
+
+
 
 {% unless meta_image contains '://' %}
   {% assign meta_image = meta_image  | uri_escape  | prepend: site.url %}
@@ -67,7 +68,6 @@
 {% if keywords %}
     <meta name="keywords" content="{{keywords}}"/>
 {% endif %}
-
 
 {% if site.facebook.app_id %}
 <meta property="fb:app_id" content="{{ site.facebook.app_id }}"/>
