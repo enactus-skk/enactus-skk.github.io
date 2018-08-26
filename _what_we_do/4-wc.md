@@ -1,5 +1,5 @@
 ---
-title: Enactus Wolrd Cup
+title: Enactus World Cup
 num : 41
 ---
 

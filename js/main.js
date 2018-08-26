@@ -64,11 +64,13 @@ if($("iframe").length>0){
 		$tabs.responsiveTabs({
 				rotate: false,
 				startCollapsed: false,
+				/*scrollToAccordionOffset: true, */
 				/*scrollToAccordionOffset: true,*/
 				/* collapsible: 'accordion',*/
 				collapsible: 'accordion',
 				setHash: true,
-				animation: 'slide',
+			/*	animation: 'slide',*/
+			/*	animation: 'fade',*/
 				active: 0,
 				disabled: [],
 				load: function(e, firstTab){
@@ -76,6 +78,9 @@ if($("iframe").length>0){
 				},
 				click: function(e, tab) {
 						// $('.info').html('Tab <strong>' + tab.id + '</strong> clicked!');
+						//var offset = $(tab.selector).offset().top-60-50;
+						//console.log(offset);
+						//console.log("click")
 
 				},
 				activate: function(e, tab) {
@@ -83,7 +88,12 @@ if($("iframe").length>0){
 						if($(tab.selector).find("iframe").length>0){
 								$(window).trigger("resize");
 						}
-						$(tab.selector).focus();
+						/*
+					 var offset = $(tab.selector).offset().top-60-50;
+						console.log(offset);
+												console.log("active")
+						setTimeout(function() { $(tab.selector).animate({scrollTop : $(tab.selector).offset().top-60-50}, 400); }, 500)
+					*/
 
 				},
 				activateState: function(e, state) {

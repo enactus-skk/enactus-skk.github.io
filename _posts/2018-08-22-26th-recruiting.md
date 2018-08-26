@@ -13,6 +13,7 @@ image: /images/recruits/2018/하반기-메인.png
 **[리플렛 다운로드](/files/recruits/2018-하반기-리쿠르팅-홍보자료.pdf)**
 
 
+
 ![](/images/recruits/2018/하반기-포스터.jpg)
 
 
