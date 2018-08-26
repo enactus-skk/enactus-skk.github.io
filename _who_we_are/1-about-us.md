@@ -28,5 +28,5 @@ num : 11
 
 ![](/images/who-we-are/skku-slogan.jpg)
 
-**[인액터스 성균관](https://encactus-skk.org)**는 **2006년** 혜화에 있는 *성균관대 인문사회과학캠퍼스* 에서 런칭하여 지금까지도 활발한 활동을 지속하고 있습니다. 지도교수(BA)로는 경영대학 **[이원준 교수](http://biz.skku.edu/kr/faculty.do?facultyId=39&categoryId=5&language=KR&facultyType=&pageIndex=1&searchCnd=0&searchWrd=%EC%9D%B4%EC%9B%90%EC%A4%80){:target="_blank"}**가 함께 하고 있습니다.
+**[인액터스 성균관](https://encactus-skk.org)**은 **2006년** 혜화에 있는 *성균관대 인문사회과학캠퍼스* 에서 런칭하여 지금까지도 활발한 활동을 지속하고 있습니다. 지도교수(BA)로는 경영대학 **[이원준 교수](http://biz.skku.edu/kr/faculty.do?facultyId=39&categoryId=5&language=KR&facultyType=&pageIndex=1&searchCnd=0&searchWrd=%EC%9D%B4%EC%9B%90%EC%A4%80){:target="_blank"}**가 함께 하고 있습니다.
 학교의 슬로건인 Unique Origin, Unique Future를 모티브로 하여, **Unique Origin, Future and Change.**라는 *MISSION STATEMENT* 아래 활동하고 있습니다. 슬로건의 의미는 우리와 대상자들 혹은 지역사회가 이미 가지고 있는 **유니크한 Asset들을 활용하고 결합하여 독특한 비즈니스 프로젝트를 기획/실행**하며, 이를 통해 우리가 속한 사회를 **더 나은 내일로 변화**시키기 위한 우리의 다짐입니다.

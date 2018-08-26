@@ -64,6 +64,7 @@ if($("iframe").length>0){
 		$tabs.responsiveTabs({
 				rotate: false,
 				startCollapsed: false,
+				/*scrollToAccordionOffset: true,*/
 				/* collapsible: 'accordion',*/
 				collapsible: 'accordion',
 				setHash: true,
@@ -82,6 +83,7 @@ if($("iframe").length>0){
 						if($(tab.selector).find("iframe").length>0){
 								$(window).trigger("resize");
 						}
+						$(tab.selector).focus();
 
 				},
 				activateState: function(e, state) {
