@@ -1,5 +1,5 @@
 
-<div id="horizontalTab">
+<div id="horizontalTab" style="">
   <ul>
     {% for post_contents in include.page_contents %}
       <li><a href="#{{ post_contents.name | slugify }}">{{ post_contents.name }}</a></li>

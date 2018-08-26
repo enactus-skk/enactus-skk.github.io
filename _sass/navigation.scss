@@ -63,7 +63,7 @@ nav {
 		border-bottom: 0;
 		text-weight:bold;
     font-weight:500;
-    
+
 		@media #{$mid-point} {
 			border-bottom: 2px solid $enactus-gold;
 
@@ -73,7 +73,6 @@ nav {
   a:hover:not(.nav-toggle) {
     color: $enactus-gold;
 		border-bottom: 0;
-    font-weight:500;
 
     @media #{$mid-point} {
     	border-bottom: 2px solid $enactus-gold;

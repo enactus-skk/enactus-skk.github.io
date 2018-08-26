@@ -22,6 +22,10 @@
       link: mailto:mail@enactus-skk.org
       social_icon: Email
       new_window: false
+    - name: YouTube
+      link: https://www.youtube.com/channel/UCvWZEtHJC5QGsVrjrY8DPAQ/featured
+      social_icon: YouTube
+      new_window: true
     - name: Facebook
       link: https://www.facebook.com/skkenactus/
       social_icon: Facebook

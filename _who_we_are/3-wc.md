@@ -1,6 +1,7 @@
 ---
 title: Enactus Wolrd Cup
-num : 41
+num : 31
+published: false
 ---
 
 # WC(World Cup)

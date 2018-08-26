@@ -7,20 +7,26 @@ num : 11
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/f336qgsZDcA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+
 *****
 
-**인액터스(Enactus: Entrepreneurial. Action. Us.)**는 기업가 정신의 실천으로, 삶을 변화시키며 지속가능하고 더 나은 세상을 만들어 가는 *학생, 교육인(지도교수), 기업인들의 공동체*입니다. 대학생들은 지도교수와 기업인들과 협력하여 지역사회에 도움이 필요한 사람의 삶의 질과 생활 수준이 향상될 수 있도록 프로젝트를 실행하고 이를 통해 사회적 책임감을 갖춘 **실천형 비즈니스 리더**로 성장하게 됩니다.
+인액터스는 1975년부터 시작된 역사를 가진 글로벌 비영리 단체입니다.
+비즈니스가 사회에 미치는 긍정적인 영향에 대한 믿음을 토대로 **1975년** 미국 리더십 연구소에서 설립되었고,
+1995년에 **Global Program**으로 확장되었습니다.
+2012년까지 **사이프(SIFE: Students In Free Enterprise)**란 이름으로 활동하였고, 우리가 원하는 가치를 더 잘 전달하기 위한 작업의 일환으로 2012년에 **[인액터스(Enactus)로 리브랜딩](http://enactuskorea.org/who-we-are/sife-is-now/){:target="_blank"}**이 진행되었습니다.
 
-+ **en**trepreneurial(기업가정신) – 기회를 발견해 내는 안목과, 이러한 기회를 통해 가치를 만들어 내는 재능
+**인액터스(Enactus: Entrepreneurial. Action. Us.)**는 기업가 정신의 실천으로, 삶을 변화시키며 지속가능하고 더 나은 세상을 만들어 가는 *학생 리더, 교육인(지도교수), 기업인들의 공동체*입니다.
+세계 각지의 학생 리더들은 지도교수와 기업인들과 협력하여 지역사회에 도움이 필요한 사람의 삶의 질과 생활 수준이 향상될 수 있도록 프로젝트를 실행하고 성과를 통해 지역사회를 변화시킵니다. 이를 통해 스스로는 사회적 책임감을 갖춘 **미래의 비즈니스 리더**로 성장하게 됩니다.
 
-+ **act**ion(실천) – 결과가 보장되지 않은 상황에서도 이를 끝까지 해내려는 의지
++ **EN**trepreneurial (기업가정신) : 기회를 발견해 내는 안목과, 이러한 기회를 통해 가치를 만들어 내는 재능
++ **ACT**ion (실천) : 결과가 보장되지 않은 상황에서도 이를 끝까지 해내려는 의지
++ **US** (공동체) : 행동 또는 목적을 같이하는 집단
 
-+ **us**(공동체) – 행동 또는 목적을 같이하는 집단
+# 인액터스 성균관(Enactus Skk)
 
+![](/images/who-we-are/official.jpg)
 
+![](/images/who-we-are/skku-slogan.jpg)
 
-# Our Purpose
-
-### 우리는 기업가정신의 실천으로 더 나은 세상을 만들어 갑니다.
-
-**세계 36여개국** **1,700여개의 대학**과 세계 유수 기업들의 파트너십을 통해 사회적 책임과 도덕성을 갖춘 실천형 비즈니스 리더를 양성하는 글로벌 대학 연합 단체입니다. 인액터스 학생들은 여러 기관들과 상호 협력하여 지역사회에 실존하는 이슈를 해결하기 위해 비즈니스 프로젝트를 실행하며 보다 더 나은 삶의 환경을 만들 수 있도록 합니다.
+**[인액터스 성균관](https://encactus-skk.org)**는 **2006년** 혜화에 있는 *성균관대 인문사회과학캠퍼스* 에서 런칭하여 지금까지도 활발한 활동을 지속하고 있습니다. 지도교수(BA)로는 경영대학 **[이원준 교수](http://biz.skku.edu/kr/faculty.do?facultyId=39&categoryId=5&language=KR&facultyType=&pageIndex=1&searchCnd=0&searchWrd=%EC%9D%B4%EC%9B%90%EC%A4%80){:target="_blank"}**가 함께 하고 있습니다.
+학교의 슬로건인 Unique Origin, Unique Future를 모티브로 하여, **Unique Origin, Future and Change.**라는 *MISSION STATEMENT* 아래 활동하고 있습니다. 슬로건의 의미는 우리와 대상자들 혹은 지역사회가 이미 가지고 있는 **유니크한 Asset들을 활용하고 결합하여 독특한 비즈니스 프로젝트를 기획/실행**하며, 이를 통해 우리가 속한 사회를 **더 나은 내일로 변화**시키기 위한 우리의 다짐입니다.

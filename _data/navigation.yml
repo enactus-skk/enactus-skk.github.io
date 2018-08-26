@@ -1,6 +1,6 @@
 links:
-#- name: Who We Are
-#  link: /who-we-are/
+- name: Who We Are
+  link: /who-we-are/
 - name: What We Do
   link: /what-we-do/
 - name: Projects

@@ -45,9 +45,11 @@
 	});
 })();
 
+function resizeVideo(){ $("iframe").each(function(){ if( /^https?:\/\/(www.youtube.com)|(fast.wistia.net)\/embed\//g.test($(this).attr("src")) ){ $(this).css("width","100%"); $(this).css("height",Math.ceil( parseInt($(this).css("width")) * 480 / 854 ) + "px");} }); }
+
+
 if($("iframe").length>0){
-  function resizeVideo(){ $("iframe").each(function(){ if( /^https?:\/\/(www.youtube.com)|(fast.wistia.net)\/embed\//g.test($(this).attr("src")) ){ $(this).css("width","100%"); $(this).css("height",Math.ceil( parseInt($(this).css("width")) * 480 / 854 ) + "px");} }); }
-	$(window).resize(function(){resizeVideo();});
+  	$(window).resize(function(){resizeVideo();});
   $(function(){resizeVideo();});
 }
 
@@ -65,16 +67,22 @@ if($("iframe").length>0){
 				/* collapsible: 'accordion',*/
 				collapsible: 'accordion',
 				setHash: true,
-				/*animation: 'slide',*/
+				animation: 'slide',
 				active: 0,
 				disabled: [],
+				load: function(e, firstTab){
+						// $('#horizontalTab').show();
+				},
 				click: function(e, tab) {
 						// $('.info').html('Tab <strong>' + tab.id + '</strong> clicked!');
 
 				},
 				activate: function(e, tab) {
-						// $('.info').html('Tab <strong>' + tab.id + '</strong> activated!');
-						$(window).trigger("resize");
+
+						if($(tab.selector).find("iframe").length>0){
+								$(window).trigger("resize");
+						}
+
 				},
 				activateState: function(e, state) {
 						//console.log(state);
