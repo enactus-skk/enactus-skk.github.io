@@ -21,7 +21,7 @@
           <strong>홍보자료</strong>
         </a>
         &nbsp;
-        <a href="{{ site.categories.recruitment[0].apply_file }}" style="color:#3b4650;">
+        <a href="{{ site.categories.recruitment[0].apply_file }}" style="color:#3b4650;" class="apply-file">
           <strong>▶ 지원서 다운로드</strong>
         </a>
 
@@ -32,5 +32,32 @@
     </div>
   </div>
 </section>
+<script>
 
+function isIE(){
+   if (navigator.userAgent.toLowerCase().indexOf("msie") != -1){
+    return true;
+   }
+   if(navigator.userAgent.match(/Trident\/(\d)/i) != null){
+      return true;
+   }
+   return false;
+}
+
+
+
+var applyLinks = document.getElementsByClassName('apply-file');
+
+for(var i =0 ;i<applyLinks.length;i++){
+  var eventName = applyLinks[i].getAttribute('href').replace('/files/recruits/', '').replace('/', '');
+  if(isIE()){
+      applyLinks[i].setAttribute("onclick", function() { gtag("event", "recruit", { "event_category": "recruit_file_download","event_label": eventName }); });
+
+  }else{
+      applyLinks[i].setAttribute('onclick','javascript:gtag("event", "recruit", { "event_category": "recruit_file_download","event_label": '+ eventName +' });');
+  }
+}
+
+
+</script>
 {% endif %}
