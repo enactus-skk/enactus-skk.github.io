@@ -50,7 +50,7 @@
           }
        },
        "description": "{{ meta_description }}"
-     }, {
+     }{% if ld_type == 'WebSite' %}, {
        "@type": "NGO",
        "url": "{{site.url}}",
        "logo": "{{ld_logo}}",
@@ -68,6 +68,6 @@
          "https://www.flickr.com/photos/enactuskorea/"
        ],
        "foundingDate": "{{site.data.team.foundingDate}}"
-     }]
+     }{% endif %}]
 }
 </script>

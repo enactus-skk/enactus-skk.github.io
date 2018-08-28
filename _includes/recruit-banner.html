@@ -33,8 +33,7 @@
   </div>
 </section>
 <script>
-
-
+{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 var applyLinks = document.getElementsByClassName('apply-file');
 if(applyLinks.length>0){
 
@@ -52,9 +51,6 @@ if(applyLinks.length>0){
     }
   }
 }
-
-
-
-
+{% endif %}
 </script>
 {% endif %}
