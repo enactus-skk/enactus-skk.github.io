@@ -38,6 +38,7 @@
 
 	$("a[href*=\\#]").on("click", function (event) {
 		event.preventDefault();
+		if(this.hash=='#Redirect') return false;
 
 		$("html, body").animate({
 			 scrollTop: $(this.hash).offset().top
