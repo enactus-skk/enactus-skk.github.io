@@ -474,7 +474,7 @@ section {
 
 	a {
 		color: white;
-		background-color: RGB(232,98,12,.9);;
+		background-color: $enactus-blue;
 		border: 0px solid transparent;
 		border-radius: 8px;
 
@@ -491,10 +491,10 @@ section {
 	}
 
 	a:hover {
-		background-color: RGB(255,255,255,.7);
+		background-color: $enactus-blue-shadow;
 		font-size: 1.2em;
-		color: 	#E8620C;
-		border: 0px solid RGB(232,98,12,.5);;
+		color: 	$enactus-dark-grey;
+		border: 3px outset $enactus-blue-shadow;
 	 	text-decoration: none;
 	 	/*letter-spacing: 2px;*/
 		padding-top:5px;

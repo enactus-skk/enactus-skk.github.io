@@ -1,0 +1,17 @@
+<hr>
+<div class="gallery-container">
+  {% assign searchword = 'images/' | append: include.target %}
+  {% assign images = site.static_files | where_exp:"item","item.path contains searchword" | sort:'basename','last' %}
+
+  {% for image in images %}
+  <div class="responsive {{ include.target }}">
+    <div class="gallery">
+
+      <img src="{% include relative-src.html src= image.path %}" alt="{{image.basename}}">
+
+      <div class="desc">{{image.basename}}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<hr>

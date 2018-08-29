@@ -1,0 +1,85 @@
+.gallery-container {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box; // 박스의 가로 세로 모두 padding, border 값을 포함한 길이이다 라고 정의하는 거죵.
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  div.gallery {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 5px;
+  }
+
+  div.gallery:hover {
+    opacity: 0.8;
+  }
+
+  div.gallery img {
+    width: 100%;
+    min-width:100%;
+    height: auto;
+    padding:10px;
+    box-sizing: border-box; // 박스의 가로 세로 모두 padding, border 값을 포함한 길이이다 라고 정의하는 거죵.
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  div.desc {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size:8px;
+    color: $enactus-grey;
+    font-weight:300;
+    margin:auto;
+  }
+
+  .responsive {
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    width: 25%;
+
+    &.universities {
+      @media #{$tablet} {
+        width: 20%;
+      }
+      @media #{$mid-point} {
+        width: 20%;
+      }
+      @media #{$desktop} {
+        width: 10%;
+      }
+    }
+
+    &.sponsors {
+      width: 50%;
+
+      @media #{$tablet} {
+        width: 50%;
+      }
+      @media #{$mid-point} {
+        width: 20%;
+      }
+      @media #{$desktop} {
+        width: 20%;
+      }
+    }
+
+
+
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

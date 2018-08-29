@@ -8,15 +8,11 @@ promo_file: /files/recruits/2018-하반기-리쿠르팅홍보.pdf
 image: /images/recruits/2018/하반기-메인.png
 ---
 
-# 2018년 하반기 정기 신입회원 모집
-
-**[리플렛 다운로드](/files/recruits/2018-하반기-리쿠르팅홍보.pdf)**
-
-
-
 ![](/images/recruits/2018/하반기-포스터.jpg)
 
+# 2018년 하반기 정기 신입회원 모집
 
+**[☛ 리플렛 다운로드](/files/recruits/2018-하반기-리쿠르팅홍보.pdf)**
 
 ### 1. 지원 자격
 
@@ -51,10 +47,7 @@ image: /images/recruits/2018/하반기-메인.png
 
 ![](/images/recruits/2018/하반기-일정.jpeg)
 
-*****
-
-
-### FAQ
+# FAQ
 
 **Q1. 상경계열이 아니어도 지원 가능한가요?**
 >**A**. 물론이죠! ‘인액터스’는 전 세계적으로 전공과 상관 없이 아이디어와 열정으로 활동하는 단체입니다.

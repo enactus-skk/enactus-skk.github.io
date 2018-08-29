@@ -19,14 +19,15 @@ num : 11
 세계 각지의 학생 리더들은 지도교수와 기업인들과 협력하여 지역사회에 도움이 필요한 사람의 삶의 질과 생활 수준이 향상될 수 있도록 프로젝트를 실행하고 성과를 통해 지역사회를 변화시킵니다. 이를 통해 스스로는 사회적 책임감을 갖춘 **미래의 비즈니스 리더**로 성장하게 됩니다.
 
 + **EN**trepreneurial (기업가정신) :
-    + igniting business innovation with integrity and passion
     + 진정성과 지성, 그리고 열정으로 개척하는 비즈니스 혁신의 불씨
+    + *igniting business innovation with integrity and passion*
 + **ACT**ion (실천) :
-    + the experience of social impact that sparks social enterprise
     + 소셜벤처의 불꽃이 되는 사회변화의 실제 경험
+    + *the experience of social impact that sparks social enterprise*
 + **US** (공동체) :
-    + student, academic and business leaders collaborating to create a better world
     + 더 나은 미래로 향하는 학생 리더, 아카데미 리더, 비즈니스 리더의 공동체
+    + *student, academic and business leaders collaborating to create a better world*
+
 
 
 # 인액터스 성균관(Enactus Skk)
