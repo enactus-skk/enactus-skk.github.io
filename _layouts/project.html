@@ -40,6 +40,10 @@ layout: default
   <div class="blog-post text-container">
     <div class="post-content">
 			{{ content }}
+			{% assign _target = page.url | replace: 'index.html', '' %}
+			{% unless _target contains 'new-project'  %}
+				{% include image-grid.html target= _target desc='none' %}
+			{% endunless %}
 		</div>
 	</div>
 </section>

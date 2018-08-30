@@ -6,7 +6,7 @@ apply_file: /files/recruits/waiting.doc
 
 
 
-![](/images/recruits/2017-하반기-포스터.jpg)
+![](/images/recruits/2017/하반기-포스터.jpg)
 
 + 지원메일 : [recruit@enactus-skk.org](mailto:recruit@enactus-skk.org)
 + [오픈카톡](https://open.kakao.com/o/sVoKHQH)

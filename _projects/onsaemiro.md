@@ -43,22 +43,3 @@ image: /images/projects/onsaemiro/main.jpg
 또한 온새미로와 함께 하는 교육콘텐츠 상품화 및 기업 메세나 활동을 통하여 비즈니스적 접근을 익힐 뿐만 아니라 자존감을 회복하게 됩니다.
 
 마지막으로 한층 다양해진 문화예술교육 시장에서는 교육대상에게 전통문화교육의 기회를 확대합니다.
-
-
-*****
-
-![](/images/projects/onsaemiro/main.jpg)
-
-![](/images/projects/onsaemiro/1.jpg)
-
-![](/images/projects/onsaemiro/2.jpg)
-
-![](/images/projects/onsaemiro/3.jpg)
-
-![](/images/projects/onsaemiro/4.jpg)
-
-![](/images/projects/onsaemiro/5.jpg)
-
-![](/images/projects/onsaemiro/6.jpg)
-
-![](/images/projects/onsaemiro/7.jpg)

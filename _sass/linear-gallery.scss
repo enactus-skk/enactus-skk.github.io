@@ -10,6 +10,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     padding: 5px;
+
   }
 
   div.gallery:hover {
@@ -20,10 +21,13 @@
     width: 100%;
     min-width:100%;
     height: auto;
+    max-height:300px;
     padding:10px;
     box-sizing: border-box; // 박스의 가로 세로 모두 padding, border 값을 포함한 길이이다 라고 정의하는 거죵.
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    object-fit: cover;
+
   }
 
   div.desc {
@@ -35,7 +39,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
-    font-size:8px;
+    font-size:10px;
     color: $enactus-grey;
     font-weight:300;
     margin:auto;
@@ -45,9 +49,28 @@
     box-sizing: border-box;
     display: inline-block;
     float: left;
-    width: 25%;
+    width: 100%;
+
+    @media #{$tablet} {
+      width: 100%;
+    }
+    @media #{$mid-point} {
+      width: 50%;
+      &:only-child{
+        width:100%;
+      }
+    }
+    @media #{$desktop} {
+      width: 50%;
+      &:only-child{
+        width:100%;
+      }
+    }
+
 
     &.universities {
+      width: 25%;
+
       @media #{$tablet} {
         width: 20%;
       }
