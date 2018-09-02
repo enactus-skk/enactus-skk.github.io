@@ -1,0 +1,211 @@
+/*
+Pure CSS modal box
+Author: Jorge Chavez
+Github: http://github.com/jorgechavz
+*/
+.modal {
+  box-sizing: border-box;
+
+  .checkbox {
+    display: none;
+  }
+.checkboxes label {
+  width:auto;
+  display: inline-block;
+float: left;
+padding-right: 10px;
+white-space: nowrap;
+}
+.checkboxes input {
+vertical-align: middle;
+margin:0;
+margin-bottom:2px;
+display:inline;
+}
+.checkboxes label span {
+vertical-align: middle;
+font-size:14px;
+}
+  /* Gray background */
+  .modal-overlay {
+    box-sizing: border-box;
+    opacity: 0;
+    transition: all 0.3s ease;
+    width: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // margin-top:60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    transform: scale(1);
+    display: none;
+    background-color: rgba(0,0,0,0.7);
+  }
+  /* Box */
+  .modal-wrap {
+    box-sizing: border-box;
+    background-color: #ddd;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+    padding: 40px 50px;
+    width: 80%;
+    height:auto;
+    margin: 20px auto 0 auto;
+    @include align-self(flex-start);
+    border-radius: 2px;
+    transition: all 0.5s ease;
+  }
+
+  .modal-wrap.small {
+    width: 40%;
+  }
+
+  .modal-wrap.full {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-wrap.a-center {
+    @include align-self(center);
+  }
+
+  .modal-wrap.from-left {
+    transform: translateX(-100%);
+  }
+
+  .modal-wrap.from-right {
+    transform: translateX(100%);
+  }
+
+  .modal-wrap.from-top {
+    transform: translateY(-100%);
+  }
+
+  .modal-wrap.from-bottom {
+    transform: translateY(100%);
+  }
+  /* Close button */
+  .modal-overlay .close {
+    margin:0px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 30px;
+    font-weight: 300;
+    width: 30px;
+    height: 30px;
+    color: #282c34;
+  }
+
+  .modal-overlay .close:hover {
+    cursor: pointer;
+    color: #4b5361;
+  }
+
+  .o-close {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -100;
+  }
+  input{
+    width:auto;
+  }
+
+
+  input:checked ~ .o-close {
+    z-index: 9998;
+  }
+
+  input:checked ~ .modal-overlay {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 9997;
+    overflow: auto;
+    @include flexbox;
+    animation-duration: 0.5s;
+    animation-name: fade-in;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-name: fade-in;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: fade-in;
+  }
+
+  input:checked ~ .modal-overlay .modal-wrap {
+    transform: translateY(0);
+    z-index: 9999;
+  }
+  /* Responsive Design */
+  /* Tablet size */
+  @media (max-width: 768px) {
+    .modal-wrap {
+      width: 80%;
+      padding: 20px;
+    }
+    .modal-wrap.small {
+      width: 50%;
+    }
+  }
+  /* Phone size */
+  @media (max-width: 450px) {
+    .modal-wrap {
+      width: 90%;
+    }
+    .modal-wrap.small {
+      width: 90%;
+    }
+  }
+  /* Fadein from display:none */
+  @keyframes fade-in {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      @include flexbox;
+      opacity: 0;
+    }
+
+    100% {
+      @include flexbox;
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fade-in {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      @include flexbox;
+      opacity: 0;
+    }
+
+    100% {
+      @include flexbox;
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fade-in {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      @include flexbox;
+      opacity: 0;
+    }
+
+    100% {
+      @include flexbox;
+      opacity: 1;
+    }
+  }
+}

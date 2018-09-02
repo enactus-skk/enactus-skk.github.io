@@ -7,6 +7,7 @@ $pattern-grey: "{{ site.baseurl }}/images/assets/pattern-grey.png";
 $pattern-light-grey: "{{ site.baseurl }}/images/assets/pattern-light-grey.png";
 $bg-take-action: "{{ site.baseurl }}/images/assets/take-action-bg.png";
 $bg-title: "{{ site.baseurl }}/images/assets/bg-title.jpg";
+$enactus-tile: "{{ site.baseurl }}/images/assets/enactus-tile.png";
 /*
 $front-main-image: "https://source.unsplash.com/j5LSbCqB1wA/2000x1322?a=.png";
 */
@@ -132,6 +133,7 @@ $section-rotation: 5deg;
 @import "mixins/columns";
 @import "elements";
 @import "landing-page";
+@import "event-top-page";
 @import "page-top-element";
 @import "layout";
 @import "contact";
@@ -144,5 +146,6 @@ $section-rotation: 5deg;
 @import "responsive-tabs";
 @import "accordion-tab";
 @import "linear-gallery";
+@import "modal";
 
 //@import "slider-pure";

@@ -1,0 +1,83 @@
+{% if site.data.team.main_popup %}
+
+{% assign popup_content = site.events | where_exp: "item","item.slug contains 'main-popup'" | first %}
+
+{% if popup_content %}
+
+
+
+<div class="modal">
+  <input id="modal-trigger-full" class="checkbox" type="checkbox">
+  <div class="modal-overlay">
+
+    <div class="modal-wrap a-center from-bottom">
+      <label for="modal-trigger-full" class="close">&#10006;</label>
+      <div class="blog-post text-contaier">
+        <div class="post-content front">
+
+        {{ popup_content }}
+
+        </div>
+      </div>
+
+      <div class="cta button alt">
+        <a href="{% include relative-src.html src= popup_content.url %}" rel="nofollow">See More &#9658;</a>
+      </div>
+
+      <div class="checkboxes">
+        <label for="modal-prevent">
+          <input id="modal-prevent" type="checkbox" onchange="prventFullPopup(this,'main_popup','0',1)"/>
+          <span>하루동안 보지 않기</span>
+        </label>
+        <label>
+            |
+        </label>
+        <label for="modal-trigger-full">
+          <span>닫기</span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function prventFullPopup(el, cname, cvalue, exdays){
+  if(el.checked){
+    setCookie(cname, cvalue, exdays);
+  }else{
+    setCookie(cname, "", 0);
+  }
+
+  document.getElementById("modal-trigger-full").checked = false;
+}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+if(getCookie("main_popup")=="")
+  document.getElementById("modal-trigger-full").checked = true;
+
+
+</script>
+{% endif %}
+
+{% endif %}

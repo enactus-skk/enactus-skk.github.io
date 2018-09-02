@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html>
+<html lang="ko">
 
 	{% include head.html %}
 
@@ -21,8 +21,8 @@
 			<div class="container">
 				<div class="team-name">
 					<a href="{{ site.baseurl }}/">
-						<span class="dark-logo"><img width="104" height="38" src="{{ site.baseurl }}{{ site.data.image.header_logo }}" alt="{{ site.social.name }}"></span>
-						<span class="light-logo"><img width="104" height="38" src="{{ site.baseurl }}{{ site.data.image.header_logo_light | default: site.data.image.header_logo }}" alt="{{ site.social.name }}"></span>
+						<span class="dark-logo"><img width="104" height="38" src="{{ site.baseurl }}{{ site.data.image.header_logo }}" alt="{{ site.title }}"></span>
+						<span class="light-logo"><img width="104" height="38" src="{{ site.baseurl }}{{ site.data.image.header_logo_light | default: site.data.image.header_logo }}" alt="{{ site.title }}"></span>
 					</a>
 				</div>
 				{% include navigation.html %}
@@ -61,5 +61,6 @@
 		<script src="{{ site.baseurl }}/js/jquery.responsiveTabs.min.js"></script>
 		<script src="{{ site.baseurl }}/js/main.js"></script>
 		<script src="{{ site.baseurl }}/js/slider.js"></script>
+
 	</body>
 </html>

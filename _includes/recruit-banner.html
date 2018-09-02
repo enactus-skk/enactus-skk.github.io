@@ -15,7 +15,7 @@
       <p class="subtext" style="font-size:1em;">
         {{ site.categories.recruitment[0].description }}
         <br>
-        <strong>e&nbsp;</strong>{{ site.data.team.recruit_email | default:site.data.team.contact_email_address}}
+        <strong>e&nbsp;</strong>{{ site.categories.recruitment[0].recruit_email | default:site.data.team.contact_email_address}}
         <br>
         <a href="{{ site.categories.recruitment[0].promo_file }}" style="color:#3b4650;">
           <strong>홍보자료</strong>

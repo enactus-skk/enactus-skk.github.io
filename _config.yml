@@ -1,56 +1,35 @@
+
+#### 팀에 따라 바꿔줘야할 부분  ↓ ↓ ↓ ↓ ####
 title: 인액터스 성균관(Enactus SKK)
-# url: "https://enactus-skk.org/"
 url: 'https://enactus-skk.org'
 baseurl:
-google_analytics_key: 'UA-124494032-1'
-google_maps_javascript_api_key:
-site_verification:
-  naver: 'b16b04b7844cbfe72dc8a0aae45d23ef9fc5c4b6'
-facebook:
-  app_id: '2058376827757026'
-disqus_shortname:
-
-locale: 'ko_KR'
-
-# Default description in social shares for the jekyll-seo-tag gem
 description: |
   A HEAD FOR BUSINESS. A HEART FOR THE WORLD.
   인액터스 성균관은 기업가정신의 실천을 통해 더 나은 사회를 만들어가는 사회혁신 경영학회입니다.
   우리는 비즈니스의 긍정적인 힘으로 세상에 변화를 가져오고 있습니다.
+feed:
+  path: atom.xml
 
-# Author details for the jekyll-seo-tag gem
-author:
-  name: Enactus SKK
-  email: mail@enactus-skk.org
-  twitter: # twitter username without the @ symbol
 
-# Social details for the jekyll-seo-tag gem
-social:
-  name: Enactus SKK
-  links:
-    - https://enactus-skk.org
+google_analytics_key: 'UA-124494032-1'
+site_verification:
+  naver: 'b16b04b7844cbfe72dc8a0aae45d23ef9fc5c4b6'
+facebook:
+  app_id: '2058376827757026'
+google_maps_javascript_api_key:
 
+#### 팀에 따라 바꿔줘야할 부분 ↑ ↑ ↑ ↑ ####
+
+
+#### 기본설정 구역 변경 금지 ↓ ↓ ↓ ↓ ####
+locale: 'ko_KR'
 timezone: Asia/Seoul
-
-collections:
-  who_we_are:
-    output: true
-  what_we_do:
-    output: true
-  projects:
-    output: true
-
+data_dir: edit/_data
+encoding:  "utf-8"
 paginate: 5
 paginate_path: "/blog/:num/"
 permalink: /:categories/:slug/
 excerpt_separator: <!--more-->
-#pretty
-
-jekyll-archives:
-  enabled:
-    - "categories"
-  permalinks:
-    category: '/:name/'
 
 plugins:
   # https://github.com/jekyll/jekyll-feed
@@ -60,13 +39,30 @@ plugins:
   - "jekyll-archives"
 #  - "jekyll-minifier"
 
+jekyll-archives:
+  enabled:
+    - "categories"
+  permalinks:
+    category: '/:name/'
+
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - LICENCE
+  - LICENSE
   - CNAME
   - _작업파일
+
+collections_dir: edit
+collections:
+  who_we_are:
+    output: true
+  what_we_do:
+    output: true
+  projects:
+    output: true
+  events:
+    output: true
 
 defaults:
   - scope:
@@ -104,13 +100,6 @@ defaults:
       sitemap: true
       layout: "default"
 
-
-feed:
-  path: atom.xml
-
-# -----------
-# CloudCannon
-# jekyll-seo-tag/usage.md at master · jekyll/jekyll-seo-tag
 social_icons:
   - Facebook
   - Google Plus
@@ -121,6 +110,7 @@ social_icons:
   - Twitter
   - YouTube
   - RSS
+#### 기본설정 구역 변경 금지 ↑ ↑ ↑ ↑  ####
 
 # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
 #jekyll-minifier:
