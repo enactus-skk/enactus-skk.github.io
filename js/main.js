@@ -96,7 +96,6 @@ if ($tabs.length > 0) {
     activate: function(e, tab) {
 
       if ($(tab.selector).find("iframe").length > 0) {
-        console.log("test")
         $(window).trigger("resize");
       }
       /*
