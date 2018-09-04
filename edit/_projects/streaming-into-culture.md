@@ -27,9 +27,9 @@ categories: representative
 
 ### 새로운 홍보 방법과 **대기만성** 소극단-대학생 매칭 프로그램
 
-성균관대학교 SIFE(현: 인액터스 성균관)팀이 가장 먼저 투입된 공연은 **[피크를 던져라](http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=09008765)**이었다.
+성균관대학교 SIFE(현: 인액터스 성균관)팀이 가장 먼저 투입된 공연은 **[피크를 던져라](http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=09008765){:target="_blank"}**이었다.
 극단‘화이트아웃’과 함께 우리 팀은 공연 **피크를 던져라**의 기획과 온라인 홍보에 주력하였고,
-이를 토대로 **[대기만성(대학생 기획단이 만드는 성장스토리)](https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EB%8C%80%EA%B8%B0%EB%A7%8C%EC%84%B1+sife&oquery=%EB%8C%80%EA%B8%B0%EB%A7%8C%EC%84%B1&tqi=TGIZFspySEKssZnW2pCssssstzK-179994)**이라는 프로그램을 구상하였다.
+이를 토대로 **[대기만성(대학생 기획단이 만드는 성장스토리)](https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EB%8C%80%EA%B8%B0%EB%A7%8C%EC%84%B1+sife&oquery=%EB%8C%80%EA%B8%B0%EB%A7%8C%EC%84%B1&tqi=TGIZFspySEKssZnW2pCssssstzK-179994){:target="_blank"}**이라는 프로그램을 구상하였다.
 대기만성은 예술경영에 뜻이 있는 대학생들을 모집하여 기획인력이 없는 소극단과 연결시켜주는 프로그램으로 극단에게는 기획 인력을, 대학생 기획단에게는 실무경험을 제공하는 win-win전략이다. 대기만성은 극단 피크와 실무경험을 통하여 얻은 효과적인 온라인 홍보방안을 기본으로 하되, 이에 그치지 않고 대외협력, 마케팅, 회계 등 전반적인 기획과정에 기여하였다. SIFE팀은 극단의 대관 업무를 주도하고 판촉물의 디자인부터 인쇄까지 직접 참여하여 비용을 최소화하였다. 이와 동시에 주변상권과의 제휴 및 후원 기업의 유치를 통해 재정상황을 개선시켰고, 각종 이벤트와 프로모션 을 통해 관객 유치에 힘썼다.
 
 # Impact
