@@ -21,4 +21,4 @@ num : 41
 
 # World Cup 2018 in Silicon Valley, San Francisco!
 
-![](http://enactuskorea.org/wp-content/uploads/2017/11/sanjose.png)
+![](/images/what-we-do/wc-2018-sanjose.png)
