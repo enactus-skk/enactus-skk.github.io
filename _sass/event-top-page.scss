@@ -10,8 +10,7 @@
   background-position: center center;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  margin-top: 0px;
-
+  margin-top: 0;
   /*margin-top:-20px;*/
   &:before {
     content: "";
@@ -48,7 +47,7 @@
     vertical-align: middle;
     */
     // margin: auto;
-    width:100%;
+    width: 100%;
     max-width: 1000px;
 
     .button,
@@ -70,6 +69,7 @@
     position: absolute;
     right: 0;
   }
+
   .hero-text-left {
     position: absolute;
     left: 0;
@@ -82,13 +82,15 @@
 
 .bottom-cta {
   text-align: center;
-  background-color:$enactus-gold;
+  background-color: $enactus-gold;
+
   a {
     color: white;
-    margin-top:10px;
-    margin-bottom: 10px;;
-    &:hover{
-      color:$enactus-gold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: $enactus-gold;
       background-color: white;
     }
   }

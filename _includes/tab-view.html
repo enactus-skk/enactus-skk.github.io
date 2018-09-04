@@ -8,16 +8,14 @@
 
 
   {% for post_contents in include.page_contents %}
-  <div id="{{ post_contents.name | slugify }}">
-    <div class="blog-post text-contaier">
-      {% for post_content in post_contents.items %}
-      <div class="post-content front">
-
-      {{ post_content }}
-
+    <div id="{{ post_contents.name | slugify }}">
+      <div class="blog-post text-contaier">
+        {% for post_content in post_contents.items %}
+        <div class="post-content front">
+          {{ post_content }}
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
-  </div>
   {% endfor %}
 </div>

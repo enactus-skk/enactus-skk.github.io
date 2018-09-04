@@ -1,7 +1,6 @@
 ---
 title: 24th Recruiting
 categories: recruitment
-apply_file: /files/recruits/waiting.doc
 ---
 
 

@@ -11,7 +11,6 @@
   padding-top: 10vh;
   padding-bottom: 20vh;
   margin-top: -5px;
-
   /*margin-top:-20px;*/
   &:before {
     content: "";
@@ -22,7 +21,8 @@
     right: 0;
     height: 130vh;
   }
-  &.event-on:before{
+
+  &.event-on:before {
     content: "";
     background: linear-gradient(to bottom,rgba(48,51,60,.6) 0,rgba(48, 51, 60, 0.25) 100%);
     position: absolute;
@@ -78,6 +78,7 @@
     position: absolute;
     right: 0;
   }
+
   .hero-text-left {
     position: absolute;
     left: 0;
@@ -90,13 +91,15 @@
 
 .bottom-cta {
   text-align: center;
-  background-color:$enactus-gold;
+  background-color: $enactus-gold;
+
   a {
     color: white;
-    margin-top:10px;
-    margin-bottom: 10px;;
-    &:hover{
-      color:$enactus-gold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: $enactus-gold;
       background-color: white;
     }
   }

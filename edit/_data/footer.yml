@@ -1,32 +1,32 @@
-- title: Site Links
+- title:           Site Links
   links:
-    - name: Enactus Worldwide
-      link: http://enactus.org/
-      new_window: true
-    - name: Enactus Korea
-      link: http://enactuskorea.org/
-      new_window: true
-    - name: Enactus Korea Blog
-      link: https://blog.naver.com/enactusblog/
-      new_window: true
-    - name: Enactus Korea Youtube
-      link: https://www.youtube.com/user/EnactusKorea/
-      new_window: true
-    - name: Enactus Korea Flickr
-      link: https://www.flickr.com/photos/enactuskorea/
-      new_window: true
+    - name:        Enactus Worldwide
+      link:        http://enactus.org/
+      new_window:  true
+    - name:        Enactus Korea
+      link:        http://enactuskorea.org/
+      new_window:  true
+    - name:        Enactus Korea Blog
+      link:        https://blog.naver.com/enactusblog/
+      new_window:  true
+    - name:        Enactus Korea Youtube
+      link:        https://www.youtube.com/user/EnactusKorea/
+      new_window:  true
+    - name:        Enactus Korea Flickr
+      link:        https://www.flickr.com/photos/enactuskorea/
+      new_window:  true
 
-- title: Social
+- title:           Social
   links:
-    - name: Email
-      link: mailto:mail@enactus-skk.org
+    - name:        Email
+      link:        mailto:mail@enactus-skk.org
       social_icon: Email
-      new_window: false
-    - name: YouTube
-      link: https://www.youtube.com/channel/UCvWZEtHJC5QGsVrjrY8DPAQ/featured
+      new_window:  false
+    - name:        YouTube
+      link:        https://www.youtube.com/channel/UCvWZEtHJC5QGsVrjrY8DPAQ/featured
       social_icon: YouTube
-      new_window: true
-    - name: Facebook
-      link: https://www.facebook.com/skkenactus/
+      new_window:  true
+    - name:        Facebook
+      link:        https://www.facebook.com/skkenactus/
       social_icon: Facebook
-      new_window: true
+      new_window:  true

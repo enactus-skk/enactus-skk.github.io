@@ -1,56 +1,66 @@
-{% if site.data.team.is_recruiting %}
-
-<section class="diagonal take-action less-padding-top">
-  <div class="slide-back shade-top ">
-  </div>
-  <div class="slide-back shade-bottom ">
-  </div>
-  <div class="container halves">
-    <div style="padding-top:20px;">
-
+{% if site.data.control.recruit.ing %}
+  <section class="diagonal take-action less-padding-top">
+    <div class="slide-back shade-top "></div>
+    <div class="slide-back shade-bottom "></div>
+    <div class="container halves">
+      <div style="padding-top:20px;">
         <h3>
           <strong>{{ site.categories.recruitment[0].title }}</strong>
         </h3>
 
-      <p class="subtext" style="font-size:1em;">
-        {{ site.categories.recruitment[0].description }}
-        <br>
-        <strong>e&nbsp;</strong>{{ site.categories.recruitment[0].recruit_email | default:site.data.team.contact_email_address}}
-        <br>
-        <a href="{{ site.categories.recruitment[0].promo_file }}" style="color:#3b4650;">
-          <strong>홍보자료</strong>
-        </a>
-        &nbsp;
-        <a href="{{ site.categories.recruitment[0].apply_file }}" style="color:#3b4650;" class="apply-file">
-          <strong>▶ 지원서 다운로드</strong>
-        </a>
+        <p class="subtext" style="font-size:1em;">
+          {{ site.categories.recruitment[0].description }}
+          <br>
+          <strong>e&nbsp;</strong>{{ site.data.control.recruit.email | default:site.data.tean.contact.email}}
+          <br>
+          <a href="{{ site.data.control.recruit.promo_file }}" style="color:#3b4650;">
+            <strong>홍보자료</strong>
+          </a> &nbsp;
+          <a href="{{ site.data.control.recruit.apply_file }}" style="color:#3b4650;" class="apply-file">
+            <strong>▶ 지원서 다운로드</strong>
+          </a>
+        </p>
 
-      </p>
-      <p class="banner-link">
-        <a class="button alt" href="{{ site.categories.recruitment[0].url }}">지원공지 확인 &rarr;</a>
-      </p>
+        <p class="banner-link">
+          <a class="button alt" href="{{ site.categories.recruitment[0].url }}">지원공지 확인 &rarr;</a>
+        </p>
+
+      </div>
     </div>
-  </div>
-</section>
-<script>
-{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
-var applyLinks = document.getElementsByClassName('apply-file');
-if(applyLinks.length>0){
+  </section>
+  {% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+  <script>
+    var applyLinks = document.getElementsByClassName('apply-file');
+    if (applyLinks.length > 0) {
 
-  for(var i =0 ;i<applyLinks.length;i++){
-    var elem = applyLinks[i];
-    var eventName = elem.getAttribute('href').replace('/files/recruits/', '').replace('/', '');
+      for (var i = 0; i < applyLinks.length; i++) {
+        var elem = applyLinks[i];
+        var eventName = elem.getAttribute('href').replace('/files/recruits/', '').replace('/', '');
 
-    if (elem.addEventListener)  // W3C DOM
-       elem.addEventListener("click", function(){ gtag("event", eventName , { "event_category": "recruit","event_label": "recruit_file_download" }); } ,false);
-    else if (elem.attachEvent) { // IE DOM
-       elem.attachEvent("onclick", function(){ gtag("event", eventName , { "event_category": "recruit","event_label": "recruit_file_download" }); });
+        if (elem.addEventListener) // W3C DOM
+          elem.addEventListener("click", function() {
+            gtag("event", eventName, {
+              "event_category": "recruit",
+              "event_label": "recruit_file_download"
+            });
+          }, false);
+        else if (elem.attachEvent) { // IE DOM
+          elem.attachEvent("onclick", function() {
+            gtag("event", eventName, {
+              "event_category": "recruit",
+              "event_label": "recruit_file_download"
+            });
+          });
+        } else { // No much to do
+          elem["click"] = function() {
+            gtag("event", eventName, {
+              "event_category": "recruit",
+              "event_label": "recruit_file_download"
+            });
+          };
+        }
+      }
     }
-    else { // No much to do
-       elem["click"] = function(){ gtag("event", eventName , { "event_category": "recruit","event_label": "recruit_file_download" }); };
-    }
-  }
-}
-{% endif %}
-</script>
+  </script>
+  {% endif %}
 {% endif %}

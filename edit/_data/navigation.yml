@@ -1,11 +1,34 @@
 links:
-- name: Who We Are
-  link: /who-we-are/
-- name: What We Do
-  link: /what-we-do/
-- name: Projects
-  link: /projects/
-- name: Now We Are
-  link: /blog/
-- name: Contact Us
-  link: /contact/
+
+- link:        /
+  name:        main
+  description: |
+    A HEAD FOR BUSINESS. A HEART FOR THE WORLD.
+    인액터스 성균관은 기업가정신의 실천을 통해 더 나은 사회를 만들어가는 사회혁신 경영학회입니다.
+    우리는 비즈니스의 긍정적인 힘으로 세상에 변화를 가져오고 있습니다.
+  image:       /images/main/2018-nc-1-sm.jpg
+
+- link:        /who-we-are/
+  name:        Who We Are
+  description: Community of student, academic and business leaders
+  image:
+
+- link:        /what-we-do/
+  name:        What We Do
+  description: Entrepreneurial action to Build a Better Tomorrow
+  image:
+
+- link:        /projects/
+  name:        Projects
+  description: Listen to the Sound of Empowerment
+  image:       /images/projects/default-main.jpg
+
+- link:        /blog/
+  name:        Now We Are
+  description: Dedicated to making the world a better place
+  image:
+
+- link:        /contact/
+  name:        Contact Us
+  description: Building a Better Tomorrow Together
+  image:

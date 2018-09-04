@@ -1,13 +1,9 @@
 ---
 title: 26th Recruiting
 categories: recruitment
-recruit_email: recruit@enactus-skk.org
 description: |
   ~ 9.7.(금) 낮 12시. 사회혁신 경영학회 Enactus SKK에서 2018년 하반기 신입회원을 모집하고 있습니다.
-apply_file: /files/recruits/[Enactus Skk 26th] 전공_학번_이름.docx
-promo_file: /files/recruits/2018-하반기-리쿠르팅홍보.pdf
 image: /images/recruits/2018/하반기-메인.png
-
 ---
 
 ![](/images/recruits/2018/하반기-포스터.jpg)

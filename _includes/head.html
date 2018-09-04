@@ -12,41 +12,49 @@
 <meta name="naver-site-verification" content="{{ site.site_verification.naver }}"/>
 {% endif %}
 
-{% unless site.data.team.default_logo contains '://' %}
-  {% assign ld_logo = site.data.team.default_logo | prepend: site.url | uri_escape %}
+{% assign page_data = site.data.navigation.links | where: "link", page.url | first %}
+
+{% unless site.data.image.logo.default contains '://' %}
+  {% assign ld_logo = site.data.image.logo.default | prepend: site.url | uri_escape %}
 {% endunless %}
 
-{% if page.layout == 'post' or page.layout == 'page' or page.layout == 'project' or page.layout == 'archive'%}
+{% if page.layout == 'post' %}
   {% assign ld_title = page.title %}
-  {% assign meta_title = page.title | append: ' | ' | append: site.title %}
-  {% assign meta_author = site.title %}
+  {% assign meta_title = ld_title | append: ' | ' | append: site.data.team.name %}
+  {% assign meta_author = site.data.team.name %}
   {% assign _meta_description = page.description | default:'' %}
   {% assign meta_url = site.url | append: site.baseurl | append: page.url | uri_escape %}
   {% assign meta_image = page.image | default: ld_logo | uri_escape %}
   {% assign meta_type = 'article' %}
-  {% if page.layout == 'post' %}
-    {% assign ld_type = 'BlogPosting' %}
-  {% else %}
-    {% assign ld_type = 'WebPage' %}
-  {% endif %}
+  {% assign ld_type = 'BlogPosting' %}
+  {% assign contents_excerpt = content | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '&nbsp;', ' '| replace: _meta_description, "" | strip_html | strip |  truncatewords: 35 %}
+  {% assign meta_description = _meta_description | append: " " | append: contents_excerpt | truncatewords: 35 %}
 
+{% elsif page.layout == 'page' or page.layout == 'project' or page.layout == 'archive' %}
+
+  {% assign ld_title = page_data.name | default : page.title %}
+  {% assign meta_title = ld_title | append: ' | ' | append: site.data.team.name %}
+  {% assign meta_author = site.data.team.name %}
+  {% assign _meta_description = page_data.description | default:'' %}
+  {% assign meta_url = site.url | append: site.baseurl | append: page.url | uri_escape %}
+  {% assign meta_image = page_data.image | default: ld_logo | uri_escape %}
+  {% assign meta_type = 'article' %}
+  {% assign ld_type = 'WebPage' %}
   {% assign contents_excerpt = content | newline_to_br | strip_newlines | replace: '<br />', ' ' | replace: '&nbsp;', ' '| replace: _meta_description, "" | strip_html | strip |  truncatewords: 35 %}
   {% assign meta_description = _meta_description | append: " " | append: contents_excerpt | truncatewords: 35 %}
 
 {% else %}
 
-  {% assign ld_title = site.title %}
-  {% assign meta_title = site.title %}
-  {% assign meta_author = site.title %}
-  {% assign meta_description = site.description | strip_html  %}
+  {% assign ld_title = site.data.team.name | default: site.title %}
+  {% assign meta_title = site.data.team.name | default: site.title  %}
+  {% assign meta_author = site.data.team.name | default: site.title  %}
+  {% assign meta_description = page_data.description | default: site.description | strip_html  %}
   {% assign meta_url = site.url | uri_escape %}
   {% assign meta_image = ld_logo | uri_escape %}
   {% assign meta_type = 'website' %}
   {% assign ld_type = 'WebSite' %}
 
 {% endif %}
-
-
 
 {% unless meta_image contains '://' %}
   {% assign meta_image = meta_image  | uri_escape  | prepend: site.url %}
@@ -58,10 +66,10 @@
 <meta name="description" content="{{ meta_description }}"/>
 <link rel="canonical" href="{{meta_url}}" />
 {% if page.tags %}
-  {% assign keywords = page.tags | join: ',' %}
+  {% assign keywords = page.tags | uniq | join: ", " %}
 {% else %}
   {% if site.data.team.search_keyword %}
-    {% assign keywords = site.data.team.search_keyword | join: ',' %}
+    {% assign keywords = site.data.team.search_keyword | uniq | join: ", " %}
   {% endif %}
 {% endif %}
 
@@ -72,7 +80,7 @@
 {% if site.facebook.app_id %}
 <meta property="fb:app_id" content="{{ site.facebook.app_id }}"/>
 {% endif %}
-<meta property="og:site_name" content="{{ site.title }}"/>
+<meta property="og:site_name" content="{{ site.data.team.name }}"/>
 <meta property="og:type" content="{{ meta_type }}"/>
 <meta property="og:title" content="{{ meta_title }}"/>
 <meta property="og:description" content="{{ meta_description }}"/>
@@ -88,7 +96,7 @@
 
 {% if page.tags %}
 <meta name="twitter:label2" content="Filed under"/>
-<meta name="twitter:data2" content="{{ page.tags | join: ','}}"/>
+<meta name="twitter:data2" content="{{ page.tags | uniq | join: ", " }}"/>
 {% for tag in page.tags %}
 <meta property="article:tag" content="{{ tag }}"/>
 {% endfor %}

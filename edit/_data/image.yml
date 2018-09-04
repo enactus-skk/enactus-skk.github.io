@@ -1,6 +1,10 @@
-main : "/images/main/2018-nc-1-sm.jpg"
-projects_main : "/images/projects/default-main.jpg"
-project_default: "/images/projects/default.png"
-asset_folder: "/images/assets"
-header_logo_light: "/images/assets/logo-light.png"
-header_logo: "/images/assets/logo-dark.png"
+asset_folder:     /images/assets
+
+logo:
+  default:        /images/assets/logo.png
+  header_light:   /images/assets/logo-light.png
+  header_dark:    /images/assets/logo-dark.png
+
+default_image:
+  pages:          /images/main/2018-nc-1-sm.jpg
+  project:        /images/projects/default.png

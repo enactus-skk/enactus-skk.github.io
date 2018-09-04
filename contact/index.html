@@ -8,25 +8,18 @@ description: Building a Better Tomorrow Together
 	<div class="container halves aligned-top" style="padding-top:40px;">
 		<div>
 			<h3>Address</h3>
-				<address><strong><a target="_blank" href="https://www.google.com/maps/place/{{ site.data.team.map.address | default: site.data.team.map.title | url_encode }}">{{ site.data.team.map.title | replace: ", ", ", <br>" }}</a></strong></address>
+				<address><strong><a target="_blank" href="https://www.google.com/maps/place/{{ site.data.team.map.search_address | default: site.data.team.map.real_address | url_encode }}">{{ site.data.team.map.real_address | replace: ", ", ", <br>" }}</a></strong></address>
 		</div>
 		<div>
 			<h3>Email</h3>
-			<p><strong><a href="mailto:{{ site.data.team.contact_email_address }}">{{ site.data.team.contact_email_address }}</a><strong></p>
+			<p><strong><a href="mailto:{{ site.data.tean.contact.email }}">{{ site.data.tean.contact.email }}</a><strong></p>
 		</div>
 
 		<div>
 			<h3>{% include social-icon.html icon='Facebook' %} Messeger
 			</h3>
-			<!--
-			<div class="fb-messengermessageus"
-				messenger_app_id="{{ site.facebook.app_id }}"
-				page_id="{{ site.data.team.contact_fb_pageid }}"
-				color="white"
-				size="large" style="height:300px;">
-			</div>
-		-->
-			<p><strong><a href="{{ site.data.team.contact_fb_messeger }}">{{ site.data.team.contact_fb_messeger }}</a><strong></p>
+
+			<p><strong><a href="{{ site.data.tean.contact.fb_messeger }}">{{ site.data.tean.contact.fb_messeger }}</a><strong></p>
 
 		</div>
 	</div>
@@ -46,7 +39,7 @@ description: Building a Better Tomorrow Together
 		<form action="https://formspree.io/mail@enactus-skk.org" method="post" class="contact-form">
 			 <input type='hidden' name='_next' value='/contact/success' />
 <!--
-			<input type="hidden" name="_to" value="{{ site.data.team.contact_email_address }}" />
+			<input type="hidden" name="_to" value="{{ site.data.tean.contact.email }}" />
 		-->
 
 			<input type="text" name="_gotcha" style="display: none;" />
@@ -54,7 +47,7 @@ description: Building a Better Tomorrow Together
 			<input type="hidden" name="_language" value="ko" />
 
 			<label for="email">회신 Email</label>
-			<input type="email" name="email" id="email" placeholder="ex) {{ site.data.team.contact_email_address }}" required />
+			<input type="email" name="email" id="email" placeholder="ex) {{ site.data.tean.contact.email }}" required />
 
 			<label for="name">이름/단체명</label>
 			<input type="text" name="name" id="name" placeholder="ex) 인액터스 성균관" />

@@ -1,22 +1,20 @@
-title: Enactus Skk Univ.
-description: '당신의 <strong class="enactus-highlight">비즈니스</strong>가 가져올 세상의 <strong class="enactus-text">변화</strong>'
-contact_email_address: mail@enactus-skk.org
-contact_phone_number:
-foundingDate: 2009
+name:             인액터스 성균관(Enactus SKK)
+english_name:     Enactus Skk Univ.
+founding_date:    2009
 
-default_logo: /images/assets/logo.png
-contact_fb_messeger: https://m.me/skkenactus
-contact_fb_pageid: skkenactus
-is_recruiting: true
-main_popup: false
-#main_projects:
-#  -
+contact:
+  email:          mail@enactus-skk.org
+  phone:
+  #fb_messeger:   https://m.me/skkenactus
+  #fb_pageid:     skkenactus
+
 map:
-  title: 서울특별시 종로구 성균관로 25-2 성균관대학교 호암관 3층 50322호
-  address: 서울특별시 명륜3가동 성균관대학교 호암관
-  latitude: 37.588630
-  longitude: 126.991918
-  zoom: 15
+  real_address:   서울특별시 종로구 성균관로 25-2 성균관대학교 호암관 3층 50322호
+  search_address: 서울특별시 명륜3가동 성균관대학교 호암관
+  latitude:       37.588630
+  longitude:      126.991918
+  zoom:           15
+
 search_keyword:
   - 대외활동
   - enactusskk

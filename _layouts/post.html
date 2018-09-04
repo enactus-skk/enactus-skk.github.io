@@ -6,28 +6,10 @@ layout: page
 		{% include post-title.html post=page %}
 		<hr>
 		<div class="post-content">
-
 			{{ content }}
 		</div>
 	</div>
 </section>
-
-<!--
-{% if page.next or page.previous %}
-<section class="diagonal alternate">
-	<div class="text-container">
-		<h2>Next post</h2>
-		<div class="blog-post">
-			{% if page.next %}
-				{% include post-summary.html post=page.next %}
-			{% elsif page.previous %}
-				{% include post-summary.html post=page.previous %}
-			{% endif %}
-		</div>
-	</div>
-</section>
-{% endif %}
--->
 
 {% if site.disqus_shortname and page.show_comments %}
 	<section class="diagonal">

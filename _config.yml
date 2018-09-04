@@ -1,35 +1,35 @@
 
 #### 팀에 따라 바꿔줘야할 부분  ↓ ↓ ↓ ↓ ####
-title: 인액터스 성균관(Enactus SKK)
-url: 'https://enactus-skk.org'
+url:                            'https://enactus-skk.org'
 baseurl:
-description: |
-  A HEAD FOR BUSINESS. A HEART FOR THE WORLD.
-  인액터스 성균관은 기업가정신의 실천을 통해 더 나은 사회를 만들어가는 사회혁신 경영학회입니다.
-  우리는 비즈니스의 긍정적인 힘으로 세상에 변화를 가져오고 있습니다.
-feed:
-  path: atom.xml
 
-
-google_analytics_key: 'UA-124494032-1'
+google_analytics_key:           'UA-124494032-1'
 site_verification:
-  naver: 'b16b04b7844cbfe72dc8a0aae45d23ef9fc5c4b6'
+  naver:                        'b16b04b7844cbfe72dc8a0aae45d23ef9fc5c4b6'
 facebook:
-  app_id: '2058376827757026'
+  app_id:                       '2058376827757026'
 google_maps_javascript_api_key:
 
 #### 팀에 따라 바꿔줘야할 부분 ↑ ↑ ↑ ↑ ####
 
 
 #### 기본설정 구역 변경 금지 ↓ ↓ ↓ ↓ ####
-locale: 'ko_KR'
-timezone: Asia/Seoul
-data_dir: edit/_data
-encoding:  "utf-8"
-paginate: 5
-paginate_path: "/blog/:num/"
-permalink: /:categories/:slug/
-excerpt_separator: <!--more-->
+title:                          인액터스 University Team
+description:                    |
+  A HEAD FOR BUSINESS. A HEART FOR THE WORLD.
+  기업가정신의 실천을 통해 더 나은 사회를 만들어가는 사회혁신 경영학회입니다.
+  우리는 비즈니스의 긍정적인 힘으로 세상에 변화를 가져오고 있습니다.
+feed:
+  path:                         atom.xml
+
+locale:                         'ko_KR'
+timezone:                       Asia/Seoul
+data_dir:                       edit/_data
+encoding:                       "utf-8"
+paginate:                       5
+paginate_path:                  "/blog/:num/"
+permalink:                      /:categories/:slug/
+excerpt_separator:              <!--more-->
 
 plugins:
   # https://github.com/jekyll/jekyll-feed
@@ -43,7 +43,7 @@ jekyll-archives:
   enabled:
     - "categories"
   permalinks:
-    category: '/:name/'
+    category:                   '/:name/'
 
 exclude:
   - Gemfile
@@ -53,52 +53,56 @@ exclude:
   - CNAME
   - _작업파일
 
-collections_dir: edit
+collections_dir:                edit
 collections:
   who_we_are:
-    output: true
+    output:                     true
   what_we_do:
-    output: true
+    output:                     true
   projects:
-    output: true
+    output:                     true
   events:
-    output: true
+    output:                     true
 
 defaults:
   - scope:
-      path: ""
-      type: "posts"
+      path: "images"
     values:
-      sitemap: true
-      layout: "post"
-      is_post: true
+      image: true
+  - scope:
+      path:                     ""
+      type:                     "posts"
+    values:
+      sitemap:                  true
+      layout:                   "post"
+      is_post:                  true
       _options:
         content:
-          width: 960
-          height: 2000
+          width:                960
+          height:               2000
   - scope:
-      path: ""
-      type: "projects"
+      path:                     ""
+      type:                     "projects"
     values:
-      sitemap: true
-      layout: "project"
-      is_post: true
+      sitemap:                  true
+      layout:                   "project"
+      is_post:                  true
       _options:
         image_path:
-          width: 2000
-          height: 2000
+          width:                2000
+          height:               2000
   - scope:
-      path: ""
-      type: "pages"
+      path:                     ""
+      type:                     "pages"
     values:
-      sitemap: true
-      layout: "page"
+      sitemap:                  true
+      layout:                   "page"
   - scope:
-      path: "index.html"
-      type: "pages"
+      path:                     "index.html"
+      type:                     "pages"
     values:
-      sitemap: true
-      layout: "default"
+      sitemap:                  true
+      layout:                   "default"
 
 social_icons:
   - Facebook

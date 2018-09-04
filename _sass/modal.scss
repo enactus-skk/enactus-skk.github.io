@@ -9,23 +9,25 @@ Github: http://github.com/jorgechavz
   .checkbox {
     display: none;
   }
-.checkboxes label {
-  width:auto;
-  display: inline-block;
-float: left;
-padding-right: 10px;
-white-space: nowrap;
-}
-.checkboxes input {
-vertical-align: middle;
-margin:0;
-margin-bottom:2px;
-display:inline;
-}
-.checkboxes label span {
-vertical-align: middle;
-font-size:14px;
-}
+
+  .checkboxes label {
+    width: auto;
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .checkboxes input {
+    vertical-align: middle;
+    margin: 0 0 2px;
+    display: inline;
+  }
+
+  .checkboxes label span {
+    vertical-align: middle;
+    font-size: 14px;
+  }
   /* Gray background */
   .modal-overlay {
     box-sizing: border-box;
@@ -51,8 +53,8 @@ font-size:14px;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
     padding: 40px 50px;
     width: 80%;
-    height:auto;
-    margin: 20px auto 0 auto;
+    height: auto;
+    margin: 20px auto 0;
     @include align-self(flex-start);
     border-radius: 2px;
     transition: all 0.5s ease;
@@ -88,7 +90,7 @@ font-size:14px;
   }
   /* Close button */
   .modal-overlay .close {
-    margin:0px;
+    margin: 0;
     position: absolute;
     right: 5px;
     top: 5px;
@@ -112,10 +114,10 @@ font-size:14px;
     top: 0;
     z-index: -100;
   }
-  input{
-    width:auto;
-  }
 
+  input {
+    width: auto;
+  }
 
   input:checked ~ .o-close {
     z-index: 9998;
@@ -146,6 +148,7 @@ font-size:14px;
       width: 80%;
       padding: 20px;
     }
+
     .modal-wrap.small {
       width: 50%;
     }
@@ -155,6 +158,7 @@ font-size:14px;
     .modal-wrap {
       width: 90%;
     }
+
     .modal-wrap.small {
       width: 90%;
     }

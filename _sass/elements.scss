@@ -1,85 +1,94 @@
 html {
-	background: $enactus-dark-grey;
+  background: $enactus-dark-grey;
 }
 
-html, body {
-	margin: 0;
-	padding: 0;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: 'Roboto',  'Nanum Gothic', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Nanum Gothic', Helvetica, Arial, sans-serif;
 }
 
 a {
-	color: $enactus-gold;
-	text-decoration: none;
+  color: $enactus-gold;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
-	font-weight: 300;
-	font-size: 2.3rem;
-	margin: 0;
+  font-weight: 300;
+  font-size: 2.3rem;
+  margin: 0;
 }
 
 h2 {
-	font-weight: 300;
-	font-size: 2.2rem;
-	margin: 0 0 30px 0;
+  font-weight: 300;
+  font-size: 2.2rem;
+  margin: 0 0 30px;
 }
 
 h3 {
-	font-size: 1.8rem;
-	margin: 0 0 20px 0;
+  font-size: 1.8rem;
+  margin: 0 0 20px;
 }
 
 h4 {
-	font-size: 1.5rem;
-	margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  margin: 0 0 10px;
 }
 
-p, address, ul, ol, pre {
-	margin: 0 0 20px 0;
+address,
+ol,
+p,
+pre,
+ul {
+  margin: 0 0 20px;
 }
 
-p, address, ul, ol {
-	font-size: 1.38rem;
-	color: #666;
-	font-weight: 300;
-	line-height: 1.6;
+address,
+ol,
+p,
+ul {
+  font-size: 1.38rem;
+  color: #666;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 pre {
-	padding:5px;
-	background: $enactus-grey;
-	color:$enactus-tan;
-	border-radius: 2px;
-	width: auto;
-	height: 100%;
-	overflow: auto;
-	white-space: pre-wrap; /* pre tag내에 word wrap */
-
+  padding: 5px;
+  background: $enactus-grey;
+  color: $enactus-tan;
+  border-radius: 2px;
+  width: auto;
+  height: 100%;
+  overflow: auto;
+  white-space: pre-wrap;
+  /* pre tag내에 word wrap */
 }
 
 blockquote {
-	background-color: $enactus-tan;
-	border-radius: 5px;
-	padding: 20px 10px 20px 10px;
-	margin-right: 0px;
-	p{
-		color: $enactus-dark-grey;
-		font-style: oblique;
-		margin:0;
-	}
+  background-color: $enactus-tan;
+  border-radius: 5px;
+  padding: 20px 10px;
+  margin-right: 0;
+
+  p {
+    color: $enactus-dark-grey;
+    font-style: oblique;
+    margin: 0;
+  }
 }
 
 blockquote:before {
@@ -87,30 +96,34 @@ blockquote:before {
   font-size: 68px;
   color: $enactus-gold;
   float: left;
-  margin: -25px 10px 0px -40px;
-	height: 30px;
+  margin: -25px 10px 0 -40px;
+  height: 30px;
 }
 
-.enactus-highlight{
-	background-color: $enactus-gold;
-	padding-right:3px;
-	padding-left:3px;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.8);
-	a{
-		color: #fff;
-	}
+.enactus-highlight {
+  background-color: $enactus-gold;
+  padding-right: 3px;
+  padding-left: 3px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+
+  a {
+    color: #fff;
+  }
 }
 
-.enactus-text{
-	color: $enactus-gold;
+.enactus-text {
+  color: $enactus-gold;
 }
-.no-margin{
-	margin:0;
+
+.no-margin {
+  margin: 0;
 }
-.light-text{
-	font-weight:300;
+
+.light-text {
+  font-weight: 300;
 }
-.line-1{
-	line-height:1;
-	padding-top:10px;
+
+.line-1 {
+  line-height: 1;
+  padding-top: 10px;
 }

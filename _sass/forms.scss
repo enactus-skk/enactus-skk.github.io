@@ -1,73 +1,73 @@
 input[type=submit] {
-	color: #fff;
-	text-decoration: none;
-	padding: 20px 30px;
-	border-radius: 3px;
-	transition: 0.2s ease-in-out;
-	border: 1px solid $enactus-gold;
-	background: $enactus-gold;
-	cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+  border: 1px solid $enactus-gold;
+  background: $enactus-gold;
+  cursor: pointer;
 }
 
 input[type=submit]:hover {
-	border: 1px solid $enactus-gold;
-	background: $enactus-dark-grey;
+  border: 1px solid $enactus-gold;
+  background: $enactus-dark-grey;
 }
 
 input[type=submit]:active {
-	transform: translateY(1px);
+  transform: translateY(1px);
 }
 
-textarea,
-input,
 button,
-select {
-	font-family: inherit;
-	font-size: inherit;
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 input[type=submit] {
-	margin: 20px 0 0 0;
+  margin: 20px 0 0;
 }
 
-label,
 input,
+label,
 textarea {
-	display: block;
-	width: 100%;
-	box-sizing: border-box;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 textarea {
-	resize: vertical;
-	height: 250px;
+  resize: vertical;
+  height: 250px;
 }
 
 label {
-	margin: 30px 0 10px 0;
-	font-size: 1.2em;
+  margin: 30px 0 10px;
+  font-size: 1.2em;
 }
 
 input,
 textarea {
-	padding: 20px;
-	font-size: 1.2em;
-	border-radius: 3px;
+  padding: 20px;
+  font-size: 1.2em;
+  border-radius: 3px;
 }
 
 input,
 textarea {
-	-webkit-transition: all 0.30s ease-in-out;
-	-moz-transition: all 0.30s ease-in-out;
-	-ms-transition: all 0.30s ease-in-out;
-	outline: none;
-	border: 1px solid #DDDDDD;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
 }
 
-input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus,
+input[type=text]:focus,
 textarea:focus {
-	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-	border: 1px solid rgba(81, 203, 238, 1);
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
 }

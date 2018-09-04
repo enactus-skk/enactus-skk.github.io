@@ -23,12 +23,12 @@
        "keywords":"{{keyowords}}",
        "author":{
          "@type": "NGO",
-         "name": "{{site.title}}",
+         "name": "{{site.data.team.name}}",
          "url": "{{site.url}}",
          "logo": "{{ld_logo}}",
          "contactPoint": [{
            "@type": "ContactPoint",
-           "email": "{{site.data.team.contact_email_address}}",
+           "email": "{{site.data.tean.contact.email}}",
            "contactType": "customer support",
            "url" : "{{site.url}}"
          }],
@@ -39,11 +39,11 @@
            "https://blog.naver.com/enactusblog/",
            "https://www.flickr.com/photos/enactuskorea/"
          ],
-         "foundingDate": "{{site.data.team.foundingDate}}"
+         "foundingDate": "{{site.data.team.founding_date}}"
        },
        "publisher":{
          "@type": "Organization",
-         "name": "{{site.title}}",
+         "name": "{{site.data.team.name}}",
           "logo": {
             "@type": "ImageObject",
             "url": "{{ld_logo}}"
@@ -56,7 +56,7 @@
        "logo": "{{ld_logo}}",
        "contactPoint": [{
          "@type": "ContactPoint",
-         "email": "{{site.data.team.contact_email_address}}",
+         "email": "{{site.data.tean.contact.email}}",
          "contactType": "customer support",
          "url" : "{{site.url}}"
        }],
@@ -67,7 +67,7 @@
          "https://blog.naver.com/enactusblog/",
          "https://www.flickr.com/photos/enactuskorea/"
        ],
-       "foundingDate": "{{site.data.team.foundingDate}}"
+       "foundingDate": "{{site.data.team.founding_date}}"
      }{% endif %}]
 }
 </script>

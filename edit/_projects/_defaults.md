@@ -1,6 +1,9 @@
 ---
-title:
+title: 
 description:
+start_year:
+end_year:
 external_url:
 image:
+categories:
 ---

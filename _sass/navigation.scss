@@ -1,6 +1,6 @@
 .nav-open nav {
   border-bottom: 1px dotted rgba(255, 255, 255, .2);
-  padding: 30px 0 10px 0;
+  padding: 30px 0 10px;
 
   a {
     display: block;
@@ -23,8 +23,7 @@ nav {
   position: relative;
   top: -7px;
   text-shadow: none;
-  font-weight:300;
-
+  font-weight: 300;
   @media #{$mid-point} {
     text-align: right;
     float: right;
@@ -60,22 +59,19 @@ nav {
 
   a.active:not(.nav-toggle) {
     color: $enactus-gold;
-		border-bottom: 0;
-		text-weight:bold;
-    font-weight:500;
-
-		@media #{$mid-point} {
-			border-bottom: 2px solid $enactus-gold;
-
-		}
+    border-bottom: 0;
+    text-weight: bold;
+    font-weight: 500;
+    @media #{$mid-point} {
+      border-bottom: 2px solid $enactus-gold;
+    }
   }
 
   a:hover:not(.nav-toggle) {
     color: $enactus-gold;
-		border-bottom: 0;
-
+    border-bottom: 0;
     @media #{$mid-point} {
-    	border-bottom: 2px solid $enactus-gold;
+      border-bottom: 2px solid $enactus-gold;
     }
   }
 }
@@ -85,7 +81,6 @@ nav {
     border-radius: 5px;
 
     &:hover {
-
       background: #fff;
       color: $enactus-gold;
     }

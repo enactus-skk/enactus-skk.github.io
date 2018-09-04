@@ -7,24 +7,8 @@ description: Community of student, academic and business leaders
 {% assign who_we_are = site.who_we_are | group_by_exp:"item", "item.title" |  sort: 'num' ,'last'  %}
 
 <section class="first diagonal alternate less-padding-top">
-  <div class="slide-back">
-  </div>
+  <div class="slide-back"></div>
   <div class="container halves">
 		{% include tab-view.html page_contents=who_we_are %}
   </div>
 </section>
-<!--
-<script src="{{ site.baseurl }}/js/blueimp-gallery.min.js"></script>
-<script>
-if(document.getElementById('links')){
-  document.getElementById('links').onclick = function (event) {
-      event = event || window.event;
-      var target = event.target || event.srcElement,
-          link = target.src ? target.parentNode : target,
-          options = {index: link, event: event},
-          links = this.getElementsByTagName('a');
-      blueimp.Gallery(links, options);
-  };
-}
-</script>
--->

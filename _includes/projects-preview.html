@@ -1,0 +1,41 @@
+{% if site.data.control.main_page.projects.view %}
+  {% assign projects_preview_limit = site.data.control.main_page.projects.limit | default:0 %}
+  {% if site.data.control.main_page.projects.categories %}
+    {% assign projects = site.projects | where: 'categories',site.data.control.main_page.projects.categories | sort: 'end_year' ,'last'  %}
+  {% else %}
+    {% assign projects = site.projects | sort: 'end_year' ,'last' %}
+  {% endif %}
+
+  <section class="diagonal patterned">
+    <div class="container halves">
+      <div>
+        <h3>{{ site.data.team.name }} Projects</h3>
+        {{ site.data.control.main_page.projects.description | markdownify }}
+        <p><a href="{{ site.baseurl }}/projects/">전체 프로젝트 보기 &rarr;</a></p>
+      </div>
+
+    </div>
+    <div class="container halves">
+      <div>
+        <ul class="image-grid">
+          {% for project in projects reversed | limit:projects_preview_limit %}
+          <li class="square-image">
+            <a href="{{ site.baseurl }}{{ project.url }}">
+  							{% assign projects_image = project.image | default: site.data.image.default_image.project %}
+  							<div class="img-box" style="background-image: url({% include relative-src.html src= projects_image %})">
+  							</div>
+  							<sub class="top-right">launched in {{ project.start_year | default:'now'}}</sub>
+  							<div class="details">
+  								<div class="name"><small class="light-text">project.</small>&nbsp;{{ project.title }}</div>
+  								<div class="position">{{ project.description }}</div>
+  							</div>
+  						</a>
+          </li>
+          {% endfor %}
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+{% endif %}

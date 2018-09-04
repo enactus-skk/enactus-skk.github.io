@@ -1,155 +1,124 @@
-
 /* Tabs container */
 .r-tabs {
-	position: relative;
-
-	background-color: $enactus-dark-grey;
-	border-top: 5px solid $enactus-dark-grey;
-	/*
+  position: relative;
+  background-color: $enactus-dark-grey;
+  border-top: 5px solid $enactus-dark-grey;
+  /*
 
 	border-right: 1px solid $enactus-dark-grey;
 	border-left: 1px solid $enactus-dark-grey;
 	*/
-
-	border-bottom: 5px solid $enactus-dark-grey;
-
-	border-radius: 4px;
-	margin-top:-55px;
-
-	@media #{$desktop} {
-			margin-top:0px;
-	}
-
-
+  border-bottom: 5px solid $enactus-dark-grey;
+  border-radius: 4px;
+  margin-top: -55px;
+  @media #{$desktop} {
+    margin-top: 0;
+  }
 }
-
 /* Tab element */
 .r-tabs .r-tabs-nav .r-tabs-tab {
-	position: relative;
-	background-color: $enactus-dark-grey;
-
+  position: relative;
+  background-color: $enactus-dark-grey;
 }
-
 /* Tab anchor */
 .r-tabs .r-tabs-nav .r-tabs-anchor {
-	display: inline-block;
-	padding: 10px 12px;
-
-	text-decoration: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
-	/*font-size: 14px;*/
-	font-weight: 500;
-	color: #fff;
-}
-.r-tabs-nav{
-	li{
-		a{
-			font-size:1rem;
-		}
-	}
+  display: inline-block;
+  padding: 10px 12px;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  /*font-size: 14px;*/
+  font-weight: 500;
+  color: #fff;
 }
 
+.r-tabs-nav {
+  li {
+    a {
+      font-size: 1rem;
+    }
+  }
+}
 /* Disabled tab */
 .r-tabs .r-tabs-nav .r-tabs-state-disabled {
-	opacity: 0.5;
+  opacity: 0.5;
 }
-
 /* Active state tab anchor */
 .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
-	color: $enactus-gold;
-	text-shadow: none;
-
-	background-color: white;
-
-	border-top-right-radius: 4px;
-	border-top-left-radius: 4px;
+  color: $enactus-gold;
+  text-shadow: none;
+  background-color: white;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
-
 /* Tab panel */
 .r-tabs .r-tabs-panel {
-	background-color: white;
-
-	border-bottom: 4px solid white;
-
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px;
-
+  background-color: white;
+  border-bottom: 4px solid white;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
-
 /* Accordion anchor */
 .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
-	display: block;
-	padding: 10px;
+  display: block;
+  padding: 10px;
+  background-color: $enactus-dark-grey;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  /*font-size: 14px;*/
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 
-	background-color: $enactus-dark-grey;
-	color: #fff;
-	font-weight: 500;
-	text-decoration: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
-	/*font-size: 14px;*/
-
-	border-top-right-radius: 4px;
-	border-top-left-radius: 4px;
-
-	&:hover{
-		background-color: $enactus-gold;
-	}
+  &:hover {
+    background-color: $enactus-gold;
+  }
 }
-
 /* Active accordion anchor */
 .r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
-	background-color: #fff;
-	color: $enactus-gold;
-	text-shadow: none;
+  background-color: #fff;
+  color: $enactus-gold;
+  text-shadow: none;
 }
-
 /* Disabled accordion button */
 .r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
-	opacity: 0.5;
+  opacity: 0.5;
 }
-
-
 /* Buttons */
 button {
-	display:inline-block;
-	margin-top: 10px;
-	margin-right: 10px;
-	padding: 10px 20px;
-	line-height: 100%;
-
-	color: #fff;
-	/*font-size: 14px;*/
-	text-align: center;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	vertical-align: middle;
-	font-weight: 500;
-
-	border: 0;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	background-color: $enactus-gold;
-	box-shadow: 0px 3px 0px 0px $enactus-gold;
-
-	cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  line-height: 100%;
+  color: #fff;
+  /*font-size: 14px;*/
+  text-align: center;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
+  font-weight: 500;
+  border: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: $enactus-gold;
+  box-shadow: 0 3px 0 0 $enactus-gold;
+  cursor: pointer;
 }
-
 /* Info bar */
 .info {
-	display:inline-block;
-	margin-top: 10px;
-	margin-right: 10px;
-	padding: 10px 20px;
-	width: 300px;
-	line-height: 100%;
-
-	/*font-size: 14px;*/
-	color: $enactus-gold;
-	border: 2px solid $enactus-gold;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	background-color: #fff;
-
-	cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  width: 300px;
+  line-height: 100%;
+  /*font-size: 14px;*/
+  color: $enactus-gold;
+  border: 2px solid $enactus-gold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  cursor: pointer;
 }

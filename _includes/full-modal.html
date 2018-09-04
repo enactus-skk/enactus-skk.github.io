@@ -1,4 +1,4 @@
-{% if site.data.team.main_popup %}
+{% if site.data.control.main_page.popup %}
 
 {% assign popup_content = site.events | where_exp: "item","item.slug contains 'main-popup'" | first %}
 

@@ -1,23 +1,27 @@
-{% assign searchword = 'images' | append: include.target %}
-{% assign images = site.static_files | where_exp:"item","item.path contains searchword" | sort:'basename','last' %}
-{% assign images_size = images|size %}
+{% assign searchword = '/images' | append: include.target %}
+{% assign _images = site.static_files | where_exp:"item","item.image" %}
+{% assign grid_images = _images | where_exp:"item","item.path contains searchword" | sort:'basename','last' %}
+{% assign images_size = grid_images|size %}
+
+
 {% unless images_size == 0 %}
 <hr>
-<div class="gallery-container">
+  <div class="gallery-container">
+    {% for grid_image in grid_images %}
+      {%  unless grid_image.path contains 'backup'  %}
+        <div class="responsive {{ include.target | replace:'/' }}">
+          <div class="gallery">
 
-    {% for image in images %}
-  {%  unless image.path contains 'backup'  %}
-  <div class="responsive {{ include.target | replace:"/" }}">
-    <div class="gallery">
+            <img src="{% include relative-src.html src= grid_image.path %}" alt="{{grid_image.basename}}">
 
-      <img src="{% include relative-src.html src= image.path %}" alt="{{image.basename}}">
-      {%  unless include.desc %}
-      <div class="desc">{{image.basename}}</div>
+            {%  unless include.desc %}
+            <div class="desc">{{grid_image.basename}}</div>
+            {% endunless %}
+
+          </div>
+        </div>
       {% endunless %}
-    </div>
+    {% endfor %}
   </div>
-  {% endunless %}
-  {% endfor %}
-</div>
 <hr>
 {% endunless %}

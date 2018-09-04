@@ -1,15 +1,13 @@
 ---
 title: What We Do
-heading: 
+heading:
 description: Entrepreneurial action to Build a Better Tomorrow
 ---
-
-{% assign what_we_do = site.what_we_do | group_by_exp:"item", "item.title" |  sort: 'num' ,'last'  %}
+{% assign what_we_do = site.what_we_do | group_by_exp:"item", "item.title" | sort: 'num' ,'last' %}
 
 <section class="first diagonal alternate less-padding-top">
-  <div class="slide-back">
-  </div>
+  <div class="slide-back"></div>
   <div class="container halves">
-		{% include tab-view.html page_contents=what_we_do %}
+    {% include tab-view.html page_contents=what_we_do %}
   </div>
 </section>

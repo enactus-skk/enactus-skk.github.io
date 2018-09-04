@@ -1,0 +1,25 @@
+{% if site.data.control.main_page.quote %}
+  {% assign main_quote_count = site.data.main_quote | size %}
+  {% unless main_quote_count == 0 %}
+  <section class="first diagonal brand-slider">
+    <!-- Slider -->
+    <div class="slider">
+      <div class="slides">
+        {% for quote in site.data.main_quote %}
+        <div class="slide">
+          <blockquote>
+            <div class="slide-post">
+              {{quote.message | markdownify }}
+              <cite>{{ quote.name | prepend: '- ' }}{% if quote.belong %}{{ quote.belong | prepend: ' | ' }}{% endif %}</cite>
+            </div>
+          </blockquote>
+        </div>
+        {% endfor %}
+
+        <span class="bullets">
+  			</span>
+      </div>
+  	</div>
+  </section>
+  {% endunless %}
+{% endif %}

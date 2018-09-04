@@ -1,4 +1,6 @@
+
 {% include facebook_sdk.html %}
+
 <footer class="diagonal">
   <div class="container">
     <div class="footer-columns">
@@ -6,10 +8,11 @@
         <ul class="footer-links">
           <li>
             {% if column.title == 'Site Links' %}
-              <h2 class="no-margin">{{ site.data.team.title }}</h2>
+              <h2 class="no-margin">{{ site.data.team.english_name }}</h2>
             {% endif %}
             <h2 class="no-margin">{{ column.title }}</h2>
           </li>
+
           {% if column.title == 'Social' %}
           <li><a href="{{ site.baseurl }}/atom.xml">{% include social-icon.html icon="RSS" %} RSS feed</a></li>
           {% endif %}
@@ -24,15 +27,13 @@
                 {{ link.name }}
               </a>
 
-              {% if link.name == 'Facebook' %}
+              {% if link.name == 'Facebook' and site.facebook.app_id %}
                 <br>
                 <div data-colorscheme="dark" class="fb-like" data-href="{% include relative-src.html src=link.link %}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
               {% endif %}
             </li>
-
-
-
           {% endfor %}
+
         </ul>
       {% endfor %}
 
@@ -42,14 +43,15 @@
             <strong class="enactus-text">EN</strong>&middot;<strong class="enactus-text">ACT</strong>&middot;<strong class="enactus-text">US</strong>
           </h2>
         </li>
+
         <li>
           <p class="no-margin">
             <strong class="enactus-text">EN</strong>trepreneurial&nbsp;|&nbsp;기업가정신
           </p>
           <p class="no-margin">진정성과 지성, 그리고 열정으로</p>
           <p class="no-margin">개척하는 비즈니스 혁신의 불씨</p>
-
         </li>
+
         <li>
           <p class="no-margin">
             <strong class="enactus-text">ACT</strong>ion&nbsp;|&nbsp;실천
@@ -57,6 +59,7 @@
           <p class="no-margin">소셜벤처의 불꽃이 되는</p>
           <p class="no-margin">사회변화의 실제 경험</p>
         </li>
+
         <li>
           <p class="no-margin">
             <strong class="enactus-text">US</strong>&nbsp;|&nbsp;공동체
@@ -65,13 +68,14 @@
           <p class="no-margin">학생, 아카데미, 비즈니스</p>
           <p class="no-margin">리더들의 공동체</p>
         </li>
+        
       </ul>
     </div>
   </div>
 
   <div class="legal-line">
     <p class="container">
-      &copy; {{ site.time | date: '%Y' }} {{ site.data.team.title }}
+      &copy; {{ site.time | date: '%Y' }} {{ site.data.team.english_name }}
       &bull;
       by <a href="https://github.com/intiwatana/" target="_blank">intiwatana</a>
     </p>
