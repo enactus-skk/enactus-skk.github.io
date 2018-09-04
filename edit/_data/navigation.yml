@@ -26,7 +26,7 @@ links:
 - link:        /blog/
   name:        Now We Are
   description: Dedicated to making the world a better place
-  image:
+  image:       /images/main/default.png
 
 - link:        /contact/
   name:        Contact Us

@@ -9,9 +9,13 @@ num : 31
 인액터스 코리아 프로그램에는 *2018년 7월 기준* **28개** 대학의 인액터스 팀이 참여하고 있습니다.
 인액터스 코리아는 **[신규 대학 모집](http://enactuskorea.org/join-us/student-leaders/){:target="_blank"}**을 통해 지속적으로 대학 네트워크를 확장하고 있습니다.
 
+
+
 | skk  | korea   |worldwide 	|
 |:-:	 |:-:	     |:-:	        |
 |  1   |   28    |  1,730 	  |
+
+
 
 
 {% include image-grid.html target="/universities" %}

@@ -353,7 +353,7 @@ section {
 
   li {
     padding: 0;
-    box-sizing: border-box;
+    @include box-sizing(border-box);
     width: 100%;
     position: relative;
     overflow: hidden;

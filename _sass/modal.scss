@@ -4,7 +4,7 @@ Author: Jorge Chavez
 Github: http://github.com/jorgechavz
 */
 .modal {
-  box-sizing: border-box;
+  @include box-sizing(border-box);
 
   .checkbox {
     display: none;

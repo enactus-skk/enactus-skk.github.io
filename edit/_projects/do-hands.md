@@ -2,7 +2,7 @@
 title: 두손(DoHands)
 description: 종이옷걸이 광고플랫폼을 통해 노숙인들에게 자활의 기회를 제공합니다.
 start_year: 2011
-end_year: 2013
+end_year: 2014
 external_url: http://dohands.com/
 image: /images/projects/do-hands/main.png
 categories: representative

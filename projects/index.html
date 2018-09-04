@@ -53,12 +53,16 @@ description: Listen to the Sound of Empowerment
   </div>
   {% endfor %}
 </section>
-
+{% assign _projects = site.projects | where_exp: "item", "item.end_year != nil" | group_by_exp:"item", "item.start_year"  %}
 {% assign projects = _projects | sort: 'name' ,'last' | where_exp:"item", "item.name != nil"| reverse %}
 <section class="diagonal alternate less-padding-top">
   {% for year in projects %}
   <div class="container">
-    <h3> {{ year.name }}<h3>
+    <h3>
+      <small style="font-weight:300;letter-spacing:-0.2px;">
+        launched in
+      </small> {{ year.name }}
+    <h3>
 				<hr>
 				<ul class="image-grid">
 				{% for project in year.items %}
