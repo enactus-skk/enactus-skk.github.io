@@ -96,7 +96,7 @@
       width: 25%;
       height:auto;
       img{
-        min-height:initial;
+        min-height:0px;
       }
       @media #{$tablet} {
         width: 20%;
@@ -113,7 +113,7 @@
       width: 50%;
       height:auto;
       img{
-        min-height:initial;
+        min-height:0px;
       }
       @media #{$tablet} {
         width: 50%;
