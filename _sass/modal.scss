@@ -48,16 +48,19 @@ Github: http://github.com/jorgechavz
   }
   /* Box */
   .modal-wrap {
-    box-sizing: border-box;
+    @include box-sizing(border-box);
     background-color: #ddd;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
     padding: 40px 50px;
-    width: 80%;
+    width: 50%;
     height: auto;
-    margin: 20px auto 0;
+    margin: 20px auto;
     @include align-self(flex-start);
     border-radius: 2px;
     transition: all 0.5s ease;
+    img{
+      width:auto;
+    }
   }
 
   .modal-wrap.small {

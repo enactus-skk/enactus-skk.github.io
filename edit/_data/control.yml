@@ -4,9 +4,9 @@ main_page:
     <br>
     A <strong>HEART</strong> FOR THE <strong>WORLD</strong>.
   sub_slogan:    |
-    당신의 <strong class="enactus-highlight">비즈니스</strong>가 가져올 
+    당신의 <strong class="enactus-highlight">비즈니스</strong>가 가져올
     세상의 <strong class="enactus-text">변화</strong>
-  popup:         false
+  popup:         true
   quote:         true
   projects:
     view:        true
