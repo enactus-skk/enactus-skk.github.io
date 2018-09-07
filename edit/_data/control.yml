@@ -6,8 +6,9 @@ main_page:
   sub_slogan:    |
     당신의 <strong class="enactus-highlight">비즈니스</strong>가 가져올
     세상의 <strong class="enactus-text">변화</strong>
-  popup:         true
+  popup:         false
   quote:         true
+  quick_view:    true
   projects:
     view:        true
     limit:       4
@@ -18,7 +19,7 @@ main_page:
       인액터스 성균관의 대표 프로젝트들을 확인해보세요.
 
 recruit:
-  ing:           true
+  ing:           false
   apply_file:    /files/recruits/[Enactus Skk 26th] 전공_학번_이름.docx
   promo_file:    /files/recruits/2018-하반기-리쿠르팅홍보.pdf
   email:         recruit@enactus-skk.org
