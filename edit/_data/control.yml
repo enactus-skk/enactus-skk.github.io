@@ -6,7 +6,11 @@ main_page:
   sub_slogan:    |
     당신의 <strong class="enactus-highlight">비즈니스</strong>가 가져올
     세상의 <strong class="enactus-text">변화</strong>
-  popup:         false
+  popup:
+    view: true
+    link: /congratulation/26th/
+    # link: /recruitment/26th/
+    image: /images/recruits/congratulation-1.jpeg
   quote:         true
   quick_view:    true
   projects:

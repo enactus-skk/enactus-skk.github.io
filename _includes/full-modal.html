@@ -1,9 +1,4 @@
-{% if site.data.control.main_page.popup %}
-
-{% assign popup_content = site.events | where_exp: "item","item.slug contains 'main-popup'" | first %}
-
-{% if popup_content %}
-
+{% if site.data.control.main_page.popup.view %}
 
 
 <div class="modal">
@@ -12,32 +7,32 @@
 
     <div class="modal-wrap a-center from-bottom">
       <label for="modal-trigger-full" class="close">&#10006;</label>
-      <div class="blog-post text-contaier">
-        <div class="post-content front">
+      <div class="blog-post text-contaier popup-background"   >
+        <div class="post-content">
 
-        {{ popup_content }}
+        <img src="{% include relative-src.html src= site.data.control.main_page.popup.image %}">
 
         </div>
       </div>
-<a href="{% include relative-src.html src= popup_content.link %}" rel="nofollow">
+        <a href="{% include relative-src.html src= site.data.control.main_page.popup.link %}" rel="nofollow">
       <div class="cta button alt">
         See More &#9658;
       </div>
       </a>
-<!--
+
       <div class="checkboxes">
-        <label for="modal-prevent">
+        <label for="modal-prevent" >
           <input id="modal-prevent" type="checkbox" onchange="prventFullPopup(this,'main_popup','0',1)"/>
           <span>하루동안 보지 않기</span>
         </label>
         <label>
             |
         </label>
-        <label for="modal-trigger-full">
+        <label for="modal-trigger-full" >
           <span>닫기</span>
         </label>
       </div>
-    -->
+
     </div>
   </div>
 </div>
@@ -80,6 +75,6 @@ if(getCookie("main_popup")=="")
 
 
 </script>
-{% endif %}
+
 
 {% endif %}

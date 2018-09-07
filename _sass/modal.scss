@@ -16,6 +16,8 @@ Github: http://github.com/jorgechavz
     float: left;
     padding-right: 10px;
     white-space: nowrap;
+    margin-top:5px;
+    height:auto;
   }
 
   .checkboxes input {
@@ -45,14 +47,15 @@ Github: http://github.com/jorgechavz
     transform: scale(1);
     display: none;
     background-color: rgba(0,0,0,0.7);
+
   }
   /* Box */
   .modal-wrap {
     @include box-sizing(border-box);
-    background-color: #ddd;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
     padding: 40px 50px;
     width: auto;
+    // min-width:50vw;
     max-width:50vw;
     height: auto;
     max-height: 80vh;
@@ -60,14 +63,22 @@ Github: http://github.com/jorgechavz
     @include align-self(flex-start);
     border-radius: 2px;
     transition: all 0.5s ease;
+    background-color: $enactus-tan;
 
     img{
-      display:block;
+      display:inline-block;
 
       max-height:50vh;
       margin:auto;
       height:auto;
       object-fit: contain;
+    }
+
+    .popup-background{
+      background-repeat: no-repeat;
+      background-color: $enactus-tan;
+      // background-size: 100% 100%;
+      background-position: center center;
     }
   }
 
@@ -158,6 +169,7 @@ Github: http://github.com/jorgechavz
     .modal-wrap {
       width: 80%;
       padding: 20px;
+      min-width:0;
       max-width:100%;
     }
 
@@ -169,6 +181,7 @@ Github: http://github.com/jorgechavz
   @media (max-width: 450px) {
     .modal-wrap {
       width: 90%;
+      min-width:0;
       max-width:100%;
     }
 
