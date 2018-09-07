@@ -159,6 +159,26 @@
 
     }
 
+    @media #{$max-device} {
+
+			th {
+				display: table-cell;
+				padding:0px 10px 0px 10px;
+			  font-size:30px;
+        font-weight: 300;
+			}
+
+      td {
+        display: table-cell;
+				padding:2px 10px 2px 10px;
+				font-size:56px;
+				letter-spacing: -4.2px;
+      }
+
+    }
+
+
+
     h1:first-child {
       margin-top: 10px;
     }
