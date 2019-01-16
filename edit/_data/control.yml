@@ -23,7 +23,7 @@ main_page:
       인액터스 성균관의 대표 프로젝트들을 확인해보세요.
 
 recruit:
-  ing:           false
+  ing:           true
   apply_file:    /files/recruits/[Enactus Skk 26th] 전공_학번_이름.docx
   promo_file:    /files/recruits/2018-하반기-리쿠르팅홍보.pdf
   email:         recruit@enactus-skk.org
