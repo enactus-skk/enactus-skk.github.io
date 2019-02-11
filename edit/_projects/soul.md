@@ -5,7 +5,7 @@ description: |
 start_year: 2018
 end_year:
 external_url:
-image: /images/projects/go-on/main.jpg
+image: /images/projects/soul.jpeg
 ---
 
 >시니어의 세대 간 단절 해결과 사회 참여 증진을 위한 프로젝트입니다.
