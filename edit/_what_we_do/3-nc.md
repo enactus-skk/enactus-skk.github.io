@@ -32,7 +32,7 @@ NC에서 우승한 **챔피언 팀**은 *그 해의 인액터스 월드컵에 �
 + 2015 - Finalist
 + 2016 - Finalist
 + 2017 - Semi-finalist
-+ 2017 - Semi-finalist
++ 2018 - Semi-finalist
 
 ![](/images/what-we-do/nc-win-2013-md.jpg)
 
