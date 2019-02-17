@@ -30,8 +30,7 @@ Project Criterion은 학생 리더들이 지역사회를 위한 프로젝트를 
 
 ## 고온
 
-![](/images/projects/go-on/go-on2.png)
-![](/images/projects/go-on/go-on1.png)
+![](/images/projects/go-on/go-on2.png)   ![](/images/projects/go-on/go-on1.png)
 
 고온은 ‘실천에서 배운다’는 팀 모토에 맞게 다양한 경험을 해왔습니다. 
 미혼양육모 자립사업장 온새미로 공방 컨설팅, 텀블벅 펀딩, 다수의 기업 협력, 인식 개선 캠페인 등 미혼양육모의 경제적 문제를 해결하며 소셜 임팩트 또한 창출해냈습니다.
