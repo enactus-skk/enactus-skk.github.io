@@ -1,7 +1,7 @@
 ---
 title: PLAYGROUND
 description: |
-  쉽고 재밌게 플라스틱 환경문제ㅘ 플라스틱 프리 실천방법을 경험할 수 있는 마켓을 만듭니다.
+  쉽고 재밌게 플라스틱 환경문제와 플라스틱 프리 실천방법을 경험할 수 있는 마켓을 만듭니다.
 start_year: 2019
 end_year:
 external_url:
