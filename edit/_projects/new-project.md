@@ -43,6 +43,7 @@ Project Criterion은 학생 리더들이 지역사회를 위한 프로젝트를 
 
 ## 엔플린
 
+![](/images/projects/nplin2.jpeg)
 ![](/images/projects/nplin.jpeg)
 
 엔플린은 장애인 화가달의 경제적 자립을 위한 프로젝트입니다.
@@ -55,7 +56,8 @@ Project Criterion은 학생 리더들이 지역사회를 위한 프로젝트를 
 
 ## NP TFT
 
-![](/images/projects/nplin.jpeg)
+![](/images/projects/tft2.jpeg)
+![](/images/projects/tft1.jpeg)
 
 NP TFT는 여자로서, 엄마로서, 한 인격체로서 결혼 이주여성이 존중받는 것을 목표로 결혼 이주 여성의 문제들을 해결하기 위해 노력하고 있습니다.
 결혼이주여성에 대한 공감과 확실한 니즈파악을 목표로 이주여성분들과 심층적으로 인터뷰를 진행하였으며, 문제상황을 여러시각으로 새롭게 정의하고 포괄적으로 이해하려고 노력하였습니다.
