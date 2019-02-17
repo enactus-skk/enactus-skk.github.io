@@ -2,7 +2,7 @@
 title: NP(New Project Teams)
 description: |
   당신의 비즈니스로 세상에 변화를.
-start_year:
+start_year: 2017
 end_year:
 external_url:
 image: /images/projects/default.png
