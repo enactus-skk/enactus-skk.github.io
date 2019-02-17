@@ -1,7 +1,7 @@
 ---
 title: 소'울
 description: |
-  손글씨 문구를 통해 할머니들의 소리를 사회에 울립니다.
+  소통 프로그램과 손글씨 문구를 통해 할머니들의 소리를 사회에 울립니다.
 start_year: 2018
 end_year:
 external_url:
