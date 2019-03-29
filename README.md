@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a10f39d2-001a-4e68-8f23-477434610077/deploy-status)](https://app.netlify.com/sites/enactus-skk/deploys)
+
 # 인수인계나 가이드는 여기에 작성하면 됩니다.
 
 ### Q1. 프로젝트를 새로 등록했는데, 하단에 이미지를 추가하고 싶어요. 어떻게 해야 하나요?
