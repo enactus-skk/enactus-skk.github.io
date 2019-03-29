@@ -1,4 +1,5 @@
 ---
+published: true
 title: S.I.C(Streaming Into Culture)
 description: 대학생 기획단과 함께 소극단과 기획단의 성공스토리를 만듭니다. 대학로에 연극의 희망을!
 start_year: 2009

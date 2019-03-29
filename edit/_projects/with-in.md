@@ -1,11 +1,12 @@
 ---
+published: true
 title: with 人
 description: 도자기 제조업체[달항아리]에 경영컨설팅을 제공합니다.
 start_year: 2014
 end_year: 2015
 external_url:
 image: /images/projects/with-in/main.jpg
-categories: 
+categories:
 ---
 
 >기업가 정신과 경영 역량이 부족한 도자기 제조업체 **달항아리**에 경영 컨설팅을 제공합니다.

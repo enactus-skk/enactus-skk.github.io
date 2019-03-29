@@ -1,4 +1,5 @@
 ---
+published: true
 title: 결
 description: |
   사회에서 당당한 기업인으로 살아가고자 하는 청각장애인 목수님의 이야기를 전합니다.
