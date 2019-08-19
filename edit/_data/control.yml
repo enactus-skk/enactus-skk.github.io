@@ -7,10 +7,10 @@ main_page:
     당신의 <strong class="enactus-highlight">비즈니스</strong>가 가져올
     세상의 <strong class="enactus-text">변화</strong>
   popup:
-    view: false
+    view: true
     link: /congratulation/26th/
     # link: /recruitment/26th/
-    image: /images/recruits/congratulation-1.jpeg
+    image: /images/recruits/2019/fall_poster.png
   quote:         true
   quick_view:    true
   projects:
