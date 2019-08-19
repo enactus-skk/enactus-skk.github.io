@@ -8,8 +8,8 @@ main_page:
     세상의 <strong class="enactus-text">변화</strong>
   popup:
     view: true
-    link: /congratulation/26th/
-    # link: /recruitment/26th/
+    # link: /congratulation/26th/
+    link: /recruitment/28th/
     image: /images/recruits/2019/fall_poster.png
   quote:         true
   quick_view:    true
