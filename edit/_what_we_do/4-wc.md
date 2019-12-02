@@ -5,9 +5,7 @@ num : 41
 
 # WC(World Cup)
 
-<p><a href="https://enactus.org/worldcup/?wvideo=4nxpoqc4zk"><img
-        src="https://embedwistia-a.akamaihd.net/deliveries/4758f9af1d139e1295a889db8658c5c2.jpg?image_play_button_size=x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=54bbffe0" width="100%" 
-        style="width: 100%; "></a></p>
+<iframe allowtransparency="true" title="Wistia video player" allowFullscreen frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" src="https://fast.wistia.net/embed/iframe/291hvlmovr" width="100%" height="300"></iframe>
 
 
 *****
