@@ -19,6 +19,6 @@ num : 41
 + **Judge** & **Business Guests** : 400
 
 
-# World Cup 2018 in Silicon Valley, San Francisco!
+# World Cup 2020 in UTRECHT, THE NETHERLANDS!
 
-![](/images/what-we-do/wc-2018-sanjose.png)
+![](/images/what-we-do/wc-2020-utrecht.png)
