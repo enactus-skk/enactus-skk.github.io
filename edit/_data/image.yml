@@ -6,5 +6,6 @@ logo:
   header_dark:    /images/assets/logo-dark.png
 
 default_image:
+# 아래의 pages 이미지를 변경하면 메인 페이지 배경이 변경
   pages:          /images/main/2018-nc-1-sm.jpg
   project:        /images/projects/default.png
