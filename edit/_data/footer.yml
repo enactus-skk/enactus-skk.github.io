@@ -30,3 +30,7 @@
       link:        https://www.facebook.com/skkenactus/
       social_icon: Facebook
       new_window:  true
+    - name:        instagram
+      link:        https://instagram.com/enactus_skk
+      social_icon: instagram
+      new_window:  true
