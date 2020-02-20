@@ -11,15 +11,12 @@ description: Building a Better Tomorrow Together
 				<address><strong><a target="_blank" href="https://www.google.com/maps/place/{{ site.data.team.map.search_address | default: site.data.team.map.real_address | url_encode }}">{{ site.data.team.map.real_address | replace: ", ", ", <br>" }}</a></strong></address>
 		</div>
 		<div>
-			<h3>Email</h3>
-			<p><strong><a href="mailto:{{ site.data.team.contact.email }}">{{ site.data.team.contact.email }}</a><strong></p>
-		</div>
-
-		<div>
-			<h3>{% include social-icon.html icon='Facebook' %} Messeger
-			</h3>
-
-			<p><strong><a href="{{ site.data.team.contact.fb_messeger }}">{{ site.data.team.contact.fb_messeger }}</a><strong></p>
+			<h3>문의</h3>
+			<p><strong><a href="mailto:{{ site.data.team.contact.email }}">{{ site.data.team.contact.email }}</a><strong>
+			<p><strong><a href={% include social-icon.html icon='Facebook' %}>"{{ site.data.team.contact.Facebook }}">{{ site.data.team.contact.Facebook }}</a><strong></p>	
+	                <p><strong><a href={% include social-icon.html icon='Instagram' %}>"{{ site.data.team.contact.Instagram }}">{{ site.data.team.contact.Instagram }}</a><strong></p>
+			<p><strong><a href={% include social-icon.html icon='Kakaotalk' %}>"인액터스 성균관"
+		</div>			
 
 		</div>
 	</div>
