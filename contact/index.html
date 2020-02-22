@@ -10,15 +10,26 @@ description: Building a Better Tomorrow Together
 			<h3>Address</h3>
 				<address><strong><a target="_blank" href="https://www.google.com/maps/place/{{ site.data.team.map.search_address | default: site.data.team.map.real_address | url_encode }}">{{ site.data.team.map.real_address | replace: ", ", ", <br>" }}</a></strong></address>
 		</div>
-		
+
 		<div>
 			<h3>문의</h3>
-			<p><strong><a href="mailto:{{ site.data.team.contact.email }}">{{ site.data.team.contact.email }}</a><strong></p>
-			<a href="{{site.data.team.contact.Facebook}}" target="_blank">페이스북</a><strong></p>	
-	                <a href="{{site.data.team.contact.Instagram}}" target="_blank">인스타그램</a><strong></p>
-		        <a href="{{site.data.team.contact.Kakao}}" target="_blank">카카오톡 플러스친구("인액터스성균관")</a><strong></p>
+			<a target="_blank" href="mailto:{{ site.data.team.contact.email }}" class="email-icon">
+				{% include social-icon.html icon=email %}
+				{{ site.data.team.contact.email }}
+			</a>
+			<a target="_blank" href="{{ site.data.team.contact.Facebook }}" class="facebook-icon">
+				{% include social-icon.html icon=Facebook %}
+				인액터스 성균관 페이스북
+			</a>
+			<a target="_blank" href="{{ site.data.team.contact.Instagram }}" class="instagram-icon">
+				{% include social-icon.html icon=Instagram %}
+				인액터스 성균관 인스타그램
+			</a>
+			<a target="_blank" href="{{ site.data.team.contact.Kakao }}" class="kakao-icon">
+				{% include social-icon.html icon=Kakao %}
+				인액터스 성균관 카카오톡 플러스친구
+			</a>
 		</div>		
-				
 	</div>
 </section>
 
