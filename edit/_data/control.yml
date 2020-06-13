@@ -6,11 +6,12 @@ main_page:
   sub_slogan:    |
     당신의 <strong class="enactus-highlight">비즈니스</strong>가 가져올
     세상의 <strong class="enactus-text">변화</strong>
-# 이부분에 대한 설정이 메인 팝업창에 반영됨.     
+# 이부분에 대한 설정이 메인 팝업창에 반영됨. 
+# 리쿠르팅 시 수정 1    
   popup:
-    view: false
+    view: true
     # link: /congratulation/26th/
-    link: /recruitment/28th/
+    link: /recruitment/30th/
     image: /images/recruits/2019/fall_poster.png
   quote:         true
   quick_view:    true
@@ -24,8 +25,9 @@ main_page:
       우리는 비즈니스의 긍정적인 힘으로 세상에 변화를 가져오고 있습니다.
       인액터스 성균관의 대표 프로젝트들을 확인해보세요.
 # 이부분에 대한 설정이 하단 영역에 지속적으로 노출됨. 리쿠르팅 시 지원파일 및 promo file 변경 필요
+# 리쿠르팅 시 수정 2
 recruit:
-  ing:           false
+  ing:           true
   apply_file:    /files/recruits/EnactusSKK_28th_application.docx
   promo_file:    /files/recruits/2018-하반기-리쿠르팅홍보.pdf
   email:         recruit@enactus-skk.org
