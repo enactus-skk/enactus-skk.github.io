@@ -6,7 +6,7 @@ description: |
 start_year: 2020
 end_year: 
 external_url:
-image: /images/projects/go-on/main.jpg
+image: /images/projects/plot/plot1.jpg
 ---
 
 >극단의 관객유치 어려움을 해결하기 위해 ‘연극 기반 예술 살롱’을 기획해 운영하고 있습니다. 
