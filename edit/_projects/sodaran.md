@@ -6,7 +6,7 @@ description: |
 start_year: 2020
 end_year:
 external_url:
-image: /images/projects/go-on/main.jpg
+image: /images/projects/sodaran/소다란_자율.jpg
 ---
 
 >고등학생과 대학생 컨설턴트를 매칭시켜주는 온라인 입시 컨설팅 플랫폼을 구축하여, 학생들이 지망하는 학과의 합격생 3명에게 온라인으로 컨설팅을 받아볼 수 있도록 합니다.
