@@ -6,7 +6,7 @@ description: |
 start_year: 2020
 end_year: 
 external_url:
-image: /images/projects/go-on/main.jpg
+image: /images/projects/p.not/p.not4.png
 ---
 
 >플라스틱 프리 행사 문화를 위해 ‘다회용 식기 렌탈 서비스’를 운영하고 있습니다. 
