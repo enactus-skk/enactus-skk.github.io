@@ -4,7 +4,7 @@ title: 소다란
 description: |
  “모든 입시는 평등하다” 정보소외계층 청소년들의 입시정보 격차를 해소하고자 합니다.
 start_year: 2020
-end_year: ~
+end_year: 2020
 external_url:
 image: /images/projects/sodaran/소다란_자율.jpg
 ---
