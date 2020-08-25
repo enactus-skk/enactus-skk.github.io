@@ -4,7 +4,7 @@ title: PLOT
 description: |
  트렌디한 문화예술 서비스를 통해 순수예술이자 대중 문화의 뿌리인 연극을 부흥시키고자 합니다.
 start_year: 2020
-end_year: 
+end_year: 2020
 external_url:
 image: /images/projects/plot/plot1.jpg
 ---
