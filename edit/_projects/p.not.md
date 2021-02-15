@@ -6,7 +6,7 @@ description: |
 start_year: 2020
 end_year: 2021
 external_url:
-image: /images/projects/p.not/p.not4.png
+image: /images/projects/p.not/피넛1.jpg
 ---
 
 >P.NOT은 지속 가능한 삶을 위한 플라스틱 프리 트렌드 확산을 목표로 각종 친환경 비즈니스를 진행해온 팀입니다. 
