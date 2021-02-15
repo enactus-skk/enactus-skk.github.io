@@ -6,7 +6,7 @@ description: |
 start_year: 2020
 end_year: 2021
 external_url:
-image: /images/projects/sodaran/소다란_자율.jpg
+image: /images/projects/sodaran/대표사진.jpg
 ---
 
 >"모든 입시는 평등해야 한다." 입시라는 기울어진 운동장에서, 소다란은 누구나 쉽게 접할 수 있는 온라인 입시 플랫폼을 통해 청소년의 입시 정보 격차를 해소하고자 합니다.
