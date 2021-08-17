@@ -12,7 +12,7 @@ main_page:
     view: true
     # link: /congratulation/26th/
     link: /recruitment/31th/
-    image: /images/recruits/2021/coming soon.jpeg
+    image: /images/recruits/2021/coming soon.jpg
   quote:         true
   quick_view:    true
   projects:
