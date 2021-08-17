@@ -12,7 +12,7 @@ main_page:
     view: true
     # link: /congratulation/26th/
     link: /recruitment/31th/
-    image: /images/recruits/2021/리크루팅이미지.png
+    image: /images/recruits/2021/coming soon.jpeg
   quote:         true
   quick_view:    true
   projects:
