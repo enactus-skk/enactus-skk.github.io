@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 title: P.NOT
 description: |
  “Plastic free, NOT that difficult” 플라스틱 프리 트렌드를 알리고, 플라스틱 없는 행사 문화를 확산하고자 합니다.
