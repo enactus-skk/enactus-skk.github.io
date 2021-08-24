@@ -6,7 +6,7 @@ description: |
 start_year: 2020
 end_year: 2021
 external_url:
-image: /images/projects/billage/빌리지메인.jpg
+image: /images/projects/billage/빌리지1.jpg
 ---
 
 >독립서점의 부흥을 위해 독립서점과 소비자를 연결할 수 있는 매력적인 상품을 만들어 궁극적으로 그들을 책방으로 유입하려 힘쓰고 있습니다.
