@@ -3,8 +3,8 @@ published: true
 title: NP(New Project)
 description: |
   당신의 비즈니스로 세상에 변화를.
-start_year:
-end_year:
+start_year: 2021
+end_year: 2021
 external_url:
 image: /images/projects/default.png
 ---
