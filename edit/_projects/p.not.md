@@ -1,9 +1,9 @@
 ---
-published: false
+published: true
 title: P.NOT
 description: |
  “Plastic free, NOT that difficult” 플라스틱 프리 트렌드를 알리고, 플라스틱 없는 행사 문화를 확산하고자 합니다.
-start_year: 2020
+start_year: 2019
 end_year: 2021
 external_url:
 image: /images/projects/p.not/피넛1.jpg
