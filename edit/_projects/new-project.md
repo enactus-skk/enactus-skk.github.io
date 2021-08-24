@@ -1,6 +1,6 @@
 ---
-published: false
-title: NP(New Project Teams)
+published: true
+title: NP(New Project)
 description: |
   당신의 비즈니스로 세상에 변화를.
 start_year:
