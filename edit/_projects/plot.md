@@ -4,7 +4,7 @@ title: PLOT
 description: |
  플롯은 연극과 대중 사이의 가교로써, 연극인과 함께 연극 문화의 부흥을 향해 나아갑니다.
 start_year: 2020
-end_year: 2021
+end_year: 2022
 external_url:
 image: /images/projects/plot/플롯0.jpg
 ---
