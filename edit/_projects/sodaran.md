@@ -4,7 +4,7 @@ title: 소다란
 description: |
  “소중하고 커다란 여러분의 꿈을 응원합니다.” 모든 청소년이 동등한 위치에서 경쟁할 수 있는 발판을 제공하고자 합니다.
 start_year: 2020
-end_year: 2021
+end_year: 2022
 external_url:
 image: /images/projects/sodaran/소다란1.jpg
 ---
