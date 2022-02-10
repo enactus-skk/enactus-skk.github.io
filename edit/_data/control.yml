@@ -11,8 +11,8 @@ main_page:
   popup:
     view: true
     # link: /congratulation/26th/
-    link: /recruitment/32nd/
-    image: /images/recruits/2021/32_리크루팅포스터.png
+    link: /recruitment/33rd/
+    image: /images/recruits/2022/33_recruiting_poster.png
   quote:         true
   quick_view:    true
   projects:
