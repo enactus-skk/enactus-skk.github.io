@@ -6,7 +6,7 @@ description: |
 start_year: 2020
 end_year: 2022
 external_url:
-image: /images/projects/sodaran/소다란2.jpg
+image: /images/projects/sodaran/sodaran1.jpg
 ---
 
 >"모든 입시는 평등해야 한다." 
