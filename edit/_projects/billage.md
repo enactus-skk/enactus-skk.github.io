@@ -1,6 +1,6 @@
 ---
 published: true
-title: 북빌리지 Bookbillage
+title: 북빌리지
 description: |
  독립서점의 부흥을 위해 책방과 독자를 책으로 잇는 하나의 마을을 만들어갑니다.
 start_year: 2020
