@@ -5,7 +5,7 @@ description: |
  플롯은 연극과 대중 사이의 가교로써, 연극인과 함께 연극 문화의 부흥을 향해 나아갑니다.
 start_year: 2020
 end_year: 진행중
-external_url: https://instagram.com/plot_official_?igshid=NDk5N2NlZjQ= 
+external_url: 
 image: /images/projects/plot/플롯 단체사진.jpg
 ---
 
