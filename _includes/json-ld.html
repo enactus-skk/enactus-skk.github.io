@@ -2,7 +2,7 @@
 {
      "@context": "http://schema.org",
      "@graph": [{
-       "@type":"{{ld_type}}",
+       "@type":"{{ ld_type }}",
        "headline":"{{ meta_title }}",{% if ld_type == 'BlogPosting' %}
        "dateModified":"{{ site.time | date_to_xmlschema }}",
        "datePublished":"{{ page.date | default: tie.time | date_to_xmlschema }}",
@@ -20,17 +20,17 @@
        ],
        "url": "{{ meta_url }}",
        "name": "{{ ld_title }}",
-       "keywords":"{{keyowords}}",
+       "keywords":"{{ keyowords }}",
        "author":{
          "@type": "NGO",
-         "name": "{{site.data.team.name}}",
-         "url": "{{site.url}}",
-         "logo": "{{ld_logo}}",
+         "name": "{{ site.data.team.name }}",
+         "url": "{{ site.url }}",
+         "logo": "{{ ld_logo }}",
          "contactPoint": [{
            "@type": "ContactPoint",
-           "email": "{{site.data.team.contact.email}}",
+           "email": "{{ site.data.team.contact.email }}",
            "contactType": "customer support",
-           "url" : "{{site.url}}"
+           "url" : "{{ site.url }}"
          }],
          "sameAs": [
            "https://www.facebook.com/skkenactus/",
@@ -39,26 +39,26 @@
            "https://blog.naver.com/enactusblog/",
            "https://www.flickr.com/photos/enactuskorea/"
          ],
-         "foundingDate": "{{site.data.team.founding_date}}"
+         "foundingDate": "{{ site.data.team.founding_date }}"
        },
        "publisher":{
          "@type": "Organization",
-         "name": "{{site.data.team.name}}",
+         "name": "{{ site.data.team.name }}",
           "logo": {
             "@type": "ImageObject",
-            "url": "{{ld_logo}}"
+            "url": "{{ ld_logo }}"
           }
        },
        "description": "{{ meta_description }}"
      }{% if ld_type == 'WebSite' %}, {
        "@type": "NGO",
-       "url": "{{site.url}}",
-       "logo": "{{ld_logo}}",
+       "url": "{{ site.url }}",
+       "logo": "{{ ld_logo }}",
        "contactPoint": [{
          "@type": "ContactPoint",
-         "email": "{{site.data.team.contact.email}}",
+         "email": "{{ site.data.team.contact.email }}",
          "contactType": "customer support",
-         "url" : "{{site.url}}"
+         "url" : "{{ site.url }}"
        }],
        "sameAs": [
          "https://www.facebook.com/skkenactus/",
@@ -67,7 +67,7 @@
          "https://blog.naver.com/enactusblog/",
          "https://www.flickr.com/photos/enactuskorea/"
        ],
-       "foundingDate": "{{site.data.team.founding_date}}"
+       "foundingDate": "{{ site.data.team.founding_date }}"
      }{% endif %}]
 }
 </script>

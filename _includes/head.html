@@ -66,15 +66,15 @@
 <meta name="description" content="{{ meta_description }}"/>
 <link rel="canonical" href="{{meta_url}}" />
 {% if page.tags %}
-  {% assign keywords = page.tags | uniq | join: ", " %}
+  {% assign keywords = page.tags | uniq | join: ', ' %}
 {% else %}
   {% if site.data.team.search_keyword %}
-    {% assign keywords = site.data.team.search_keyword | uniq | join: ", " %}
+    {% assign keywords = site.data.team.search_keyword | uniq | join: ', ' %}
   {% endif %}
 {% endif %}
 
 {% if keywords %}
-    <meta name="keywords" content="{{keywords}}"/>
+    <meta name="keywords" content="{{ keywords }}"/>
 {% endif %}
 
 {% if site.facebook.app_id %}
@@ -96,7 +96,7 @@
 
 {% if page.tags %}
 <meta name="twitter:label2" content="Filed under"/>
-<meta name="twitter:data2" content="{{ page.tags | uniq | join: ", " }}"/>
+<meta name="twitter:data2" content="{{ page.tags | uniq | join: ', ' }}"/>
 {% for tag in page.tags %}
 <meta property="article:tag" content="{{ tag }}"/>
 {% endfor %}
@@ -107,18 +107,18 @@
 
 {% feed_meta %}
 
-<link rel="shortcut icon" href="{{site.url}}/favicon.ico" type="image/x-icon" />
-<link rel="apple-touch-icon" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon.png" />
+<link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="{{ site.url }}{{ site.data.image.asset_folder }}/apple-touch-icon.png" />
 
-<link rel="apple-touch-icon" sizes="57x57" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon" sizes="76x76" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon" sizes="120x120" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon" sizes="144x144" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon" sizes="152x152" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-152x152.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="{{site.url}}{{ site.data.image.asset_folder }}/apple-touch-icon-180x180.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}{{ site.data.image.asset_folder }}/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}{{ site.data.image.asset_folder }}/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}{{ site.data.image.asset_folder }}/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}{{ site.data.image.asset_folder }}/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}{{ site.data.image.asset_folder }}/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}{{ site.data.image.asset_folder }}/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}{{ site.data.image.asset_folder }}/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}{{ site.data.image.asset_folder }}/apple-touch-icon-180x180.png" />
 
-<link rel="stylesheet" href="{{site.url}}{{ site.baseurl }}/css/screen.css">
+<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/screen.css">
 
 </head>
