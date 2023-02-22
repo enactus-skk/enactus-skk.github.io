@@ -71,7 +71,7 @@ GEM
       execjs (>= 0.3.0, < 3)
 
 PLATFORMS
-  arm64-darwin-22
+  ruby
 
 DEPENDENCIES
   jekyll (= 3.7.4)
