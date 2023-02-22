@@ -52,6 +52,7 @@ exclude:
   - LICENSE
   - CNAME
   - _작업파일
+  - vendor/bundle
 
 collections_dir:                edit
 collections:
