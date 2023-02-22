@@ -37,6 +37,7 @@ plugins:
   - "jekyll-seo-tag"
   - "jekyll-paginate"
   - "jekyll-archives"
+  - "jekyll-sitemap"
 #  - "jekyll-minifier"
 
 jekyll-archives:
@@ -53,6 +54,18 @@ exclude:
   - CNAME
   - _작업파일
   - vendor/bundle
+  - node_modules
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - cache/bundle
+
+strict_front_matter : false
+
+liquid:
+  error_mode        : warn
+  strict_filters    : false
+  strict_variables  : false
 
 collections_dir:                edit
 collections:
