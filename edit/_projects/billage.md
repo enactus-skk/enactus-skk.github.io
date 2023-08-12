@@ -6,7 +6,7 @@ description: |
 start_year: 2020
 end_year: 2023
 external_url:
-image: /images/projects/billage/billage1.jpg
+image: /images/projects/billage/billage2023-2.png
 ---
 
 >독립서점의 부흥을 위해 독립서점과 소비자를 연결할 수 있는 상품과 서비스를 기획 및 실행하고 있습니다.
