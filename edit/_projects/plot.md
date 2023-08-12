@@ -6,7 +6,7 @@ description: |
 start_year: 2020
 end_year: 2023
 external_url: 
-image: /images/projects/plot/플롯_단체사진.jpeg
+image: /images/projects/plot/plot2023-2.png
 ---
 
 >소극단 관객 유치의 어려움을 해소하기 위해 문화예술 뉴스레터 ‘플롯레터’와 연극 기반 대화 커뮤니티 ‘혜화동 사람들’을 운영하고 있습니다.
