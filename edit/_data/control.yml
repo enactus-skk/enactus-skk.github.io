@@ -9,7 +9,7 @@ main_page:
 # 이부분에 대한 설정이 메인 팝업창에 반영됨. 
 # 리쿠르팅 시 수정 1    
   popup:
-    view: true
+    view: false
     # link: /congratulation/26th/
     link: /recruitment/35th/
     image: /images/recruits/2023/35_recruiting.jpg
@@ -27,7 +27,7 @@ main_page:
 # 이부분에 대한 설정이 하단 영역에 지속적으로 노출됨. 리쿠르팅 시 지원파일 및 promo file 변경 필요
 # 리쿠르팅 시 수정 2
 recruit:
-  ing:           true
+  ing:           false
   apply_file:    /files/recruits/35th Recruiting document.docx
   promo_file:    /files/recruits/35th_recruiting_leaflet.pdf
   email:         recruit@enactus-skk.org
