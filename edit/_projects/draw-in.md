@@ -5,7 +5,7 @@ description: 예술활동 지원을 통해 시니어의 사회적 고립과 우�
 start_year: 2022
 end_year: 2023
 external_url:
-image: /images/projects/p.not/피넛1.jpg (/images/projects/draw-in/ 아래에 이미지 파일을 올리고 이곳의 경로를 변경하면 됨. 이후에 괄호안의 글 삭제)
+image: /images/projects/draw-in/drawin_1.png
 ---
 
 >“시니어의 청춘을 당신의 삶으로” 
