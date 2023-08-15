@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: 드로인
 description: 예술활동 지원을 통해 시니어의 사회적 고립과 우울, 무료한 일상을 해소합니다.
 start_year: 2022
