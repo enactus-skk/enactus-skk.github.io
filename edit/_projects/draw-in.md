@@ -5,7 +5,7 @@ description: 예술활동 지원을 통해 시니어의 사회적 고립과 우�
 start_year: 2022
 end_year: 2023
 external_url:
-image: /images/projects/draw-in/drawin_1.png
+image: /images/projects/draw-in/2023drawin-2.png
 ---
 
 >“시니어의 청춘을 당신의 삶으로” 
