@@ -5,7 +5,7 @@ description: 펫잇은 반려동물을 매개로 시니어와 사회 공동체 �
 start_year: 2024
 end_year: 2024
 external_url:
-image: /images/projects/pet-it/2024 petit-1.png
+image: /images/projects/pet-it/2024 petit-1.jpg
 ---
 
 >“믿고 맡길 수 있는 우리 동네 펫시터” 
