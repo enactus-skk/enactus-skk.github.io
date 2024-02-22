@@ -6,7 +6,7 @@ description: |
 start_year: 2024
 end_year: 2024
 external_url:
-image: /images/projects/free-fair/2024 freefair-1.jpg
+image: /images/projects/free-fair/2024 freefair-1.png
 ---
 
 >"자유롭고 공정한 입시를 디자인하다" 
