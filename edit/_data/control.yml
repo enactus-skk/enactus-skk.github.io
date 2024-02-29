@@ -12,7 +12,7 @@ main_page:
     view: true
     # link: /congratulation/26th/
     link: /recruitment/37th/
-    image: /images/recruits/2024/37th recruiting poster.jpg
+    image: /images/recruits/2024/37th_recruiting_poster.jpg
   quote:         true
   quick_view:    true
   projects:
