@@ -11,8 +11,8 @@ main_page:
   popup:
     view: true
     # link: /congratulation/26th/
-    link: /recruitment/37th/
-    image: /images/recruits/2024/37th_recruiting_poster.jpg
+    link: /recruitment/38th/
+    image: /images/recruits/2024/38th_Poster.png
   quote:         true
   quick_view:    true
   projects:
@@ -28,6 +28,6 @@ main_page:
 # 리쿠르팅 시 수정 2
 recruit:
   ing:           true
-  apply_file:    /files/recruits/EnactusSKK_37th_application.docx
-  promo_file:    /files/recruits/EnactusSKK_37th_recruitment_leaflet.pdf
+  apply_file:    /files/recruits/EnactusSKK_38th_application.docx
+  promo_file:    /files/recruits/38th_leaflet.pdf
   email:         recruit@enactus-skk.org
