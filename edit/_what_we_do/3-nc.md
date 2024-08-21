@@ -27,12 +27,15 @@ NC에서 우승한 **챔피언 팀**은 *그 해의 인액터스 월드컵에 �
 + 2011 - Spirit Award
 + 2012 - 2nd place
 + **2013** - **NATIONAL CHAMPION**
-+ **2013** - *Worldcup Semi-finalist*
++ **2013** - **Worldcup Semi-finalist**
 + 2014 - 3rd place
 + 2015 - Finalist
 + 2016 - Finalist
 + 2017 - Semi-finalist
 + 2018 - Semi-finalist
++ 2020 - ESC, Rising Star
++ 2021 - 2nd place
++ 2024 - Semi-Finalist
 
 ![](/images/what-we-do/nc-win-2013-md.jpg)
 
