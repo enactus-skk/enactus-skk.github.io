@@ -31,10 +31,7 @@
       social_icon: Facebook
       new_window:  true
     - name:        Instagram
-      link:        https://instagram.com/enactus_skk
+      link:        https://instagram.com/enactus_skku
       social_icon: Instagram
       new_window:  true
-    - name:        Kakao
-      link:        https://pf.kakao.com/_BLWxlxb
-      social_icon: Kakao
-      new_window:  true
+  
