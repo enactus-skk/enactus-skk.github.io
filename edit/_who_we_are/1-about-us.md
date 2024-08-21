@@ -32,7 +32,7 @@ num : 11
 
 # 인액터스 성균관(Enactus Skk)
 
-![](/images/main/2024-fall.jpg)
+![](/images/main/2024-fall.png)
 
 ![](/images/who-we-are/skku-slogan.jpg)
 
