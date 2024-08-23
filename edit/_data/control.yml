@@ -28,6 +28,5 @@ main_page:
 # 리쿠르팅 시 수정 2
 recruit:
   ing:           true
-  apply_file:    지원서는 26일(월) 12:00에 오픈될 예정입니다. 
   promo_file:    /files/recruits/38th_leaflet.pdf
   email:         recruit@enactus-skk.org
