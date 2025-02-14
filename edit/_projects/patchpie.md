@@ -3,7 +3,7 @@ published: true
 title: 패치파이
 description: |
  “패스트 패션으로 인한 환경 오염을 줄이기 위해 자투리 원단을 고부가가치 상품으로 업사이클링합니다.”
-start_year: 2024
+start_year: 2025
 end_year: 2025
 external_url: "" 
 image: /images/projects/patchpie/39th_patch_1.jpg
