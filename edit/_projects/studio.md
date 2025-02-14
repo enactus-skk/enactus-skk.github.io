@@ -3,7 +3,7 @@ published: true
 title: 스튜디오 누누슴
 description: |
  “가정 밖 청소년들이 본인의 집이라 부를 수 있는 곳을 찾아
-그 안에서 자유롭게 살아갈 수 있는 세상을 만들어갑니다. ”
+ 그 안에서 자유롭게 살아갈 수 있는 세상을 만들어갑니다. ”
 start_year: 2024
 end_year: 2025
 external_url: "" 
