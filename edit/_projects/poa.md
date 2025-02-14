@@ -6,7 +6,7 @@ description: |
 start_year: 2024
 end_year: 2025
 external_url: "" 
-image: /images/projects/poa/39th_poa_1.png
+image: /images/projects/poa/39th_poa_2.png
 ---
 
 >PoA는 학사 졸업 후 전업 작가의 길을 고민하는 이들을 위합니다.
