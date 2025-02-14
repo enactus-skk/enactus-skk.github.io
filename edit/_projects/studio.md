@@ -6,7 +6,7 @@ description: |
 그 안에서 자유롭게 살아갈 수 있는 세상을 만들어갑니다. ”
 start_year: 2024
 end_year: 2025
-external_url: ""
+external_url: "" 
 image: /images/projects/studio/38th_studio_1.jpg
 ---
 
