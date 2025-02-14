@@ -6,7 +6,7 @@ description: |
 start_year: 2024
 end_year: 2025
 external_url: "" 
-image: /images/projects/studio/39th_patch_1.jpg
+image: /images/projects/patchpie/39th_patch_1.jpg
 ---
 
 >패치파이는 자투리 원단 업사이클링 프로젝트를 통해 봉제 및 재단 과정에서 필연적으로 발생하는 원단 폐기물을 재활용하고자 합니다. 
